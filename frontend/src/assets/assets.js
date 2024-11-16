@@ -32,6 +32,7 @@ import Sale5 from "../assets/FlashSales/Cloth.jpg";
 import Sale6 from "../assets/FlashSales/FlashSale_4.jpeg";
 import pic_about from "../assets/About.jpg";
 import pic_contact from "../assets/Help1.jpg";
+import contact_pic from "../assets/contact-img.jpg";
 import pic_cloth1 from "../assets/clothes/1.jpg";
 import pic_cloth2 from "../assets/clothes/2.jpg";
 import pic_cloth3 from "../assets/clothes/3.jpg";
@@ -65,6 +66,7 @@ import pic_sponsor4 from "./Versace.png";
 import pic_sponsor5 from "./zara.png";
 
 export const assets = {
+  contact_pic,
   Logo,
   Logo1,
   HeroCart,
