@@ -18,6 +18,11 @@ main {
 }
 
 
+.contact-banner {
+  background-image: url(../../assets/contact-img.jpeg);
+  height: 85vh;
+}
+
 
 .contact-h1 {
   font-weight: bold;
