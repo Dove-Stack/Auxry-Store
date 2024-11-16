@@ -1,0 +1,316 @@
+/* .flash-sale-wrapper {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.flash-sale-wrapper .flash-sale {
+
+    text-align: start;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 22, 0.3);
+}
+
+.flash-sale-wrapper .flash-sale  img  {
+    width: 20%;
+    object-fit: cover;
+}
+
+.flash-sale-wrapper .flash-sale .flash-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.flash-sale .flash-text h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.flash-sale .flash-text h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.flash-sale .flash-text h3 > span.old-price {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #00000090;
+    font-weight: lighter;
+    text-decoration: line-through;  
+}
+
+.flash-sale .flash-text h3 > span.percent {
+    margin-left: 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 4px 11px;
+    color: #ff3333;
+    background-color: rgba(255, 51, 51, 0.2);
+}
+
+
+.flash-sale .flash-text button {
+    outline: none;
+    border: none;
+    width: 50%;
+    font-size: .6rem;
+    background: #f16609;
+    color: #fefefe;
+    text-align: center;
+    padding: 8px 12px;
+    transition: .4s ease-in-out;
+}
+
+.flash-sale .flash-text button:hover {
+    background-color: #2f3449;
+}
+
+.flash-sale .flash-text button > i {
+    margin-left: .2rem;
+    transition: .5s ease-in-out;
+}
+
+.flash-sale .flash-text button:hover i {
+    margin-left: .5rem;
+}
+ */
+/* 
+ .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+
+ }
+
+.flash-sale {
+  width: 40%;
+  max-width: 100%;
+  box-shadow: 1px 3px 6px hsla(0, 1%, 31%, 0.781);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transition: 0.5s ease-in-out;
+}
+
+.flash-img {
+    margin-bottom: -5px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.flash-img img {
+  width: 150px;
+}
+
+.flash-text {
+  margin-left: 10px;
+}
+
+.flash-text .text-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flash-text .text-content h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.flash-text .text-content h3 {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.flash-text .text-content h3 > span.old-price {
+  margin-left: 1rem;
+  font-size: .8rem;
+  color: #00000090;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.flash-text .text-content h3 > span.percent {
+  margin-left: 1rem;
+  font-size: 0.5rem;
+  font-weight: 500;
+  padding: 4px 11px;
+  color: #ff3333;
+  background-color: rgba(255, 51, 51, 0.2);
+}
+
+.flash-text .text-content button {
+  outline: none;
+  border: none;
+  width: 50%;
+  font-size: 0.5rem;
+  background: #f16609;
+  color: #fefefe;
+  text-align: center;
+  padding: 4px 7px;
+  transition: 0.4s ease-in-out;
+}
+
+.flash-text .text-content button:hover {
+  background-color: #2f3449;
+}
+
+.flash-text .text-content button > i {
+  margin-left: 0.2rem;
+  transition: 0.5s ease-in-out;
+}
+
+.flash-text .text-content button:hover i {
+  margin-left: 0.5rem;
+}
+ */
+
+main.flash-sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  /* flex-wrap: wrap; */
+  padding: 70px;
+  gap: 60px;
+  min-height: 100vh;
+  /* margin: 30px 4rem; */
+  font-family: Poppins;
+}
+
+.flash-sale section {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 320px;
+}
+
+.text-content {
+  padding: 35px;
+  background-color: whitesmoke;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.text-content h1 {
+  color: #2f3449;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.text-content p {
+  color: #2f3449e0;
+  font-size: 10px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+}
+
+img.sale-image {
+  width: 50%;
+  flex: 1 0 50%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.product-category {
+  font-size: 11px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.text-content .prices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sale-price {
+  color: #2f3449;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.list-price {
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: hsla(0, 0%, 50%, 0.612);
+  margin-right: 10px;
+}
+
+.percent {
+  color: #ff3333;
+  font-size: 9px;
+  background-color: rgba(255, 51, 51, 0.2);
+  margin-left: 12px;
+  border-radius: 10px;
+  padding: 4px 9px;
+}
+
+.text-content button {
+  font-weight: 500;
+  font-size:8px;
+  letter-spacing: 1px;
+  background-color: #2f3449;
+  color: #eee;
+  border: none;
+  outline: none;
+  padding: 9px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.text-content button:hover {
+  background-color: #121731;
+}
+
+.text-content button > i {
+  align-items: center;
+}
+
+@media (width <= 1338px) {
+  main.flash-sale {
+    flex-wrap: wrap;
+    margin: 30px 1rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .flash-sale section {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .text-content h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .text-content .prices {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  img.sale-image {
+    width: 100%;
+  }
+}

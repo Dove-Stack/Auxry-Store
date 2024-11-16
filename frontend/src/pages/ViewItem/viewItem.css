@@ -1,0 +1,285 @@
+.main-div {
+  margin-top: 100px;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 50px;
+  align-items: center;
+}
+
+.main-div .title h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.detail .image img {
+  width: 55%;
+  border-radius: 20px;
+}
+
+.detail .image {
+  position: relative;
+}
+
+.detail .image::before {
+  position: absolute;
+  width: 370px;
+  height: 340px;
+  content: "";
+  background-color: #2d2e32;
+  z-index: -1;
+  border-radius: 190px 100px 170px 100px;
+  left: calc(50% -150px);
+  top: 50px;
+}
+
+.detail .name {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  /* padding: 40px 0 0 0; */
+}
+
+.detail .price {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.detail .buttons {
+  display: flex;
+  gap: 18px;
+}
+
+/* .detail .buttons button {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: bisque;
+  border: none;
+  padding: 7px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 15px;
+} */
+
+.detail .content .buttons .checkout-btn {
+  padding: 9px 20px;
+  border: none;
+  background-color: bisque;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.detail i {
+  font-size: 15px;
+}
+
+.detail .content .buttons {
+  margin-bottom: 15px;
+}
+
+.detail .content .buttons button:nth-child(2) {
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  color: #eee;
+  border: none;
+  border-radius: 5px;
+  background-color: #121731;
+  font-size: 11px;
+  gap: 9px;
+  padding: 7px 9px;
+}
+
+.detail .content .buttons button:nth-child(2) i {
+  font-size: 12px;
+}
+
+.detail .content .description span {
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  
+}
+
+.similar {
+  margin-top: 200px;
+}
+
+.similar h1 {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+  }
+
+  .detail .image::before {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: "";
+    background-color: #2d2e32;
+    z-index: -1;
+    border-radius: 190px 100px 170px 100px;
+    left: 1%;
+    top: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-div {
+    margin-top: 50px;
+  }
+
+  .main-div .title h2 {
+    font-size: 24px;
+    margin-left: 30px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .detail {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .detail .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(100px); */
+  }
+
+  .detail .image img {
+    width: 300px;
+  }
+
+  .detail .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .detail .buttons {
+    display: inline;
+  }
+
+  .detail .buttons button {
+    width: 40%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 18px;
+  }
+
+  .detail .content .buttons .checkout-btn {
+    padding: 15px 10px;
+    border: none;
+    background-color: bisque;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 7px;
+  }
+
+  .detail .content .buttons button:nth-child(2) {
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 300;
+    gap: 9px;
+    padding: 15px 10px;
+  }
+
+  .detail .description span {
+    font-size: 12px;
+  }
+
+  .detail .price {
+    font-size: 17px;
+  }
+
+  .detail .name {
+    font-size: 35px;
+    padding: 40px 0 0 0;
+  }
+
+  .detail .image::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-div .title h2 {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+
+  .detail {
+    padding: 15px;
+  }
+
+  .detail .image img {
+    width: 80%;
+  }
+
+  .detail .name {
+    font-size: 20px;
+  }
+
+  .detail .buttons button {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+
+  .detail .description span {
+    font-size: 10px;
+  }
+
+  .similar h1 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .detail .buttons button {
+    font-size: 10px !important;
+    margin-bottom: 20px;
+    margin-right: 13px;
+  }
+
+  .detail .content .buttons .checkout-btn {
+    padding: 12px 8px;
+    border: none;
+    background-color: bisque;
+    font-weight: 300;
+    width: 50%;
+    border-radius: 7px;
+  }
+
+  .detail .content .buttons button:nth-child(2) {
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-weight: 300;
+    gap: 9px;
+    width: 50%;
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .detail .price {
+    font-size: 16px !important;
+  }
+}

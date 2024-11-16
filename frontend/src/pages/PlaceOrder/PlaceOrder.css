@@ -1,0 +1,119 @@
+.place-order {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 150px;
+}
+
+.place-order-left {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 100%;
+  padding:30px;
+  max-width: max(30%, 500px);
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+
+.place-order-left .title > i {
+  /* font-size: 30px; */
+  /* color: #fefefe; */
+  border-radius: 24px;
+}
+
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 10px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+
+.place-order-left input:focus {
+  border: 1px solid #121731;
+  border-radius: 5px;
+}
+
+.place-order-left input::placeholder {
+  color: rgba(0, 0, 0, 0.676);
+  font-weight: 300;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-right {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  max-width: max(40%, 500px);
+}
+
+.place-order .card-total button {
+  margin-top: 30px;
+  background-color: #121731;
+  transition: 0.6s ease-in-out;
+  border: 1px solid #121731;
+  border-radius: 3px;
+  padding: 16px;
+}
+
+.place-order .card-total button > i {
+  margin-left: 5px;
+}
+
+.place-order .card-total button:hover {
+  margin-left: 15px;
+  /* background-color: #2f3449; */
+  color: #121731;
+  background: white;
+}
+
+@media (min-width: 769px) and (width <= 1200px) {
+  .place-order {
+    /* flex-direction: column; */
+    margin: 150px 40px;
+  }
+  .place-order-right {
+    max-width: max(20px, 300px);
+  }
+  .place-order-left {
+    max-width: max(40%, 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    margin: 150px 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .place-order-left input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+  }
+
+  .place-order-left input::placeholder {
+    color: rgba(0, 0, 0, 0.876);
+    font-size: 9px;
+  }
+}

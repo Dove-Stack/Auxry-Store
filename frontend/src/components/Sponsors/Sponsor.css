@@ -1,0 +1,50 @@
+.sponsor-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #616267d1;
+  padding: 20px;
+}
+
+.sponsor-main img {
+  width: 80px;
+}
+
+.sponsor-main img.zara {
+  width: 49px;
+}
+
+@media (width <= 768px) {
+  .sponsor-main {
+    justify-content: space-between;
+  }
+
+  .sponsor-main img {
+    width: 47px;
+  }
+
+  .sponsor-main img.calvin {
+    width: 60px;
+  }
+  .sponsor-main img.zara {
+    width: 30px;
+  }
+}
+
+@media (width <= 475px) {
+  .sponsor-main {
+    padding: 10px;
+  }
+
+  .sponsor-main img {
+    width: 35px;
+  }
+
+  .sponsor-main img.calvin {
+    width: 40px;
+  }
+
+  .sponsor-main img.zara {
+    width: 25px;
+  }
+}

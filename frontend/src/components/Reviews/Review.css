@@ -1,0 +1,134 @@
+.review {
+  padding: 30px;
+  margin: 70px 0;
+}
+
+.review .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.review .title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.review .title p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #00000060;
+  width: 75%;
+  margin-top: 8px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.review .text-content {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.review .text-content .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11.5px; 
+}
+
+.review .text-content .top img {
+  width: 40px;
+  border-radius: 3px;
+}
+
+.review .text-content .top p {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.review .text-content .bottom {
+  padding: 15px;
+}
+
+.review .text-content .bottom p {
+  font-size: 10px;
+  line-height: 1.7;
+  font-weight: normal;
+  color: #00000070;
+}
+
+.review .text-content .bottom i {
+  /* margin-left: 5px; */
+  margin-right: 5px;
+  margin-top: 5px;
+  color: rgb(255, 196, 0);
+}
+
+@media (max-width: 768px) {
+  .review {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .review .title {
+    margin-bottom: 20px;
+  }
+
+  .review .title p {
+    font-size: 9px;
+    width: 100%;
+  }
+
+  .review .text-content .top img {
+    width: 30px;
+  }
+
+  .review .text-content .top p {
+    font-size: 9px;
+  }
+
+  .review .text-content .top {
+    padding: 2px;
+  }
+
+  .review .text-content .bottom {
+    padding: 6px;
+  }
+
+  .review .text-content .bottom p {
+    font-size: 8px;
+  }
+
+  .review .text-content .bottom i {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 425px) {
+  .review {
+    margin: 0;
+  }
+
+  .review .title {
+    margin: 0;
+  }
+
+  .review .swiper-wrapper > .swiper-slide.swiper-slide-prev,
+  .review .swiper-wrapper > .swiper-slide.swiper-slide-active,
+  .review .swiper-wrapper > .swiper-slide.swiper-slide-next {
+    width: 200px !important;
+    margin-right: 0px;
+  }
+}

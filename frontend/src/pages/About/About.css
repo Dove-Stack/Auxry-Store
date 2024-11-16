@@ -1,0 +1,64 @@
+.main-about {
+    margin-bottom: 15rem;
+}
+
+.about-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-banner img {
+    width: 80%;
+    height: auto;
+}
+
+.about-banner .text-right {
+    background-color: #123171;
+    display: grid;
+    align-self: last baseline;
+    position: absolute;
+    left: 65%;
+    bottom: 8%;
+    padding: 30px 70px;
+}
+
+.about-banner .text-right p {
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: white;
+}
+.about-banner .text-right span {
+    display: flex;
+    font-size: 17px;
+    font-weight: 100;
+    font-family: Poppins;
+    color: white;
+}
+
+.content-about {
+    padding: 38px;
+}
+
+.content-about .sub-content-about {
+    margin: 25px 0;
+}
+
+.content-about p {
+    margin: 10px 0;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.content-about .sub-content-about > h4{
+    margin: 10px 0;
+}
+
+.content-about .sub-content-about > p {
+    margin: 15px 0;
+    line-height: 1.7;
+    font-weight: 300;
+}
