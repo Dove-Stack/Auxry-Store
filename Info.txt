@@ -1,0 +1,19 @@
+jsonwebtoken - Authentication
+
+bcrypt - Encrypt user data and store it in database
+
+cors - Give Permission to frontend to connect with backend
+
+dotenv - for use of environment variables in project
+
+body-parser - Parse the data coming from the user 
+
+multer - Image store system
+
+stripe - It adds payment gateways 
+
+validator - Check for valid Email/Paswword
+
+nodemon - Restarts server onSave of the Project 
+
+axios - Creates the network requests { `GET , POST`}.

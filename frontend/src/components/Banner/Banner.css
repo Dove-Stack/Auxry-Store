@@ -1,0 +1,257 @@
+.main-banner {
+  margin: 130px 0;
+}
+
+.main-banner .title {
+  display: flex;
+  align-items: start;
+  margin-left: 30px;
+}
+
+.main-banner .title h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 50px;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  align-items: center;
+  /* background-color: red; */
+}
+
+.banner .image-1 {
+  background-image: url(../../assets/banner2.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  transition: 0.7s;
+  display: flex;
+  align-items: center;
+  /* width: 40%; */
+}
+
+.banner .image-2 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+    url(../../assets/banner1.jpg); */
+
+  /* box-shadow: 4px 12px #00000090; */
+  background-image: url(../../assets/clothes/4.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  width: 50%;
+}
+.banner .image-3 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+    url(../../assets/banner1.jpg); */
+
+  background-image: url(../../assets/dancer.jpeg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.banner .image-4 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+  url(../../assets/banner1.jpg); */
+
+  background-image: url(../../assets/apparel4.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  width: 50%;
+}
+
+.banner .image-5 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+  url(../../assets/banner1.jpg); */
+
+  background-image: url(../../assets/MAN.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  width: 50%;
+}
+.banner .image-6 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+  url(../../assets/banner1.jpg); */
+
+  background-image: url(../../assets/clothes/1.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  width: 50%;
+}
+.banner .image-7 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+  url(../../assets/banner1.jpg); */
+
+  background-image: url(../../assets/FlashSale_1.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  width: 50%;
+}
+.banner .image-8 {
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
+  url(../../assets/banner1.jpg); */
+
+  background-image: url(../../assets/apparel2.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  /* margin: 40px; */
+  /* padding: 20px; */
+  transition: 0.7s;
+  width: 50%;
+}
+
+.banner .image:hover {
+  /* height: 45vh; */
+  scale: 1.03;
+  /* padding: 10px; */
+}
+
+.banner .inner-swiper {
+  /* margin: 10px; */
+  /* padding: 10px; */
+  transition: 0.3s ease-in-out;
+}
+
+.banner .text-content {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  background: none;
+  padding: 30px;
+  margin: 20px 0;
+  width: 60%;
+}
+
+.banner .text-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.banner .text-content span {
+  font-size: 10px;
+}
+
+.banner .text-content span > i {
+  font-size: 15px;
+}
+
+.banner .text-content p {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 7rem;
+    padding: 10px;
+  }
+
+  .banner .swiper-wrapper {
+    /* box-sizing: border-box; */
+  }
+  /* .banner .image-1 {
+    height: 50vh;
+  }
+  .banner .image-2 {
+    height: 50vh;
+  }
+
+  .banner .image-3 {
+    height: 50vh;
+  }
+
+  .banner .image-4 {
+    height: 50vh;
+  } */
+  /* 
+  .banner .swiper-wrapper > .swiper-slide.swiper-slide-active,
+  .banner .swiper-wrapper > .swiper-slide.swiper-slide-next,
+  .banner .swiper-wrapper > .swiper-slide.swiper-slide-prev {
+    width: 150px !important;
+    margin-right: 10px !important;
+  } */
+}
+
+@media (max-width: 475px) {
+  .banner .text-content {
+    padding: 5px;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .banner .text-content h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .banner .text-content p {
+    font-size: 9px !important;
+    margin-bottom: 0;
+  }
+
+  .banner .text-content span {
+    font-size: 8px;
+  }
+
+  .banner .text-content span > i {
+    font-size: 9px;
+  }
+
+  /* .banner .swiper-wrapper > .swiper-slide.swiper-slide-active,
+  .banner .swiper-wrapper > .swiper-slide.swiper-slide-next,
+  .banner .swiper-wrapper > .swiper-slide.swiper-slide-prev {
+    width: 110px !important;
+
+    margin-right: 10px !important;
+  } */
+}
