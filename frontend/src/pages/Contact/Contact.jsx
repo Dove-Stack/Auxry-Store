@@ -11,6 +11,7 @@
 import React from "react";
 import "./Contact.css";
 import { assets } from "../../assets/assets";
+import ContactMap from "../../components/ContactMap/ContactMap";
 
 const Contact = () => {
   // const { show}
@@ -170,7 +171,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-25 col-img">
-          <img src={assets.contactImg} alt="" />
+          {/* <img src={assets.contactImg} alt="" /> */}
+          <ContactMap/>
         </div>
 
         {/* <div className="col-25">
