@@ -4,7 +4,7 @@
 } */
 
 main {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 110px;
   padding: 10px;
 }
@@ -19,8 +19,12 @@ main {
 
 
 .contact-banner {
-  background-image: url(../../assets/contact-img.jpeg);
-  height: 85vh;
+  background-image: url(../../assets/contact-img.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 
 
