@@ -1,0 +1,19 @@
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 100px 0;
+    /* transform: translateY(50%); */
+}
+
+.not-found h2 {
+    font-size: 35px;
+    color: #00000090;
+}
+
+.not-found p {
+    color: #00000090;
+    font-size: 18px;
+}
