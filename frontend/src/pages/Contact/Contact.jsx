@@ -17,6 +17,7 @@ const Contact = () => {
 
   return (
     <main>
+      <div className="contact-banner"></div>
       <h1 className="contact-h1">Contact Us</h1>
       <div className="row">
         <div className="col-75">
