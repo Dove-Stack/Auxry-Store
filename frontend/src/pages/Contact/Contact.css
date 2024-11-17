@@ -58,7 +58,7 @@ main {
   font-size: 40px;
   font-weight: bold;
   color: #121731;
-    text-shadow: 1px 3px 1px #9e9fa5;
+  text-shadow: 1px 3px 1px #9e9fa5;
 
   /* filter: drop-shadow(4px 4px 1px #121731); */
 }
@@ -254,6 +254,10 @@ span.price {
 
 /* Responsive layout */
 @media (max-width: 900px) {
+  .banner-text {
+    width: 100%;
+  }
+
   .row {
     flex-direction: column;
     margin: 0;
@@ -302,4 +306,19 @@ span.price {
     
     flex: 100%;
   } */
+}
+
+@media (max-width: 575px) {
+  .contact-banner {
+    height: 35vh;
+  }
+
+  .banner-text h2 {
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 10px;
+    /* top: 5%; */
+    left: 50%;
+    transform: translate(-0%, -70%);
+  }
 }
