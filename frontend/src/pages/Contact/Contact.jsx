@@ -11,7 +11,7 @@
 import React from "react";
 import "./Contact.css";
 import { assets } from "../../assets/assets";
-import ContactMap from "../../components/ContactMap/ContactMap";
+// import ContactMap from "../../components/ContactMap/ContactMap";
 
 const Contact = () => {
   // const { show}
@@ -19,7 +19,10 @@ const Contact = () => {
   return (
     <main>
       <div className="contact-banner"></div>
-      <h1 className="contact-h1">Contact Us</h1>
+      <div className="banner-text">
+        <h2>Contact Us</h2>
+      </div>
+      {/* <h1 className="contact-h1">Contact Us</h1> */}
       <div className="row">
         <div className="col-75">
           <div className="container">
@@ -170,10 +173,10 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="col-25 col-img">
-          {/* <img src={assets.contactImg} alt="" /> */}
+        {/* <div className="col-25 col-img">
+          <img src={assets.contactImg} alt="" />
           <ContactMap/>
-        </div>
+        </div> */}
 
         {/* <div className="col-25">
           <div className="container">
