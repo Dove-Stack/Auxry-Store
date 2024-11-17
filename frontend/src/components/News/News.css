@@ -13,8 +13,8 @@
   line-height: 1.7;
 }
 .news .news-title h2 {
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 900;
   letter-spacing: 1px;
     margin-bottom: 9px;
 }
@@ -38,7 +38,7 @@
   /* border: 1px solid #121731; */
   border-radius: 10px;
       background: rgba(255, 255, 255, 0.459);
-  box-shadow: 10px 8px 32px 0 rgba(30, 30, 33, 0.265);
+  box-shadow: -3px 1px 10px 0 rgba(30, 30, 33, 0.265);
   backdrop-filter: blur(11px);
 }
 
