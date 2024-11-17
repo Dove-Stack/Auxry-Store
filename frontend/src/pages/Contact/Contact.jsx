@@ -173,10 +173,24 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {/* <div className="col-25 col-img">
-          <img src={assets.contactImg} alt="" />
-          <ContactMap/>
-        </div> */}
+        <div className="col-50 col-img">
+          {/* <img src={assets.contactImg} alt="" /> */}
+          <iframe
+            width="600"
+            height="800"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Texas+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>{" "}
+          <script
+            type="text/javascript"
+            src="https://embedmaps.com/google-maps-authorization/script.js?id=0ba9acdb19a10b9aad45c51fb578d14853e13cc2"
+          ></script>
+          {/* <ContactMap/> */}
+        </div>
 
         {/* <div className="col-25">
           <div className="container">
