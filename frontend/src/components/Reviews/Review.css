@@ -14,8 +14,8 @@
 }
 
 .review .title h3 {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 900;
   margin-top: 8px;
   margin-bottom: 5px;
 }
@@ -32,7 +32,8 @@
 
 .review .text-content {
     background: rgba(255, 255, 255, 0.459);
-  box-shadow: 20px 8px 32px 0 rgba(30, 30, 33, 0.265);
+  /* box-shadow: 20px 8px 32px 0 rgba(30, 30, 33, 0.265); */
+  box-shadow: 10px 3px 10px  rgba(13, 13, 13, 0.167);
   backdrop-filter: blur(11px);
   display: flex;
   align-items: start;
@@ -69,7 +70,7 @@
 }
 
 .review .text-content .bottom p {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.7;
   font-weight: normal;
   color: #00000070;
@@ -77,8 +78,9 @@
 
 .review .text-content .bottom i {
   /* margin-left: 5px; */
+  font-size: 19px;
   margin-right: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
   color: rgb(255, 196, 0);
 }
 
