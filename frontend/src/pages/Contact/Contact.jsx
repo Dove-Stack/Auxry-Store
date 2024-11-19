@@ -7,6 +7,8 @@ import "./Contact.css";
 import { assets } from "../../assets/assets";
 
 const Contact = () => {
+  const reCaptchaSiteKey = import.meta.env.VITE_AUXRY_STORE_SITE_KEY_CAPTCHA;
+
   const [captchaToken, setCaptchaToken] = useState(null);
 
   const validationSchema = Yup.object({
@@ -18,18 +20,29 @@ const Contact = () => {
     city: Yup.string().required("City is required"),
     state: Yup.string().required("State is required"),
     zip: Yup.string()
-      .matches(/^d{5}$/, "Zip Code must be 5 digits")
+      .matches(/^\d{5}$/, "Zip Code must be 5 digits")
       .required("Zip Code is required"),
     message: Yup.string()
       .min(10, "Message must be at least 10 characters")
       .required("Message is required"),
   });
 
-  const { register, handleSubmit, formState: { errors }  } = useForm({
-    resolver: yupResolver(validationSchema)
-  })
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(validationSchema),
+  });
 
-  
+  const onSubmit = (data) => {
+    if (!captchaToken) {
+      alert("plese complete the reCAPTCHA verification.");
+      return;
+    }
+    console.log("Form Data: ", data);
+    alert("Form Submitted successfully");
+  };
 
   return (
     <main>
@@ -40,7 +53,7 @@ const Contact = () => {
       <div className="row">
         <div className="col-75">
           <div className="container">
-            <form action="">
+            <form action="" onSubmit={handleSubmit(onSubmit)}>
               <div className="row">
                 <div className="col-50 col contact">
                   <h2>User Details</h2>
@@ -52,9 +65,11 @@ const Contact = () => {
                     type="text"
                     id="fname"
                     name="firstname"
+                    {...register("fullname")}
                     placeholder="John M. Doe"
                     required
                   />
+                  <p className="error">{errors.fullname?.message}</p>
                   <label htmlFor="email">
                     <i className="bx bx-mail-send"></i> <span>Email</span>
                   </label>
@@ -62,9 +77,11 @@ const Contact = () => {
                     type="text"
                     id="email"
                     name="email"
+                    {...register("email")}
                     placeholder="john@example.com"
                     required
                   />
+                  <p className="error">{errors.fullname?.message}</p>
                   <label htmlFor="adr">
                     <i className="bx bx-user-pin"></i> <span>Address</span>
                   </label>
@@ -72,9 +89,11 @@ const Contact = () => {
                     type="text"
                     id="adr"
                     name="address"
+                    {...register("address")}
                     placeholder="542 W. 15th Street"
                     required
                   />
+                  <p className="error">{errors.fullname?.message}</p>
                   <label htmlFor="city">
                     <i className="bx bxs-city"></i> <span>City</span>
                   </label>
@@ -82,9 +101,11 @@ const Contact = () => {
                     type="text"
                     id="city"
                     name="city"
+                    {...register("city")}
                     placeholder="New York"
                     required
                   />
+                  <p className="error">{errors.fullname?.message}</p>
                   <div className="row bottom-row">
                     <div className="col-50 col-address">
                       <label htmlFor="state">
@@ -95,8 +116,10 @@ const Contact = () => {
                         type="text"
                         id="state"
                         name="state"
+                        {...register("state")}
                         placeholder="NY"
                       />
+                      <p className="error">{errors.fullname?.message}</p>
                     </div>
                     <div className="col-50 col-address zip">
                       <label htmlFor="zip">
@@ -106,8 +129,10 @@ const Contact = () => {
                         type="text"
                         id="zip"
                         name="zip"
+                        {...register("zip")}
                         placeholder="10001"
                       />
+                      <p className="error">{errors.fullname?.message}</p>
                     </div>
                   </div>
 
@@ -115,7 +140,19 @@ const Contact = () => {
                     <i className="bx bx-chat"></i>
                     <span>Message</span>
                   </label>
-                  <textarea name="message" id="message"></textarea>
+                  <textarea
+                    name="message"
+                    id="message"
+                    {...register("message")}
+                  ></textarea>
+                  <p className="error">{errors.fullname?.message}</p>
+
+                  <div className="recaptcha-container">
+                    <ReCAPTCHA
+                      sitekey={reCaptchaSiteKey}
+                      onChange={(token) => setCaptchaToken(token)}
+                    />
+                  </div>
 
                   <button type="submit" className="btn">
                     Submit
