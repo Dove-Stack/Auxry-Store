@@ -4,12 +4,15 @@ import React, { useState } from "react";
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import * as Yup from 'yup'
 import "./Contact.css";
 import { assets } from "../../assets/assets";
 
 const Contact = () => {
 
-  const [captchaToken, setCaptchaToken] = useState(null)
+  const [captchaToken, setCaptchaToken] = useState(null);
+
+  const validationSchema = Yup
 
   return (
     <main>
