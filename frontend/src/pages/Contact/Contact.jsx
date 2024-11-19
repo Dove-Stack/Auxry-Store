@@ -1,18 +1,35 @@
-
-
 import React, { useState } from "react";
-import ReCAPTCHA from 'react-google-recaptcha'
+import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from 'yup'
+import * as Yup from "yup";
 import "./Contact.css";
 import { assets } from "../../assets/assets";
 
 const Contact = () => {
-
   const [captchaToken, setCaptchaToken] = useState(null);
 
-  const validationSchema = Yup
+  const validationSchema = Yup.object({
+    fullname: Yup.string().required("Full Name is required"),
+    email: Yup.string()
+      .email("Invalid email format")
+      .required("Email is required"),
+    address: Yup.string().required("Address is required"),
+    city: Yup.string().required("City is required"),
+    state: Yup.string().required("State is required"),
+    zip: Yup.string()
+      .matches(/^d{5}$/, "Zip Code must be 5 digits")
+      .required("Zip Code is required"),
+    message: Yup.string()
+      .min(10, "Message must be at least 10 characters")
+      .required("Message is required"),
+  });
+
+  const { register, handleSubmit, formState: { errors }  } = useForm({
+    resolver: yupResolver(validationSchema)
+  })
+
+  
 
   return (
     <main>
