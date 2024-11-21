@@ -9,7 +9,7 @@ import { assets } from "../../assets/assets";
 const Contact = () => {
   const reCaptchaSiteKey = import.meta.env.VITE_AUXRY_STORE_SITE_KEY_CAPTCHA;
 
-  const [captchaToken, setCaptchaToken] = useState(null);
+  const [captchaToken, setCaptchaToken] = useState();
 
   const validationSchema = Yup.object({
     fullname: Yup.string().required("Full Name is required"),
