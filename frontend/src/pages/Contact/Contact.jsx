@@ -14,12 +14,12 @@ const Contact = () => {
   const validationSchema = Yup.object({
     fullname: Yup.string().required("Full Name is required"),
     email: Yup.string()
-      .email("Invalid email format")
       .required("Email is required")
+      .email("Invalid email format")
       .test(
         "is-gmail",
         "Email must be a Gmail address (e.g example@gmail.com)",
-        (value) => value && value.endsWith("@gmail.com")
+        (value) => !value && value.endsWith("@gmail.com")
       ),
     address: Yup.string().required("Address is required"),
     city: Yup.string().required("City is required"),
