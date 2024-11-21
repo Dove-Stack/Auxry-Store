@@ -19,7 +19,7 @@ const Contact = () => {
       .test(
         "is-gmail",
         "Email must be a Gmail address (e.g example@gmail.com)",
-        (value) => !value && value.endsWith("@gmail.com")
+        (value) => !value || value.endsWith("@gmail.com")
       ),
     address: Yup.string().required("Address is required"),
     city: Yup.string().required("City is required"),
