@@ -15,7 +15,12 @@ const Contact = () => {
     fullname: Yup.string().required("Full Name is required"),
     email: Yup.string()
       .email("Invalid email format")
-      .required("Email is required"),
+      .required("Email is required")
+      .test(
+        "is-gmail",
+        "Email must be a Gmail address (e.g example@gmail.com)",
+        (value) => value && value.endsWith("@gmail.com")
+      ),
     address: Yup.string().required("Address is required"),
     city: Yup.string().required("City is required"),
     state: Yup.string().required("State is required"),
