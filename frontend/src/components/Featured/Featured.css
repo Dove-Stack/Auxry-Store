@@ -3,11 +3,11 @@
 }
 
 .feature-header h1 {
-  margin-left: 3.5rem;
+  margin-left: 3rem;
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 1px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   text-shadow: 1px 3px 1px #9e9fa5;
 }
 
@@ -27,7 +27,7 @@
   background-color: #f0eeed;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 230px;
+  width: 250px;
 }
 
 .feature .feature-card .feature-main-card {
@@ -37,7 +37,7 @@
   box-shadow: -2px 8px 10px 3px #00000010;
   position: relative;
   transition: 0.5s ease-in-out;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .feature .feature-card .feature-main-card:hover {
@@ -97,6 +97,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 10px;
 }
 
 .feature .feature-card .feature-main-card .bottom button {
@@ -110,7 +111,7 @@
   cursor: pointer;
 }
 
-.feature .more-btn {
+ .more-btn {
   padding: 9px 11px;
   font-size: 10px;
   font-weight: 600;
@@ -136,10 +137,9 @@
 }
 
 .feature .feature-card .feature-main-card i:hover {
-    color: white !important;
+  color: white !important;
   background-color: #121731 !important;
 }
-
 
 .feature .feature-card .feature-main-card i.bx-cart-add {
   position: absolute;
@@ -225,10 +225,48 @@
   text-shadow: 9px 3px 2px #00000035;
 }
 
-@media (max-width: 940px) {
-  .feature .more-btn {
-    width: 24%;
-    margin: 40px 30px;
+.product-counter-container p {
+  font-size: 13px;
+}
+
+@media (max-width: 991px) {
+   .more-btn {
+    padding: 18px 30px;
+    font-size: 10px;
+    color: #fefefe;
+    background-color: #121731;
+    border-radius: 22px;
+    margin: 40px auto;
+    display: block;
+    align-self: center;
+    width: 15%;
+    flex-wrap: nowrap !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 775px) {
+  .more-btn {
+    width: 27%;
+    /* margin: 40px 30px; */
+  }
+}
+@media (max-width: 434px) {
+  .more-btn {
+    padding: 13px 20px;
+    width: 31%;
+    /* margin: 40px 30px; */
+  }
+}
+
+@media (max-width: 425px) {
+  .feature-header {
+    margin-top: 50px;
+  }
+
+  .feature-header h1  {
+    text-align: center;
+    margin: 0;
   }
 }
 
@@ -240,7 +278,8 @@
   flex-wrap: wrap; */
     gap: 4rem;
   }
+
+  .more-btn {
+    width: 35%;
+  }
 }
-
-
-

@@ -35,11 +35,24 @@ const Navbar = ({ setShowLogin }) => {
   // const logOut
 
   return (
-    <header className={`header ${scrolled ? "scroll-active" : ""}`} id="header">
-      <nav className={`navbar ${isActive ? "active" : ""}`}>
+    <header
+      className={`header ${scrolled ? "scroll-active" : ""} ${
+        isActive ? "active" : ""
+      } `}
+      id="header"
+    >
+      <div className="logo-container">
         <Link to={`/`}>
-          <img src={assets.Logo1} className="logo" alt="" />
+          <img src={assets.Logo1} className="main-logo " alt="" />
         </Link>
+      </div>
+      <nav className={`navbar ${isActive ? "active" : ""}   `}>
+        <Link to={`/`}>
+          <img src={assets.Logo1} className="logo " alt="" />
+        </Link>
+        {/* <Link to={`/`}>
+            <img src={assets.Logo1} className="logo nav-logo" alt="" />
+          </Link> */}
         <li>Home</li>
         <Link to={`/shop`}>
           <li>Shop</li>
@@ -57,13 +70,13 @@ const Navbar = ({ setShowLogin }) => {
           <i className="bx bx-cart"></i>{" "}
         </Link>
         <i className="bx bx-search"></i>
-        <i className="bx bx-menu" id="menu-btn"></i>
-        {/* <div className={getTotalCartAmount() === 0 ? "" : "dot"}>{}</div> */}
+        <i className="bx bx-menu" id="menu-btn" onClick={toggleNavbar}></i>
         <i
           className={`bx bx-x ${isActive ? "active" : ""}`}
           onClick={toggleNavbar}
           id="close-menu-btn"
         ></i>
+        {/* <div className={getTotalCartAmount() === 0 ? "" : "dot"}>{}</div> */}
         {/* <i className="bx bx-user" onClick={() => setShowLogin(true)}></i> */}
         {/* {!token ? (
           // <i

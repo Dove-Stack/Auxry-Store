@@ -29,7 +29,14 @@ const ProductItem = ({
           //   onClick={() => setItemCount((prev) => prev + 1)}
           //   className="bx bx-plus"
           // ></i>
-          <i onClick={() => addToCart(id)} className="bx bx-cart-add"></i>
+          <i
+            onClick={() => {
+              if (!cartItems[id]) {
+                addToCart(id);
+              }
+            }}
+            className="bx bx-cart-add"
+          ></i>
         ) : (
           <div className="product-counter">
             <i onClick={() => addToCart(id)} className="bx bx-plus"></i>
@@ -47,7 +54,14 @@ const ProductItem = ({
           <br />
         </div>
         <div className="icons">
-          <i onClick={() => addToCart(id)} className="bx bx-cart"></i>
+          <i
+            onClick={() => {
+              if (!cartItems[id]) {
+                addToCart(id);
+              }
+            }}
+            className="bx bx-cart"
+          ></i>
           <Link to={`/cart`}>
             {" "}
             {/* <button>View Cart</button>{" "} */}

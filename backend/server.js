@@ -10,6 +10,7 @@ import emailRouter from "./routes/emailRoute.js";
 
 // app config
 
+
 const app = express();
 const port = 4000;
 
@@ -26,7 +27,7 @@ app.use("/images", express.static("uploads"));
 app.use("/api/user", userRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
-app.use("/api/response-receipt", emailRouter);
+app.use("/api/email", emailRouter);
 
 app.get("/", (req, resp) => {
   resp.send("API working");

@@ -1,8 +1,8 @@
 import express from "express";
-import { confirmResponse } from "../controllers/emailController.js";
+import { contactFeedback } from "../controllers/emailController.js";
 
 const emailRouter = express.Router();
 
-emailRouter.post("/confirm-response", confirmResponse);
+emailRouter.post("/contact-feedback", contactFeedback);
 
 export default emailRouter;

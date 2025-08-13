@@ -1,6 +1,6 @@
 .news {
   margin: 60px 10px;
-  /* padding: 30px; */
+  padding: 30px;
   /* text-align: center; */
 }
 
@@ -16,7 +16,8 @@
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 1px;
-    margin-bottom: 9px;
+  margin-bottom: 9px;
+  text-shadow: 1px 3px 1px #9e9fa5;
 }
 
 .news .news-title p {
@@ -35,16 +36,13 @@
 }
 
 .news .news-container .news-card {
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  /* box-shadow: 0 0 4px rgba(14, 55, 63, 0.15); */
   /* border: 1px solid #121731; */
   border-radius: 10px;
-      background: rgba(255, 255, 255, 0.459);
-  box-shadow: -3px 1px 10px 0 rgba(30, 30, 33, 0.265);
-  backdrop-filter: blur(11px);
+  background: rgba(255, 255, 255, 0.459);
+  box-shadow: -3px 1px 10px 0 rgba(60, 60, 61, 0.091);
+  /* backdrop-filter: blur(11px); */
 }
-
-
-
 
 .news .news-container .news-card .news-image img {
   height: 11rem;
@@ -53,7 +51,7 @@
   border-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .news .news-container .news-card:hover img {
   scale: 1.01;
@@ -81,4 +79,58 @@
   font-weight: 400;
   font-size: 11px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+
+  .news {
+    margin: 0;
+    padding: 0;
+  }
+
+  .news .news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 40px;
+  gap: 1rem;
+}
+}
+
+@media (max-width: 425px) {
+  .news .news-title {
+    margin: 30px;
+
+    h2 {
+      font-size: 27px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .news .news-container {
+    gap: 3rem;
+  }
+
+  .news .news-container .news-card .news-description p {
+    font-size: 7px !important;
+  }
+  .news .news-container .news-card .news-description h3 {
+    font-size: 15px;
+  }
+
+  .news .news-container .news-card .news-description span {
+    font-size: 9px;
+  }
+
+  .news .news-container .news-card .news-image img {
+    height: 9rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }

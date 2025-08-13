@@ -16,7 +16,7 @@
 
 .product .product-main .products-nav {
   display: flex;
-  margin: 15px 0;
+  margin: 20px 0;
   gap: 30px;
 }
 
@@ -66,5 +66,12 @@
 
   .product .product-main .products-nav .left li {
     font-size: 10px;
+  }
+}
+
+
+@media (max-width: 425px) { 
+  .product {
+    margin-top: 50px;
   }
 }

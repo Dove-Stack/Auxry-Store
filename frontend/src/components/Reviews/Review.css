@@ -1,7 +1,6 @@
 .review {
-  padding: 30px;
-  margin: 70px 0;
-  
+  padding: 60px;
+  margin: 100px 0;
 }
 
 .review .title {
@@ -10,7 +9,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .review .title h3 {
@@ -33,7 +32,7 @@
 .review .text-content {
     background: rgba(255, 255, 255, 0.459);
   /* box-shadow: 20px 8px 32px 0 rgba(30, 30, 33, 0.265); */
-  box-shadow: 10px 3px 10px  rgba(13, 13, 13, 0.167);
+  /* box-shadow: 10px 3px 10px  rgba(79, 78, 78, 0); */
   backdrop-filter: blur(11px);
   display: flex;
   align-items: start;
@@ -41,8 +40,8 @@
   flex-direction: column;
   background: none;
   border: 1px solid #ddd;
-  border-radius: 7px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 5px;
   margin: 30px 0;
 }
 
@@ -55,8 +54,8 @@
 }
 
 .review .text-content .top img {
-  width: 40px;
-  border-radius: 3px;
+  width: 35px;
+  border-radius: 20px;
 }
 
 .review .text-content .top p {
@@ -78,7 +77,7 @@
 
 .review .text-content .bottom i {
   /* margin-left: 5px; */
-  font-size: 19px;
+  font-size: 15px;
   margin-right: 5px;
   margin-top: 10px;
   color: rgb(255, 196, 0);
@@ -86,8 +85,9 @@
 
 @media (max-width: 768px) {
   .review {
-    padding: 0;
-    margin: 10px;
+    /* padding: 10px 30px; */
+    /* margin: 10px 30px; */
+    padding: 40px;
   }
 
   .review .title {
@@ -100,19 +100,21 @@
   }
 
   .review .text-content .top img {
-    width: 30px;
+    width: 23px;
+    border-radius: 13px;
   }
 
   .review .text-content .top p {
     font-size: 9px;
+    font-weight: 700;
   }
 
   .review .text-content .top {
-    padding: 2px;
+    padding: 5px;
   }
 
   .review .text-content .bottom {
-    padding: 6px;
+    padding: 3px;
   }
 
   .review .text-content .bottom p {
@@ -124,6 +126,21 @@
   }
 }
 
+
+
+@media (max-width: 525px) {
+  .review {
+    padding: 20px;
+    margin: 100px 0;
+  }
+
+  .review .text-content {
+    padding: 15px;
+  }
+}
+
+
+
 @media (max-width: 425px) {
   .review {
     margin: 0;
@@ -133,10 +150,18 @@
     margin: 0;
   }
 
-  .review .swiper-wrapper > .swiper-slide.swiper-slide-prev,
+  .review .title h3{
+    font-size: 30px;
+  }
+
+  .review .title p{
+    font-size: 10px;
+  }
+
+  /* .review .swiper-wrapper > .swiper-slide.swiper-slide-prev,
   .review .swiper-wrapper > .swiper-slide.swiper-slide-active,
   .review .swiper-wrapper > .swiper-slide.swiper-slide-next {
     width: 200px !important;
     margin-right: 0px;
-  }
+  } */
 }

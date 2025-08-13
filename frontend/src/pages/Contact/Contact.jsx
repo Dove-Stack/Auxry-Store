@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import "./Contact.css";
 import { assets } from "../../assets/assets";
+import { StoreContext } from "../../context/StoreContext";
 
 const Contact = () => {
+
+  const { url } = useContext(StoreContext)
+
   const reCaptchaSiteKey = import.meta.env.VITE_AUXRY_STORE_SITE_KEY_CAPTCHA;
 
   const [captchaToken, setCaptchaToken] = useState();
@@ -40,11 +44,32 @@ const Contact = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     if (!captchaToken) {
-      alert("plese complete the reCAPTCHA verification.");
+      alert("Plese complete the reCAPTCHA verification.");
       return;
     }
+
+    try {
+      const response = await fetch(url + "/api/email/contact-feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert("Your message has been submitted, and a confirmation email ")
+      } else {
+        alert("Failed to submit the form. Please try again.");
+      }
+
+    }catch (error) {
+      console.error("Error submitting the form:", error);
+      "Error submitting the form:", error;
+    }
+
     console.log("Form Data: ", data);
     alert("Form Submitted successfully");
   };

@@ -1,7 +1,7 @@
 .top-deals {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 45px;
   margin: 100px 0;
 }
 
@@ -73,7 +73,7 @@
   /* backdrop-filter: blur(11px); */
 }
 .top-deals .deals-wrapper .deals-card:hover img {
-    box-shadow: 20px 8px 32px 0 rgba(30, 30, 33, 0.265);
+    box-shadow: 10px 8px 23px 0 rgba(49, 49, 50, 0.265);
   
 }
 

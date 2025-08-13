@@ -10,32 +10,45 @@
 }
 
 .about-banner img {
-    width: 80%;
-    height: auto;
+    margin-top: 70px;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
+/* .about-banner img {
+    width: 50%;
+    object-fit: contain;
+    height: auto;
+} */
+
 .about-banner .text-right {
-    background-color: #123171;
+    background-color: #ff6347;
     display: grid;
     align-self: last baseline;
     position: absolute;
-    left: 65%;
-    bottom: 8%;
-    padding: 30px 70px;
+    border-radius: 15px;
+    left: 60%;
+    bottom: -8%;
+    width: 30%;
+    padding: 30px 100px;
 }
 
 .about-banner .text-right p {
     display: flex;
     font-size: 30px;
     font-weight: 600;
-    font-family: Poppins;
     color: white;
 }
 .about-banner .text-right span {
     display: flex;
     font-size: 17px;
     font-weight: 100;
-    font-family: Poppins;
+    font-style: italic;
     color: white;
 }
 
