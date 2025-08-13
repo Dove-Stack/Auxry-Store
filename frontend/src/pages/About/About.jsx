@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets.js";
 const About = () => {
   return (
     <div className="main-about">
-      <div className="about-banner">
+      <div className="about-banner" >
         <img src={`${assets.pic_about}`} alt="" />
         <div className="text-right">
           <p>About Us</p>

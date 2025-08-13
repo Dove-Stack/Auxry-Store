@@ -16,18 +16,27 @@
 }
 
 .scroll-active {
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
   padding: 13px 40px;
-  background-color: hsla(0, 0%, 100%, 0.635);
-  background: rgba(255, 255, 255, 0.25);
+  /* background-color: hsla(0, 0%, 100%, 0.635); */
+  background: rgb(255, 255, 255);
   box-shadow: 20px 8px 32px 0 rgba(31, 38, 135, 0.1);
-  backdrop-filter: blur(11px);
+}
+
+.header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 
 .header .logo {
   width: 150px;
   outline: none;
   cursor: pointer;
+}
+
+.header .logo.nav-logo {
+  display: none;
 }
 
 .header .navbar {
@@ -51,13 +60,14 @@
 .header .header-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
 .header .header-icon i {
   cursor: pointer;
   font-size: 16px;
-  color: #0e1742;
+  color: #121731;
 }
 
 .header .header-icon #close-menu-btn {
@@ -184,11 +194,31 @@
   padding: 20px;
   margin-top: 40px;
 }
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 @media (max-width: 1050px) {
   .header {
-    height: max(7vh);
+    /* height: max(7vh); */
+    padding: 15px 20px;
   }
+
+  .scroll-active {
+    padding: 17px 30px;
+  }
+
   .header .logo {
     width: 110px;
   }
@@ -200,7 +230,29 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
+ .header {
+    padding: 28px 25px;
+  }
+
+  .header .logo {
+    width: 120px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+  }
+
+  .header .header-icon {
+    gap: 30px;
+  }
+
+  .header #menu-btn {
+  display: inline-block;
+  color: #2f3449;
+  cursor: pointer;
+}
+
+  
+
   .header .navbar {
     position: absolute;
     top: 0;
@@ -211,6 +263,121 @@
     justify-content: start;
     flex-direction: column;
     gap: 25px;
+  }
+
+  .header-icon {
+    position: absolute;
+    right: 12px;
+  }
+} */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 25px;
+    /* backdrop-filter: blur(10px); */
+  }
+
+  .header .logo {
+    width: 120px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    display: none;
+  }
+
+  .header .header-icon {
+    gap: 30px;
+  }
+
+  .header .header-icon i {
+    font-size: 15px;
+  }
+
+  .header #menu-btn {
+    display: inline-block;
+    color: #2f3449;
+    cursor: pointer;
+  }
+
+  .header .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #f4f3f3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .header .navbar.active {
+    display: flex;
+    z-index: 100;
+    animation: slideDown 0.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .header .logo-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: inline;
+    /* display: none; */
+  }
+
+  .header .logo-container img {
+    width: 120px;
+  }
+
+  .header .logo.nav-logo {
+    display: block;
+  }
+
+  .header .navbar li {
+    font-size: 12px;
+    color: #242735;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 17px;
+    width: 100%;
+    text-align: left;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+  .header .navbar.active li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .header .navbar.active li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .header .navbar.active li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .header .navbar.active li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .header .navbar.active li:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  
+
+  /* ✅ Menu toggle button logic */
+  .header #close-menu-btn {
+    display: none;
+  }
+
+  .header .navbar.active ~ .header-icon #menu-btn {
+    display: none;
+  }
+
+  .header .navbar.active ~ .header-icon #close-menu-btn {
+    display: inline-block;
   }
 
   .header-icon {
@@ -267,19 +434,16 @@
 
 @media (max-width: 425px) {
   .header {
-    padding: 0 20px;
+    /* padding: 28px 25px; */
   }
 
   .header .logo {
-    width: 100px;
+    width: 120px;
+    margin-top: 10px;
     transition: 0.5s ease;
   }
 
   .header .header-icon {
     gap: 20px;
-  }
-
-  .header .header-icon i {
-    font-size: 11px;
   }
 }

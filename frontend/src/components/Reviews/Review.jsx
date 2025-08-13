@@ -14,12 +14,33 @@ const Review = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
           sapiente voluptatum, aliquid aliquam ratione perspiciatis sunt
           voluptatem numquam? Nostrum vero, ducimus sint eum placeat nemo
-          praesentium ipsa 
+          praesentium ipsa
         </p>
       </div>
       <Swiper
         spaceBetween={10}
         slidesPerView={3}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+
+          // 640: {
+          //   slidesPerView: 2,
+          // },
+          768: {
+            slidesPerView: 2,
+          },
+
+          867: {
+            slidesPerView: 3,
+          },
+
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
         speed={1000}
         autoplay={{
           delay: 4000,
