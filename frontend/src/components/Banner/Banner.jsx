@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+// import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 // const swiper = new Swiper ('.swiper-container', {
@@ -28,7 +28,7 @@ const Banner = () => {
               slidesPerView: 2,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             1024: {
               slidesPerView: 3,
@@ -61,15 +61,8 @@ const Banner = () => {
               </span>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="image inner-swiper">
-            {/* <div className="text-content">
-              <p>NEW SEASON</p>
-              <h3>Shop for Latest trends in Fashion Season</h3>
-              <span>
-                Don't miss the Opportunity{" "}
-                <i className="bx bx-right-top-arrow-circle"></i>{" "}
-              </span>
-            </div> */}
+{/*           <SwiperSlide className="image inner-swiper">
+
             <Swiper
               spaceBetween={10}
               slidesPerView={1}
@@ -123,7 +116,7 @@ const Banner = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           <SwiperSlide className="image image-2">
             <div className="text-content">

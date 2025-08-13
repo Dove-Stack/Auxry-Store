@@ -176,11 +176,17 @@ p > span {
 }
 
 @media (max-width: 375px) {
+
+  .header-login {
+    position: absolute;
+    top: -15%;
+  }
+
   .header-login-container {
     gap: 10px;
     background-color: white;
     padding: 20px;
-    width: 70%;
+    width: 90%;
   }
 
   p {

@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Sponsor />
+      {/* <Sponsor /> */}
       <Product category={category} setCategory={setCategory} />
       <Featured />
       <TopDeals />

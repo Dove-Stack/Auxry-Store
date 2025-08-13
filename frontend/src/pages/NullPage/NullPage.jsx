@@ -4,7 +4,7 @@ import './NullPage.css'
 const NullPage = () => {
   return (
     <div className='not-found'>
-        <h2>404</h2>
+        <h1>404</h1>
         <p>Page not Found </p>
     </div>
   )
