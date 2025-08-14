@@ -1,4 +1,6 @@
 .main-about {
+    display: grid;
+    gap: 40px;
     margin-bottom: 15rem;
 }
 
@@ -7,6 +9,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    
 }
 
 .about-banner img {
@@ -27,33 +30,35 @@
 } */
 
 .about-banner .text-right {
-    background-color: #ff6347;
+    background-color: white;
     display: grid;
+    gap: 10px;
     align-self: last baseline;
     position: absolute;
-    border-radius: 15px;
-    left: 60%;
+    right: 55%;
     bottom: -8%;
-    width: 30%;
-    padding: 30px 100px;
+    width: 40%;
+    /* padding: 30px 100px; */
+    padding: 30px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-banner .text-right p {
     display: flex;
     font-size: 30px;
-    font-weight: 600;
-    color: white;
+    font-weight: 700;
+    color: black;
 }
 .about-banner .text-right span {
     display: flex;
     font-size: 17px;
     font-weight: 100;
-    font-style: italic;
-    color: white;
+    color: black;
 }
 
 .content-about {
-    padding: 38px;
+    padding: 38px 40px;
+    margin: 50px;
 }
 
 .content-about .sub-content-about {
@@ -62,16 +67,46 @@
 
 .content-about p {
     margin: 10px 0;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.6;
     font-weight: 300;
 }
 
-.content-about .sub-content-about > h4{
+.content-about h4{
     margin: 10px 0;
+    font-size: 25px;
 }
 
 .content-about .sub-content-about > p {
     margin: 15px 0;
-    line-height: 1.7;
+    line-height: 1.5;
     font-weight: 300;
+}
+
+
+@media (max-width : 768px) {
+
+    .about-banner {
+        
+    }
+
+    .about-banner .text-right {
+        right: 10%;
+        bottom: -5%;
+        width: 80%;
+    }
+
+    .content-about {
+        padding: 20px;
+        margin: 40px;
+    }
+
+    .content-about p {
+        font-size: 13px;
+    }
+
+    .content-about .sub-content-about > h4 {
+        font-size: 20px;
+    }
+    
 }
