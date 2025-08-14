@@ -13,7 +13,7 @@ const About = () => {
       </div>
 
       <div className="content-about">
-        <h4>Our Motto</h4>
+        <h4>Mission</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga reiciendis praesentium consectetur in libero, delectus eaque. Ea, sequi minus.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, dolorem. Distinctio quisquam placeat sequi corporis iste nemo repudiandae id dolor veritatis, dolorum aspernatur exercitationem expedita laborum magnam adipisci quos eius.</p>
         <div className="sub-content-about">
