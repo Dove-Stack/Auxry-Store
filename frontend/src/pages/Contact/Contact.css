@@ -18,16 +18,16 @@ main {
 
 .contact-banner {
   background-image: url(../../assets/contact-img.jpg);
-  height: 55vh;
-  opacity: .5;
+  height: 60vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0;
   margin-bottom: 100px;
   position: relative;
-  z-index: 1;
-  border-radius: 17px;
+  /* opacity: .5; */
+  /* z-index: -; */
+  /* border-radius: 17px; */
 }
 
 .banner-text {
