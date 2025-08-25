@@ -131,11 +131,21 @@ const cart = () => {
                     ></i>
                     <i
                       className="bx bx-trash-alt"
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => {
+                        clearFromCart(item.id);
+                        toast("Item Cleared", {
+                          icon: "🗑️",
+                        });
+                      }}
                     ></i>
                     <i
                       className="bx bx-minus"
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => {
+                        removeFromCart(item.id);
+                        toast("Item Removed", {
+                          icon: "🗑️",
+                        });
+                      }}
                     ></i>
                   </div>
                 </div>
