@@ -73,24 +73,21 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 60vh;
+  min-height: 70vh;
   /* border-radius: 20px; */
-  overflow: hidden;
-  margin: 70px 0 0 0; /* Add top margin to sit below navbar */
+  overflow: visible;
+  margin: 70px 0 0 0;
 }
 
 .about-banner .about-img {
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   object-fit: cover;
-  /* No filter or overlay for a clear image */
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-
-/* Removed overlay for a clear background image */
 
 /* .about-banner img {
     width: 50%;
@@ -105,7 +102,7 @@
   align-self: flex-end;
   position: absolute;
   right: 8vw;
-  bottom: 5vh;
+  bottom: -5vh;
   width: 38vw;
   padding: 36px 48px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.066);
@@ -117,10 +114,10 @@
 .about-banner .text-right p.title {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   font-weight: 600;
-  color: #121731;
+  color: #ff6347;
   margin-bottom: 0.5rem;
 }
 .about-title-icon {
@@ -166,18 +163,20 @@
   line-height: 1.6;
   font-weight: 300;
   letter-spacing: 0;
+  font-style: italic;
 }
 
 .content-about h4 {
   margin: 10px 0;
-  font-size: 25px;
+  font-size: 20px;
   color: #222;
   display: flex;
   align-items: center;
+  font-style: italic;
   gap: 8px;
 }
 .about-section-icon {
-  font-size: 1.2em;
+  font-size: 2.5rem;
   margin-right: 6px;
   color: #121731;
 }
@@ -187,6 +186,7 @@
   line-height: 1.5;
   font-weight: 300;
   letter-spacing: 0;
+  font-style: italic;
 }
 
 .icon-about {
