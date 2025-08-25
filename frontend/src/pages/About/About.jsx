@@ -80,11 +80,11 @@ const About = () => {
           <h5>Fast Delivery</h5>
           <p>Get your orders quickly with our reliable delivery service.</p>
         </div>
-        <div className="about-feature-card">
+        {/* <div className="about-feature-card">
           <i className="bx bxs-shield-alt-2 about-feature-icon"></i>
           <h5>30-Day Guarantee</h5>
           <p>Enjoy peace of mind with our 30-day money-back guarantee.</p>
-        </div>
+        </div> */}
         <div className="about-feature-card">
           <i className="bx bxs-star about-feature-icon"></i>
           <h5>Trusted Brand</h5>
@@ -96,7 +96,7 @@ const About = () => {
           <p>Your transactions are protected with top-tier security.</p>
         </div>
         <div className="about-feature-card">
-          <i className="bx bxs-headphone about-feature-icon"></i>
+          <i className="bx bx-support about-feature-icon"></i>
           <h5>Customer Support</h5>
           <p>Our team is here to help you 24/7 with any questions.</p>
         </div>
