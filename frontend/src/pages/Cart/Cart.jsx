@@ -89,8 +89,8 @@ const cart = () => {
                     <i
                       className="bx bx-trash-alt"
                       onClick={() => {
-                        removeFromCart(item.id);
-                        toast("Item Removed", {
+                        clea(item.id);
+                        toast("Item Cleared", {
                           icon: "🗑️",
                         });
                       }}
