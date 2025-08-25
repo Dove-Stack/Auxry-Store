@@ -4,6 +4,7 @@ import "./viewItem.css";
 import { StoreContext } from "../../context/StoreContext";
 import { Link } from "react-router-dom";
 import Featured from "../../components/Featured/Featured";
+import { toast } from "react-hot-toast"
 
 const viewItem = () => {
   const { selectedProduct, addToCart, FeatureList } = useContext(StoreContext);
@@ -33,8 +34,13 @@ const viewItem = () => {
             <Link to={`/order`}>
               <button className="checkout-btn">Check Out</button>
             </Link>
-            <button onClick={() => addToCart(selectedProduct.id)}>
-              Add to Cart <i className="bx bx-cart"></i>
+            <button
+              onClick={() => {
+                addToCart(selectedProduct.id);
+                toast.success("Item added to cart");
+              }}
+            >
+              Add to Cart <i className="bx bx-cart" ></i>
             </button>
           </div>
           <div className="description">
