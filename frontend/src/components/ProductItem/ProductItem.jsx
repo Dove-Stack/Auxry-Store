@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./ProductItem.css";
 import { StoreContext } from "../../context/StoreContext";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 const ProductItem = ({
   id,
@@ -33,15 +34,18 @@ const ProductItem = ({
             onClick={() => {
               if (!cartItems[id]) {
                 addToCart(id);
+                toast.success("Item added to cart");
               }
             }}
             className="bx bx-cart-add"
           ></i>
         ) : (
           <div className="product-counter">
-            <i onClick={() => addToCart(id)} className="bx bx-plus"></i>
+            <i onClick={() => {addToCart(id); toast.success("Item added to cart");}} className="bx bx-plus"></i>
             <p>{cartItems[id]}</p>
-            <i onClick={() => removeFromCart(id)} className="bx bx-minus"></i>
+            <i onClick={() => {removeFromCart(id); toast('Item Removed', {
+              icon: '🗑️',
+            }) }} className="bx bx-minus"></i>
           </div>
         )}
       </div>
@@ -58,6 +62,7 @@ const ProductItem = ({
             onClick={() => {
               if (!cartItems[id]) {
                 addToCart(id);
+                toast.success("Item added to cart");
               }
             }}
             className="bx bx-cart"
