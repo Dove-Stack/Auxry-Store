@@ -19,9 +19,9 @@
   border: 1.5px solid #f3f3f3;
 }
 .about-feature-card:hover {
-  box-shadow: 0 4px 24px rgba(18, 23, 49, 0.304);
-  transform: translateY(-4px) scale(1.04);
-  border-color: #121731;
+  box-shadow: 0 4px 24px rgba(18, 23, 49, 0.104);
+  transform: translateY(-4px) scale(1.01);
+  /* border-color: #121731; */
 }
 .about-feature-icon {
   font-size: 2.5em;
@@ -127,8 +127,7 @@
 
 .content-about {
   padding: 38px 15px;
-  margin: 50px;
-
+  margin: 40px 10px 0 40px;
   border-radius: 18px;
 }
 
