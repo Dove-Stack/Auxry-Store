@@ -1,5 +1,4 @@
 import userModel from "../models/userModel.js";
-
 // Add item to cart
 const addToCart = async (req, res) => {
   try {
@@ -22,7 +21,7 @@ const addToCart = async (req, res) => {
     res.json({ success: true, message: "Added to Cart" });
   } catch (error) {
     console.log(error);
-    res.json({ success: false, message: "Eror" });
+    res.json({ success: false, message: "Error" });
   }
 };
 
