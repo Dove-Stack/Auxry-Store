@@ -1,27 +1,101 @@
+
+/* --- About Features Row --- */
+.about-features-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 40px 0 0 0;
+    padding: 0 30px;
+}
+
+.about-feature-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 28px 22px 22px 22px;
+    min-width: 180px;
+    max-width: 220px;
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 1.5px solid #f3f3f3;
+}
+.about-feature-card:hover {
+    box-shadow: 0 4px 24px rgba(255,99,71,0.13);
+    transform: translateY(-4px) scale(1.04);
+    border-color: #121731;
+}
+.about-feature-icon {
+    font-size: 2.5em;
+    color: #121731;
+    margin-bottom: 10px;
+}
+.about-feature-card h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 8px 0 6px 0;
+    color: #222;
+}
+.about-feature-card p {
+    font-size: 0.98em;
+    color: #444;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .about-features-row {
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 10px;
+    }
+    .about-feature-card {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 .main-about {
     display: grid;
     gap: 40px;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+    background: #f8f9fa;
+    min-height: 100vh;
 }
+
 
 .about-banner {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    
+    min-height: 60vh;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    margin: 70px 0 0 0; /* Add top margin to sit below navbar */
 }
 
-.about-banner img {
-    margin-top: 70px;
-    width: 100%;
-    height: 70vh;
+
+
+.about-banner .about-img {
+    width: 100vw;
+    height: 80vh;
     object-fit: cover;
-    /* position: absolute; */
+    /* No filter or overlay for a clear image */
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
+
+
+/* Removed overlay for a clear background image */
 
 /* .about-banner img {
     width: 50%;
@@ -29,47 +103,67 @@
     height: auto;
 } */
 
+
 .about-banner .text-right {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.895);
     display: grid;
-    gap: 10px;
-    align-self: last baseline;
+    gap: 14px;
+    align-self: flex-end;
     position: absolute;
-    right: 55%;
-    bottom: -18%;
-    width: 40%;
-    /* padding: 30px 100px; */
-    padding: 30px 50px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    right: 8vw;
+    bottom: 5vh;
+    width: 38vw;
+    padding: 36px 48px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.066);
+    border-radius: 18px;
+    z-index: 1;
+    /* border: 1.5px solid #121731; */
 }
+
 
 .about-banner .text-right p.title {
     display: flex;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: #ff6347;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #121731;
+    margin-bottom: 0.5rem;
 }
+.about-title-icon {
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
 
 .about-banner .text-right p.body {
     display: flex;
-    font-size: 11px;
-    letter-spacing: 0;
-    font-weight: 300;
-    line-height: 1.4;
-    color: black;
-}
-.about-banner .text-right span {
-    display: flex;
-    font-size: 17px;
-    font-weight: bold;
-    text-transform: capitalize;
-    color: black;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #222;
 }
 
+.about-banner .text-right span {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+
+
 .content-about {
-    padding: 38px 40px;
-    margin: 50px;
+    padding: 38px 0;
+    margin: 50px ;
+    /* max-width: 800px; */
+    /* background: #fff; */
+    border-radius: 18px;
+    /* box-shadow: 0 4px 24px rgba(0,0,0,0.08); */
+    /* No border or color for a simpler look */
 }
 
 .content-about .sub-content-about {
@@ -84,9 +178,20 @@
     letter-spacing: 0;
 }
 
+
+
 .content-about h4{
     margin: 10px 0;
     font-size: 25px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.about-section-icon {
+    font-size: 1.2em;
+    margin-right: 6px;
+    color: #121731;
 }
 
 .content-about .sub-content-about > p {
@@ -96,31 +201,60 @@
     letter-spacing: 0;
 }
 
+
 .icon-about {
-    margin: 0 90px ;
+    margin: 0 90px;
+    display: flex;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about-icon-link {
+    color: #121731;
+    font-size: 2.2em;
+    background: #fff;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-icon-link:hover {
+    background: #121731;
+    color: #fff;
+    transform: translateY(-4px) scale(1.08);
 }
 
 
 
-@media (max-width : 768px) {
-
-    .about-banner .text-right {
-        right: 10%;
-        bottom: -5%;
-        width: 80%;
+@media (max-width : 900px) {
+    .about-banner .about-img,
+    .about-banner .about-overlay {
+        width: 100vw;
+        height: 40vh;
     }
-
+    .about-banner .text-right {
+        right: 4vw;
+        bottom: 2vh;
+        width: 80vw;
+        padding: 20px 16px;
+    }
     .content-about {
         padding: 20px;
-        margin: 40px;
+        margin: 20px;
     }
-
     .content-about p {
         font-size: 13px;
     }
-
     .content-about .sub-content-about > h4 {
         font-size: 20px;
     }
-    
+    .icon-about {
+        margin: 0 20px;
+        gap: 18px;
+    }
 }
