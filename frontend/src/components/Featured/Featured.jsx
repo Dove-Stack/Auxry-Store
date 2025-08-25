@@ -48,7 +48,6 @@ const Featured = ({ displayTitle = true, excludeItem }) => {
                       addToCart(item.id);
                       toast.success("Item added to cart");
                     }}
-                    
                     className="bx bx-cart-add"
                   ></i>
                 ) : (
@@ -62,7 +61,12 @@ const Featured = ({ displayTitle = true, excludeItem }) => {
                     ></i>
                     <p>{cartItems[item.id]}</p>
                     <i
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => {
+                        removeFromCart(item.id);
+                        toast("Item removed", {
+                          icon: "🗑️",
+                        });
+                      }}
                       className="bx bx-minus"
                     ></i>
                   </div>
@@ -88,9 +92,7 @@ const Featured = ({ displayTitle = true, excludeItem }) => {
                       }}
                       className="bx bx-cart"
                       title={
-                        cartItems[item.id]
-                          ? "Already in cart"
-                          : "Add to cart"
+                        cartItems[item.id] ? "Already in cart" : "Add to cart"
                       }
                     ></i>
 
