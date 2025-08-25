@@ -43,7 +43,7 @@ const ProductItem = ({
           <div className="product-counter">
             <i onClick={() => {addToCart(id); toast.success("Item added to cart");}} className="bx bx-plus"></i>
             <p>{cartItems[id]}</p>
-            <i onClick={() => {removeFromCart(id); toast('Item Removed', {
+            <i onClick={() => {removeFromCart(id); toast('Item removed', {
               icon: '🗑️',
             }) }} className="bx bx-minus"></i>
           </div>
