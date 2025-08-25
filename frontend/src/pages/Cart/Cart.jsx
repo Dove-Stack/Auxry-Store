@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 const cart = () => {
   const {
@@ -80,15 +81,28 @@ const cart = () => {
                   <div className="icon-cart">
                     <i
                       className="bx bx-plus"
-                      onClick={() => addToCart(item.id)}
+                      onClick={() => {
+                        addToCart(item.id);
+                        toast.success("Item added to cart");
+                      }}
                     ></i>
                     <i
                       className="bx bx-trash-alt"
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => {
+                        removeFromCart(item.id);
+                        toast("Item Removed", {
+                          icon: "🗑️",
+                        });
+                      }}
                     ></i>
                     <i
                       className="bx bx-minus"
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => {
+                        removeFromCart(item.id);
+                        toast("Item Removed", {
+                          icon: "🗑️",
+                        });
+                      }}
                     ></i>
                   </div>
                 </div>
@@ -109,7 +123,10 @@ const cart = () => {
                   <div className="icon-cart">
                     <i
                       className="bx bx-plus"
-                      onClick={() => addToCart(item.id)}
+                      onClick={() => {
+                        addToCart(item.id);
+                        toast.success("Item added to cart");
+                      }}
                     ></i>
                     <i
                       className="bx bx-trash-alt"
