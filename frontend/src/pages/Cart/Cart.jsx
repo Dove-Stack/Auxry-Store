@@ -11,6 +11,7 @@ const cart = () => {
     itemList,
     itemsArray,
     addToCart,
+    clearFromCart,
     removeFromCart,
     getTotalCartAmount,
     FeatureList = [],
@@ -89,7 +90,7 @@ const cart = () => {
                     <i
                       className="bx bx-trash-alt"
                       onClick={() => {
-                        clea(item.id);
+                        clearFromCart(item.id);
                         toast("Item Cleared", {
                           icon: "🗑️",
                         });
