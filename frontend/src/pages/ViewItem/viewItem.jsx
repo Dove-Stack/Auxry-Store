@@ -31,7 +31,7 @@ const viewItem = () => {
           <h3 className="name">{selectedProduct.name}</h3>
           <p className="price">${selectedProduct.salePrice}</p>
           <div className="buttons">
-            <Link to={`/order`}>
+            <Link to={`/cart`}>
               <button className="checkout-btn">Check Out</button>
             </Link>
             <button
