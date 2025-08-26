@@ -99,6 +99,7 @@
 @media (max-width: 425px) {
   .news .news-title {
     margin: 30px;
+    text-align: center;
 
     h2 {
       font-size: 27px;
@@ -114,6 +115,9 @@
     gap: 3rem;
   }
 
+   .news .news-container .news-card .news-description {
+     text-align: center;
+   }
   .news .news-container .news-card .news-description p {
     font-size: 7px !important;
   }
