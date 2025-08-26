@@ -20,9 +20,9 @@ const Newsletter = () => {
         </div>
       </div>
       <div className="sub-newsletter">
-        <h1>
+        <h2>
           Need Help ? <br /> (+234) 7045 810 691
-        </h1>
+        </h2>
         <span>
           Our support team is here to assist you with any questions or concerns
           you may have. Whether you need help with your order, product
