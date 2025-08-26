@@ -11,7 +11,9 @@ const Newsletter = () => {
                 <span>By suscribing you agree to our Terms & Conditions and Privacy & Cookies Policy</span>
             </div>
         </div>
-        <div className="sub-newsletter"></div>
+        <div className="sub-newsletter">
+          <h1>Need Help ? <br /> (+234) 7045 810 691</h1>
+        </div>
     </div>
   )
 }
