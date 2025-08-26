@@ -255,12 +255,8 @@
 
 
 @media (max-width: 640px){
-  .banner .image {
-    /* height: 70vh;
-    background-position: top 50% center; */
-  }
+
 }
-/* width: 50% !important; */
 
 @media (max-width: 475px) {
 
@@ -268,7 +264,9 @@
     text-align: center;
   }
 
-  
+    .main-banner .title h3 {
+    font-size: 30px;
+  }
 
   .banner .text-content {
     padding: 5px;
