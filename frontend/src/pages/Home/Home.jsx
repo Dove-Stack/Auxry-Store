@@ -10,6 +10,7 @@ import {
   TopDeals,
   News,
 } from "../../index.js";
+import Newsletter from "../../components/Newsletter/Newsletter.jsx";
 
 const Home = () => {
   const [category, setCategory] = useState("All");
@@ -26,6 +27,7 @@ const Home = () => {
       <Banner />
       <News />
       <Review />
+      <Newsletter/>
     </div>
   );
 };
