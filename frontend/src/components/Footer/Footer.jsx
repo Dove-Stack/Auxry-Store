@@ -24,17 +24,17 @@ const Footer = () => {
           <div className="content-center">
             <h2 className="">Info.</h2>
             <div className="center-nav">
-              <Link to={`/shop`}>
+              <Link to={`/home`}>
                 <li>
                   <a href="">- Home</a>
                 </li>
               </Link>
-              <Link to={`/shop`}>
+              <Link to={`/about`}>
                 <li>
                   <a href="">- About Us</a>
                 </li>
               </Link>
-              <Link to={`/shop`}>
+              <Link to={`/contact`}>
                 <li>
                   <a href="">- Contact</a>
                 </li>
