@@ -263,6 +263,13 @@
 /* width: 50% !important; */
 
 @media (max-width: 475px) {
+
+  .main-banner .title {
+    text-align: center;
+  }
+
+  
+
   .banner .text-content {
     padding: 5px;
     margin: 20px 0;
