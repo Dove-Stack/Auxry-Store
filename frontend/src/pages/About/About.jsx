@@ -102,7 +102,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="icon-about">
+{/*       <div className="icon-about">
         <a href="tel:+1234567890" className="about-icon-link" title="Call us">
           <i className="bx bx-phone"></i>
         </a>
@@ -122,7 +122,7 @@ const About = () => {
         >
           <i className="bx bxl-instagram"></i>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
