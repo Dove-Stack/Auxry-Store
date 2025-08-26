@@ -27,7 +27,7 @@ const Home = () => {
       <Banner />
       <News />
       <Review />
-      <Newsletter/>
+      <Newsletter />
     </div>
   );
 };
