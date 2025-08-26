@@ -10,7 +10,7 @@ const Newsletter = () => {
           $180
         </span>
         <div className="newsletter-form">
-          <input type="email" name="" id="" />
+          <input type="email" name="" id="" placeholder="Enter your email address" />
           <button>Suscribe</button>
           <br />
           <span>
