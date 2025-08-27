@@ -33,7 +33,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About/>}/>
+            <Route path="/about" element={<About />} />
             <Route
               path="/cart"
               element={
@@ -53,7 +53,7 @@ function App() {
               }
             />
             <Route path="/preview" element={<ItemView />} />
-            <Route path="/verify" element={<VerifyPayment />} />
+            <Route path="/verify-order" element={<VerifyPayment />} />
             <Route path="/orders_product" element={<ProductOrders />} />
             <Route path="*" element={<NullPage />} />
           </Routes>
