@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import "./verifyPayment.css";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
@@ -25,6 +25,7 @@ const VerifyPayment = () => {
 
   const verifyOrder = useCallback(async () => {
     const { orderId, success } = getQueryParams();
+    console.log("Verifying order:", orderId, success);
 
     if (!orderId || !success) {
       setError("Invalid verification request.");
@@ -40,7 +41,9 @@ const VerifyPayment = () => {
 
       if (response.data.success) {
         setMessage(response.data.message || `Payment successfully verified `);
-        navigate("/myorders");
+        setTimeout(() => {
+          navigate("/product-orders");
+        }, 6000);
       } else {
         setMessage("Payment verification failed. Please contact support.");
       }
