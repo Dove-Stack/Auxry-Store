@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Updated to take full viewport height */
+  min-height: 100vh; 
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -88,7 +88,7 @@
   height: 60%;
   background: radial-gradient(circle, #3b82f6 0%, #60a5fa 70%, transparent 100%);
   border-radius: 50%;
-  animation: pulse 3s ease-in-out infinite alternate; /* Slowed down to 3s */
+  animation: pulse 3s ease-in-out infinite alternate;
 }
 
 .message-container {
