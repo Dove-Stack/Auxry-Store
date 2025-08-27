@@ -9,11 +9,17 @@ const placeOrder = async (req, res) => {
   const frontend_url = "http://localhost:5173";
 
   try {
+    const lastOrder = await orderModel.findOne().sort({ orderNumber: -1 });
+    const newOrderNumber = lastOrder
+      ? `ORD-${parseInt(lastOrder.orderNumber.split("-")[1] + 1)}`
+      : "ORD-1001";
+
     const newOrder = new orderModel({
       userId: req.body.userId,
       items: req.body.items,
       amount: req.body.amount,
       address: req.body.address,
+      orderNumber: newOrderNumber,
     });
 
     await newOrder.save();
