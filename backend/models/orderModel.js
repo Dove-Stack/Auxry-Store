@@ -6,9 +6,11 @@ const orderSchema = new mongoose.Schema({
   amount: { type: Number, required: true },
   address: { type: Object, required: true },
   status: { type: String, default: "Item Loading..." },
-  date: { type: Date, default: Date.now() },
   payment: { type: Boolean, default: false },
+  orderNumber: { type: String, unique: true, required: true },
+  date: { type: Date, default: Date.now() },
 });
 
-const orderModel = mongoose.models.order || mongoose.model("order", orderSchema)
+const orderModel =
+  mongoose.models.order || mongoose.model("order", orderSchema);
 export default orderModel;
