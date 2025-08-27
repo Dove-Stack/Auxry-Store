@@ -93,8 +93,6 @@
 
 // export default VerifyPayment;
 
-
-
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import "./verifyPayment.css";
 import { useLocation, useNavigate } from "react-router-dom";
