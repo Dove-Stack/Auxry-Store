@@ -62,8 +62,8 @@ const placeOrder = async (req, res) => {
       metadata: {
         orderId: newOrder._id.toString(),
       },
-      success_url: `${frontend_url}/verify-payment?success=true&orderId=${newOrder._id}`,
-      cancel_url: `${frontend_url}/verify-payment?success=false&orderId=${newOrder._id}`,
+      success_url: `${frontend_url}/verify-order?success=true&orderId=${newOrder._id}`,
+      cancel_url: `${frontend_url}/verify-order?success=false&orderId=${newOrder._id}`,
     });
 
     res.json({ success: true, session_url: session.url });
