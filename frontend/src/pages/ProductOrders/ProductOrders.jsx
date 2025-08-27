@@ -35,12 +35,6 @@ const ProductOrders = () => {
               <p>Order Number: {order.orderNumber}</p>
               <p>Amount: ${order.amount}</p>
               <p>Status: {order.payment ? "Paid ✅" : "Pending 🔃"}</p>
-              {/* <p>Order ID: {order._id}</p>
-            <p>Date: {new Date(order.createdAt).toLocaleDateString()}</p>
-            <p>Total Amount: ${order.totalAmount}</p>
-            <p>Status: {order.status}</p>
-            <hr /> */}
-              {/* <p>Order ID: {}</p> */}
             </li>
           ))}
         </ul>
