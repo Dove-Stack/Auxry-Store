@@ -7,11 +7,9 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 const VerifyPayment = () => {
   const location = useLocation();
-
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
-
   const { url } = useContext(StoreContext);
   const navigate = useNavigate();
 
@@ -29,6 +27,7 @@ const VerifyPayment = () => {
 
     if (!orderId || !success) {
       setError("Invalid verification request.");
+      setMessage("Invalid request. Please try again or contact support.");
       setLoading(false);
       return;
     }
@@ -40,19 +39,19 @@ const VerifyPayment = () => {
       });
 
       if (response.data.success) {
-        setMessage(response.data.message || `Payment successfully verified `);
+        setMessage(response.data.message || "Payment successfully verified");
         setTimeout(() => {
           navigate("/product-orders");
-        }, 6000);
+        }, 4000);
       } else {
         setMessage("Payment verification failed. Please contact support.");
       }
     } catch (error) {
-      setMessage("Error verifying order . Please try again.");
+      setMessage("Error verifying order. Please try again.");
     } finally {
       setLoading(false);
     }
-  }, [getQueryParams]);
+  }, [getQueryParams, navigate, url]);
 
   useEffect(() => {
     verifyOrder();
@@ -68,11 +67,11 @@ const VerifyPayment = () => {
             loading={loading}
             size={50}
           />
-          <p>Verifying your order, please wait.....</p>
+          <p>Verifying your order, please wait...</p>
         </div>
       ) : (
         <div className="message-container">
-          <i class="bx bx-check-circle "></i>
+          <i className="bx bx-check-circle"></i>
           <h2>{message}</h2>
         </div>
       )}
