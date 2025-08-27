@@ -248,6 +248,7 @@
 @media (max-width: 900px) { 
   .feature-header h1 {
     text-align: center;
+    margin: 0;
   }
 }
 
