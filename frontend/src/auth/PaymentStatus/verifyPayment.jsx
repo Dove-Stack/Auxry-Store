@@ -33,10 +33,16 @@ const VerifyPayment = () => {
     }
 
     try {
-      const response = await axios.post(`${url}/api/order/verify`, {
-        orderId,
-        success,
-      });
+      const response = await axios.post(
+        `${url}/api/order/verify`,
+        {
+          orderId,
+          success,
+        },
+        {
+          timeout: 15000,
+        }
+      );
 
       if (response.data.success) {
         setMessage(response.data.message || "Payment successfully verified");
@@ -47,7 +53,13 @@ const VerifyPayment = () => {
         setMessage("Payment verification failed. Please contact support.");
       }
     } catch (error) {
-      setMessage("Error verifying order. Please try again.");
+      if (error.code === "ECONNABORTED") {
+        setMessage(
+          "The request timed out. Please check your internet connection and try again."
+        );
+      } else {
+        setMessage("Error verifying order. Please try again.");
+      }
     } finally {
       setLoading(false);
     }
