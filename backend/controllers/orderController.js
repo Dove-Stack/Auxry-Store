@@ -5,21 +5,22 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Place Order from frontend
-const placeOrder = async (req, res) => {
+/* const placeOrder = async (req, res) => {
   const frontend_url = "http://localhost:5173";
 
   try {
     const lastOrder = await orderModel.findOne().sort({ orderNumber: -1 });
-    const newOrderNumber = lastOrder
-      ? `ORD-${parseInt(lastOrder.orderNumber.split("-")[1] + 1)}`
-      : "ORD-1001";
+    const orderNumber = lastOrder
+      ? `ORD-${parseInt(lastOrder.orderNumber.split("-")[1]) + 1}`
+      : "ORD-10001";
+    console.log("Generated orderNumber:", orderNumber);
 
     const newOrder = new orderModel({
       userId: req.body.userId,
       items: req.body.items,
       amount: req.body.amount,
       address: req.body.address,
-      orderNumber: newOrderNumber,
+      orderNumber,
     });
 
     await newOrder.save();
@@ -77,7 +78,71 @@ const placeOrder = async (req, res) => {
     console.log("🚀 ~ placeOrder ~ error:", error);
     res.json({ success: false, message: "Error" });
   }
-};
+}; */
+
+  const placeOrder = async (req, res) => {
+    const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
+
+    try {
+      const lastOrder = await orderModel.findOne().sort({ createdAt: -1 });
+      let orderNumber;
+      if (lastOrder && lastOrder.orderNumber) {
+        orderNumber = `ORD-${
+          parseInt(lastOrder.orderNumber.split("-")[1]) + 1
+        }`;
+      } else {
+        orderNumber = "ORD-10001"; // Default for first order or if lastOrder is null
+      }
+
+      console.log("Generated orderNumber:", orderNumber); // Debug log
+
+      const newOrder = new orderModel({
+        userId: req.body.userId,
+        items: req.body.items,
+        amount: req.body.amount,
+        address: req.body.address,
+        payment: false, // Default payment status
+        orderNumber, // Ensure this is set
+      });
+
+      await newOrder.save();
+      console.log("Saved order:", newOrder); // Debug log
+
+      await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
+
+      const line_items = req.body.items.map((item) => ({
+        price_data: {
+          currency: "usd",
+          product_data: { name: item.name },
+          unit_amount: item.salePrice * 100,
+        },
+        quantity: item.quantity,
+      }));
+
+      line_items.push({
+        price_data: {
+          currency: "usd",
+          product_data: { name: "Delivery Charges" },
+          unit_amount: 200,
+        },
+        quantity: 1,
+      });
+
+      const session = await stripe.checkout.sessions.create({
+        line_items,
+        mode: "payment",
+        metadata: { orderId: newOrder._id.toString() },
+        success_url: `${frontend_url}/verify-payment?success=true&orderId=${newOrder._id}`,
+        cancel_url: `${frontend_url}/verify-payment?success=false&orderId=${newOrder._id}`,
+      });
+
+      res.json({ success: true, session_url: session.url });
+    } catch (error) {
+      console.log("🚀 ~ placeOrder ~ error:", error);
+      res.json({ success: false, message: "Error" });
+    }
+  };
+
 
 const verifyOrder = async (req, res) => {
   console.log("Received data:", req.body);
