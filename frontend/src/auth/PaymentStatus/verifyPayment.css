@@ -1,32 +1,4 @@
-/* .payment-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-  font-weight: 300;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.644);
-}
 
-.success-message , .message-container{
-  box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 5px 0px;;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #e7e7e740;
-  padding: 60px;
-  gap: 30px;
-  border-radius: 30px;
-
-}
-
-
-.message-container > i {
-  color: #31cb36;
-  font-size: 60px;
-}
- */
 
 .payment-container {
   display: flex;
