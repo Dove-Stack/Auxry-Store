@@ -245,6 +245,13 @@
   }
 }
 
+@media (max-width: 900px) { 
+  .feature-header h1 {
+    text-align: center;
+  }
+}
+
+
 @media (max-width: 775px) {
   .more-btn {
     width: 27%;
