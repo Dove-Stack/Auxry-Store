@@ -3,6 +3,7 @@ import "./PlaceOrder.css";
 import { StoreContext } from "../../context/StoreContext";
 // import { FeatureList, ProductList } from "../../assets/assets";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const PlaceOrder = () => {
   const {
@@ -240,18 +241,48 @@ const PlaceOrder = () => {
       amount: getTotalCartAmount() + 2,
     };
 
-    alert(JSON.stringify(orderData)); // Check order data before sending
+    // alert(JSON.stringify(orderData));
 
-    let response = await axios.post(url + "/api/order/place", orderData, {
+    // let response = await axios.post(url + "/api/order/place", orderData, {
+    //   headers: { token },
+    // });
+
+    // if (response.data.success) {
+    //   const { session_url } = response.data;
+    //   window.location.replace(session_url);
+    // } else {
+    //   alert("Error placing order");
+    // }
+
+    const orderPromise = axios.post(url + "/api/order/place", orderData, {
       headers: { token },
     });
 
-    if (response.data.success) {
-      const { session_url } = response.data;
-      window.location.replace(session_url);
-    } else {
-      alert("Error placing order");
-    }
+    toast.promise(
+      orderPromise,
+      {
+        loading: "Placing Order...",
+        success: (response) => {
+          const { session_url } = response.data;
+          window.location.replace(session_url);
+          return "Order Placed Successfully! Redirecting to payment...";
+        },
+        error: "Error placing order. Please try again.",
+      },
+      {
+        style: {
+          minWidth: "250px",
+          background: "#333",
+          color: "#fff",
+        },
+        success: {
+          duration: 3000,
+        },
+        error: {
+          duration: 4000,
+        },
+      }
+    );
   };
 
   // alert(itemList.)
