@@ -32,9 +32,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100vh; /* Updated to take full viewport height */
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #121731;
@@ -86,14 +86,9 @@
   left: 20%;
   width: 60%;
   height: 60%;
-  background: radial-gradient(
-    circle,
-    #3b82f6 0%,
-    #60a5fa 70%,
-    transparent 100%
-  );
+  background: radial-gradient(circle, #3b82f6 0%, #60a5fa 70%, transparent 100%);
   border-radius: 50%;
-  animation: pulse 1.5s ease-in-out infinite alternate;
+  animation: pulse 3s ease-in-out infinite alternate; /* Slowed down to 3s */
 }
 
 .message-container {
@@ -190,6 +185,7 @@
     font-size: 1rem;
   }
 }
+
 
 /* .payment {
   min-height: 60vh;
