@@ -33,15 +33,6 @@ const Login = ({ setShowLogin }) => {
       newUrl += "/api/user/register";
     }
 
-    // const response = await axios.post(newUrl, data);
-
-    // if (response.data.success) {
-    //   setToken(response.data.token);
-    //   localStorage.setItem("token", response.data.token);
-    //   setShowLogin(false);
-    // }else {
-    //   alert(response.data.message)
-    // }
 
     try {
       const response = await axios.post(newUrl, data);
@@ -61,7 +52,7 @@ const Login = ({ setShowLogin }) => {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="header-login">
         <form onSubmit={onLogin} className="header-login-container">
           <div className="login-title">
@@ -120,7 +111,7 @@ const Login = ({ setShowLogin }) => {
           )}
         </form>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
