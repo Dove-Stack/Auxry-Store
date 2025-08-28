@@ -33,7 +33,6 @@ const Login = ({ setShowLogin }) => {
       newUrl += "/api/user/register";
     }
 
-
     try {
       const response = await axios.post(newUrl, data);
 
