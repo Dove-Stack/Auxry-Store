@@ -21,7 +21,6 @@ const StoreContextProvider = (props) => {
 
   const [token, setToken] = useState(localStorage.getItem("token") || "");
 
-
   const navigate = useNavigate();
 
   const getToken = localStorage.getItem("token");
