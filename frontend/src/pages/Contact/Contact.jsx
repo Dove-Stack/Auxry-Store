@@ -8,8 +8,7 @@ import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 
 const Contact = () => {
-
-  const { url } = useContext(StoreContext)
+  const { url } = useContext(StoreContext);
 
   const reCaptchaSiteKey = import.meta.env.VITE_AUXRY_STORE_SITE_KEY_CAPTCHA;
 
@@ -56,16 +55,15 @@ const Contact = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        alert("Your message has been submitted, and a confirmation email ")
+        alert("Your message has been submitted, and a confirmation email ");
       } else {
         alert("Failed to submit the form. Please try again.");
       }
-
-    }catch (error) {
+    } catch (error) {
       console.error("Error submitting the form:", error);
       "Error submitting the form:", error;
     }
