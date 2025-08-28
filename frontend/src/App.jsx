@@ -53,7 +53,7 @@ function App() {
               }
             />
             <Route path="/preview" element={<ItemView />} />
-            <Route path="/verify-order" element={<VerifyPayment />} />
+            <Route path="/verify-payment" element={<VerifyPayment />} />
             <Route path="/product-orders" element={<ProductOrders />} />
             <Route path="*" element={<NullPage />} />
           </Routes>
