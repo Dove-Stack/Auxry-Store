@@ -15,8 +15,7 @@ const SecureRoute = ({ ProtectedComponent, setShowLogin }) => {
     return <Navigate to={`/`} replace />;
   }
 
-  return ProtectedComponent; // If user is logged in, render the protected component
+  return ProtectedComponent;
 };
 
 export default SecureRoute;
-
