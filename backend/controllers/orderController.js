@@ -5,144 +5,234 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Place Order from frontend
-/* const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173";
+// const placeOrder = async (req, res) => {
+//   const frontend_url = "http://localhost:5173";
+
+//   try {
+//     const lastOrder = await orderModel.findOne().sort({ orderNumber: -1 });
+//     const orderNumber = lastOrder
+//       ? `ORD-${parseInt(lastOrder.orderNumber.split("-")[1]) + 1}`
+//       : "ORD-10001";
+//     console.log("Generated orderNumber:", orderNumber);
+
+//     const newOrder = new orderModel({
+//       userId: req.body.userId,
+//       items: req.body.items,
+//       amount: req.body.amount,
+//       address: req.body.address,
+//       orderNumber,
+//     });
+
+//     await newOrder.save();
+
+//     await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
+
+//     // Stripe Payment Link
+
+//     const line_items = req.body.items.map((item) => ({
+//       price_data: {
+//         currency: "usd",
+//         product_data: {
+//           name: item.name,
+//         },
+//         unit_amount: item.salePrice * 100,
+//       },
+//       quantity: item.quantity,
+//     }));
+
+//     // Delivery Charges
+//     // line_items.push({
+//     //   price_data: {
+//     //     currency: "inr",
+//     //     product_data: {
+//     //       name: "Delivery Charges",
+//     //     },
+//     //     unit_amount: 2 * 100 * 80,
+//     //   },
+//     //   quantity: 1,
+//     // });
+
+//     line_items.push({
+//       price_data: {
+//         currency: "usd",
+//         product_data: {
+//           name: "Delivery Charges",
+//         },
+//         unit_amount: 200,
+//       },
+//       quantity: 1,
+//     });
+
+//     const session = await stripe.checkout.sessions.create({
+//       line_items: line_items,
+//       mode: "payment",
+//       metadata: {
+//         orderId: newOrder._id.toString(),
+//       },
+//       success_url: `${frontend_url}/verify-payment?success=true&orderId=${newOrder._id}`,
+//       cancel_url: `${frontend_url}/verify-payment?success=false&orderId=${newOrder._id}`,
+//     });
+
+//     res.json({ success: true, session_url: session.url });
+//   } catch (error) {
+//     console.log("🚀 ~ placeOrder ~ error:", error);
+//     res.json({ success: false, message: "Error" });
+//   }
+// };
+
+// const placeOrder = async (req, res) => {
+//   const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
+
+//   try {
+//     const lastOrder = await orderModel
+//       .findOne()
+//       .sort({ orderNumber: -1 })
+//       .select("orderNumber");
+//     let nextOrderNumber;
+//     if (lastOrder && lastOrder.orderNumber) {
+//       const currentMax = parseInt(lastOrder.orderNumber.split("-")[1]);
+//       nextOrderNumber = `ORD-${currentMax + 1}`;
+//     } else {
+//       nextOrderNumber = "ORD-10001";
+//     }
+
+//     console.log("Generated orderNumber:", nextOrderNumber);
+
+//     const existingOrder = await orderModel.findOne({
+//       orderNumber: nextOrderNumber,
+//     });
+//     if (existingOrder) {
+//       throw new Error(`Duplicate orderNumber detected: ${nextOrderNumber}`);
+//     }
+
+//     const newOrder = new orderModel({
+//       userId: req.body.userId,
+//       items: req.body.items,
+//       amount: req.body.amount,
+//       address: req.body.address,
+//       payment: false,
+//       orderNumber: nextOrderNumber,
+//     });
+
+//     await newOrder.save();
+//     console.log("Saved order:", newOrder);
+
+//     await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
+
+//     const line_items = req.body.items.map((item) => ({
+//       price_data: {
+//         currency: "usd",
+//         product_data: { name: item.name },
+//         unit_amount: item.salePrice * 100,
+//       },
+//       quantity: item.quantity,
+//     }));
+
+//     line_items.push({
+//       price_data: {
+//         currency: "usd",
+//         product_data: { name: "Delivery Charges" },
+//         unit_amount: 200,
+//       },
+//       quantity: 1,
+//     });
+
+//     const session = await stripe.checkout.sessions.create({
+//       line_items,
+//       mode: "payment",
+//       metadata: { orderId: newOrder._id.toString() },
+//       success_url: `${frontend_url}/verify-payment?success=true&orderId=${newOrder._id}`,
+//       cancel_url: `${frontend_url}/verify-payment?success=false&orderId=${newOrder._id}`,
+//     });
+
+//     res.json({ success: true, session_url: session.url });
+//   } catch (error) {
+//     console.log("🚀 ~ placeOrder ~ error:", error);
+//     res.status(500).json({
+//       success: false,
+//       message: "Error placing order",
+//       error: error.message,
+//     });
+//   }
+// };
+
+const placeOrder = async (req, res) => {
+  const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
 
   try {
-    const lastOrder = await orderModel.findOne().sort({ orderNumber: -1 });
-    const orderNumber = lastOrder
-      ? `ORD-${parseInt(lastOrder.orderNumber.split("-")[1]) + 1}`
-      : "ORD-10001";
-    console.log("Generated orderNumber:", orderNumber);
+    const lastOrder = await orderModel
+      .findOne()
+      .sort({ orderNumber: -1 })
+      .select("orderNumber");
+    let nextOrderNumber;
+    if (lastOrder && lastOrder.orderNumber) {
+      const currentMax = parseInt(lastOrder.orderNumber.split("-")[1]);
+      nextOrderNumber = `ORD-${currentMax + 1}`;
+    } else {
+      nextOrderNumber = "ORD-10001";
+    }
+
+    console.log("Generated orderNumber:", nextOrderNumber);
+
+    const existingOrder = await orderModel.findOne({
+      orderNumber: nextOrderNumber,
+    });
+    if (existingOrder) {
+      throw new Error(`Duplicate orderNumber detected: ${nextOrderNumber}`);
+    }
 
     const newOrder = new orderModel({
       userId: req.body.userId,
       items: req.body.items,
       amount: req.body.amount,
       address: req.body.address,
-      orderNumber,
+      payment: false,
+      orderNumber: nextOrderNumber,
     });
 
     await newOrder.save();
+    console.log("Saved order:", newOrder);
 
     await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
-
-    // Stripe Payment Link
 
     const line_items = req.body.items.map((item) => ({
       price_data: {
         currency: "usd",
-        product_data: {
-          name: item.name,
-        },
-        unit_amount: item.salePrice * 100,
+        product_data: { name: item.name || "Unnamed Item" }, // Fallback name
+        unit_amount: Math.round((item.salePrice || 0) * 100), // Convert to cents
       },
-      quantity: item.quantity,
+      quantity: item.quantity || 1,
     }));
 
-    // Delivery Charges
-    // line_items.push({
-    //   price_data: {
-    //     currency: "inr",
-    //     product_data: {
-    //       name: "Delivery Charges",
-    //     },
-    //     unit_amount: 2 * 100 * 80,
-    //   },
-    //   quantity: 1,
-    // });
-
+    // Add delivery charge
     line_items.push({
       price_data: {
         currency: "usd",
-        product_data: {
-          name: "Delivery Charges",
-        },
-        unit_amount: 200,
+        product_data: { name: "Delivery Charges" },
+        unit_amount: 200, // $2.00 in cents
       },
       quantity: 1,
     });
 
+    console.log("Generated line_items:", line_items);
+
     const session = await stripe.checkout.sessions.create({
-      line_items: line_items,
+      line_items,
       mode: "payment",
-      metadata: {
-        orderId: newOrder._id.toString(),
-      },
-      success_url: `${frontend_url}/verify-order?success=true&orderId=${newOrder._id}`,
-      cancel_url: `${frontend_url}/verify-order?success=false&orderId=${newOrder._id}`,
+      metadata: { orderId: newOrder._id.toString() },
+      success_url: `${frontend_url}/verify-payment?success=true&orderId=${newOrder._id}`,
+      cancel_url: `${frontend_url}/verify-payment?success=false&orderId=${newOrder._id}`,
     });
 
     res.json({ success: true, session_url: session.url });
   } catch (error) {
     console.log("🚀 ~ placeOrder ~ error:", error);
-    res.json({ success: false, message: "Error" });
+    res.status(500).json({
+      success: false,
+      message: error.message || "Error placing order",
+    });
   }
-}; */
-
-  const placeOrder = async (req, res) => {
-    const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
-
-    try {
-      const lastOrder = await orderModel.findOne().sort({ createdAt: -1 });
-      let orderNumber;
-      if (lastOrder && lastOrder.orderNumber) {
-        orderNumber = `ORD-${
-          parseInt(lastOrder.orderNumber.split("-")[1]) + 1
-        }`;
-      } else {
-        orderNumber = "ORD-10001"; // Default for first order or if lastOrder is null
-      }
-
-      console.log("Generated orderNumber:", orderNumber); // Debug log
-
-      const newOrder = new orderModel({
-        userId: req.body.userId,
-        items: req.body.items,
-        amount: req.body.amount,
-        address: req.body.address,
-        payment: false, // Default payment status
-        orderNumber, // Ensure this is set
-      });
-
-      await newOrder.save();
-      console.log("Saved order:", newOrder); // Debug log
-
-      await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
-
-      const line_items = req.body.items.map((item) => ({
-        price_data: {
-          currency: "usd",
-          product_data: { name: item.name },
-          unit_amount: item.salePrice * 100,
-        },
-        quantity: item.quantity,
-      }));
-
-      line_items.push({
-        price_data: {
-          currency: "usd",
-          product_data: { name: "Delivery Charges" },
-          unit_amount: 200,
-        },
-        quantity: 1,
-      });
-
-      const session = await stripe.checkout.sessions.create({
-        line_items,
-        mode: "payment",
-        metadata: { orderId: newOrder._id.toString() },
-        success_url: `${frontend_url}/verify-payment?success=true&orderId=${newOrder._id}`,
-        cancel_url: `${frontend_url}/verify-payment?success=false&orderId=${newOrder._id}`,
-      });
-
-      res.json({ success: true, session_url: session.url });
-    } catch (error) {
-      console.log("🚀 ~ placeOrder ~ error:", error);
-      res.json({ success: false, message: "Error" });
-    }
-  };
-
+};
 
 const verifyOrder = async (req, res) => {
   console.log("Received data:", req.body);
@@ -204,6 +294,7 @@ const handleStripeWebhook = async (req, res) => {
 const userOrders = async (req, res) => {
   try {
     const orders = await orderModel.find({ userId: req.body.userId });
+    console.log("Orders Fetched", orders);
     res.json({ success: true, data: orders });
   } catch (error) {
     console.error(error);
