@@ -20,4 +20,3 @@ const SecureRoute = ({ ProtectedComponent, setShowLogin }) => {
 
 export default SecureRoute;
 
-// const SecureRoute = ({})
