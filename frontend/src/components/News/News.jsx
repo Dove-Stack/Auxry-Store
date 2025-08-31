@@ -29,8 +29,8 @@ const News = () => {
                 <p>{item.category} - 15, Oct. 2024</p>
                 <h3>{item.header}</h3>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit,
-                  Eaque voluptatui aliquid tempora illo enim fuga dolorem.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit, Eaque
+                  voluptatui aliquid tempora illo enim fuga dolorem.
                 </span>
               </div>
               {/* </> */}
