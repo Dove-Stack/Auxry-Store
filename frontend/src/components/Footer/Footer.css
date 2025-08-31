@@ -154,8 +154,7 @@ footer {
   font-size: 10px;
   border-radius: 7px;
   cursor: pointer;
-  /* border-top-left-radius: 0px; */
-  /* border-bottom-left-radius: 0px; */
+
   border: none;
 }
 
@@ -201,9 +200,7 @@ footer {
 
 @media (width <= 900px) {
   .footer-main .content {
-    /* align-items: start;
-    justify-content: start; */
-    /* flex-wrap: wrap; */
+
     display: flex;
     flex-direction: column;
   }
