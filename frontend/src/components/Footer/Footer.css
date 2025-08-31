@@ -52,7 +52,6 @@ footer {
   font-weight: 500;
   line-height: 1.7;
   color: #121731;
-  /* width: 60%; */
 }
 
 .footer-main .content .content-left span {
@@ -69,7 +68,6 @@ footer {
 
 .footer-main .content .content-left .social-icon i {
   margin-right: 0px;
-  /* background-color: #2f3449; */
   color: white;
   background-color: #121731;
   border-radius: 42%;
@@ -112,7 +110,6 @@ footer {
   margin: 30px;
   border-radius: 7px;
   line-height: 1.7;
-  /* background-color: #2f3449; */
 }
 
 .footer-main .form form {
