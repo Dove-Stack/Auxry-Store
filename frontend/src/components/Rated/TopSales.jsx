@@ -1,6 +1,5 @@
 import React from "react";
 import "./TopSales.css";
-// import ProductList, { assets } from '../../assets/assets.js' 
 
 const TopSales = () => {
   return (
