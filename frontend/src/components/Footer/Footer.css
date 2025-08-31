@@ -26,13 +26,11 @@ footer {
   color: #121731;
   font-weight: 500;
   transition: 0.3s ease-in-out;
-  /* padding-block: 0px; */
   padding-block: 3px;
 }
 
 .footer- .content a:hover {
   background-color: #d2d2da;
-  /* font-weight: 500; */
   border-left: 1px solid #121731;
   margin-left: 5px;
 }
