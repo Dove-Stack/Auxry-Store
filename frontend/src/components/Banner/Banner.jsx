@@ -4,8 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-
-
 const Banner = () => {
   return (
     <div className="main-banner">
@@ -28,7 +26,6 @@ const Banner = () => {
             },
           }}
           speed={1000}
-  
         >
           <SwiperSlide className="image image-1">
             <div className="text-content">
@@ -50,7 +47,6 @@ const Banner = () => {
               </span>
             </div>
           </SwiperSlide>
-
 
           <SwiperSlide className="image image-2">
             <div className="text-content">
