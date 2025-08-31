@@ -18,8 +18,7 @@ const FlashSales = () => {
               </p>
               <div className="prices">
                 <span className="sale-price">$51.75</span>
-                {/* <span className="list-price">$75.25</span> */}
-                {/* <span className="percent">-32%</span> */}
+                
               </div>
               <button>
                 BUY NOW <i className="bx bx-cart"></i>{" "}
