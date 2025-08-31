@@ -4,14 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-// const swiper = new Swiper ('.swiper-container', {
-//   slidesPerView: 3,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2
-//     }
-//   }
-// });
+
 
 const Banner = () => {
   return (
@@ -35,11 +28,7 @@ const Banner = () => {
             },
           }}
           speed={1000}
-          // autoplay={{
-          //   delay: 4000,
-          //   disableOnInteraction: false,
-          // }}
-          // modules={[Autoplay]}
+  
         >
           <SwiperSlide className="image image-1">
             <div className="text-content">
