@@ -3,7 +3,6 @@ footer {
 }
 
 .footer-main {
-
   padding: 10px 20px;
   background-color: rgba(233, 229, 229, 0.838);
 }
@@ -200,7 +199,6 @@ footer {
 
 @media (width <= 900px) {
   .footer-main .content {
-
     display: flex;
     flex-direction: column;
   }
@@ -288,5 +286,3 @@ footer {
     margin-top: 450px;
   }
 }
-
-
