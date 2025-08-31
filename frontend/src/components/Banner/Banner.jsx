@@ -50,62 +50,7 @@ const Banner = () => {
               </span>
             </div>
           </SwiperSlide>
-{/*           <SwiperSlide className="image inner-swiper">
 
-            <Swiper
-              spaceBetween={10}
-              slidesPerView={1}
-              breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 1,
-                },
-                1024: {
-                  slidesPerView: 1,
-                },
-              }}
-              speed={1000}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay]}
-            >
-              <SwiperSlide className="image image-5">
-                <div className="text-content">
-                  <p>NEW SEASON</p>
-                  <h3>Shop for Latest trends in Fashion Season</h3>
-                  <span>
-                    Don't miss the Opportunity{" "}
-                    <i className="bx bx-right-top-arrow-circle"></i>{" "}
-                  </span>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide className="image image-7">
-                <div className="text-content">
-                  <p>NEW SEASON</p>
-                  <h3>Shop for Latest trends in Fashion Season</h3>
-                  <span>
-                    Don't miss the Opportunity{" "}
-                    <i className="bx bx-right-top-arrow-circle"></i>{" "}
-                  </span>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="image image-4">
-                <div className="text-content">
-                  <p>NEW SEASON</p>
-                  <h3>Shop for Latest trends in Fashion Season</h3>
-                  <span>
-                    Don't miss the Opportunity{" "}
-                    <i className="bx bx-right-top-arrow-circle"></i>{" "}
-                  </span>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </SwiperSlide> */}
 
           <SwiperSlide className="image image-2">
             <div className="text-content">
