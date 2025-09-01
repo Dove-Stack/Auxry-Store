@@ -124,37 +124,7 @@ const cart = () => {
           }
         })}
 
-        {/*         {FeatureList.map((item, index) => {
-          if (cartItems[item.id] > 0) {
-            return (
-              <div key={index}>
-                <div className="cart-items-title cart-items-item">
-                  <img src={item.image} alt="" />
-                  <p>{item.name}</p>
-                  <p>${item.salePrice}</p>
-                  <p>{cartItems[item.id]}</p>
-                  <p>${Math.floor(item.salePrice * cartItems[item.id])}</p>
 
-                  <div className="icon-cart">
-                    <i
-                      onClick={() => addToCart(item.id)}
-                      className="bx bx-plus"
-                    ></i>
-                    <i
-                      onClick={() => removeFromCart(item.id)}
-                      className="bx bx-trash-alt"
-                    ></i>
-                    <i
-                      onClick={() => removeFromCart(item.id)}
-                      className="bx bx-minus"
-                    ></i>
-                  </div>
-                </div>
-                <hr />
-              </div>
-            );
-          }
-        })} */}
       </div>
       <div className="card-bottom">
         <div className="card-total">
