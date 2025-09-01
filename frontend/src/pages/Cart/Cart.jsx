@@ -37,8 +37,6 @@ const cart = () => {
         <br />
         <hr />
 
-
-
         {itemsArray[0].productlist.map((item, index) => {
           if (cartItems[item.id] > 0) {
             return (
@@ -123,8 +121,6 @@ const cart = () => {
             );
           }
         })}
-
-
       </div>
       <div className="card-bottom">
         <div className="card-total">
