@@ -64,7 +64,6 @@
   display: flex;
   justify-content: space-between;
   gap: max(12vw, 20px);
-  /* background-color: red; */
 }
 
 .card-total {
