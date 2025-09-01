@@ -148,13 +148,7 @@
 }
 
 @media (max-width: 750px) {
-  /* .cart-items-title {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr 1fr 1fr 0.5fr 0.8fr;
-    align-items: center;
-    color: grey;
-    font-size: 12px;
-  } */
+
 
   .cart-items-title {
     grid-template-columns: 0.8fr 1fr 0.8fr 1fr 0.9fr 0.9fr;
