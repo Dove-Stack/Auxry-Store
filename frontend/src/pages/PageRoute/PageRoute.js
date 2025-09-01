@@ -1,6 +1,6 @@
 export { default as Cart } from "../Cart/Cart.jsx";
 export { default as Home } from "../Home/Home.jsx";
-export { default as About } from '../About/About.jsx'
+export { default as About } from "../About/About.jsx";
 export { default as Shop } from "../Shop/Shop.jsx";
 export { default as Login } from "../../components/Login/Login.jsx";
 export { default as Contact } from "../Contact/Contact.jsx";
