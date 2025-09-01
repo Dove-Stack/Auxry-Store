@@ -86,7 +86,6 @@
 .card-total button {
   color: white;
   width: max(15vw, 200px);
-  /* width: 30%; */
   padding: 16px;
   cursor: pointer;
 
