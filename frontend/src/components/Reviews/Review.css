@@ -30,7 +30,6 @@
 
 .review .text-content {
   background: rgba(255, 255, 255, 0.459);
-  /* box-shadow: 20px 8px 32px 0 rgba(30, 30, 33, 0.265); */
   /* box-shadow: 10px 3px 10px  rgba(79, 78, 78, 0); */
   backdrop-filter: blur(11px);
   display: flex;
