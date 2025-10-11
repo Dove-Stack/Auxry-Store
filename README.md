@@ -7,61 +7,61 @@
 
 ## Table of Contents
 
-- [Demo & Screenshots](#demo--screenshots)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Architecture & Folder Structure](#architecture--folder-structure)  
-- [Getting Started](#getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Installation](#installation)  
-  - [Running Locally](#running-locally)  
-- [Environment Variables](#environment-variables)  
-- [API Endpoints](#api-endpoints)  
-- [Payment Integration](#payment-integration)  
-- [Admin Panel](#admin-panel)  
-- [Contributing](#contributing)  
-- [Roadmap & Future Enhancements](#roadmap--future-enhancements)  
-- [License](#license)  
-- [Contact](#contact)  
+- [Demo & Screenshots](#demo--screenshots)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture & Folder Structure](#architecture--folder-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running Locally](#running-locally)
+- [Environment Variables](#environment-variables)
+- [API Endpoints](#api-endpoints)
+- [Payment Integration](#payment-integration)
+- [Admin Panel](#admin-panel)
+- [Contributing](#contributing)
+- [Roadmap & Future Enhancements](#roadmap--future-enhancements)
+- [License](#license)
+- [Contact](#contact)
 
 ---
 
 ## Demo & Screenshots
 
-*(Add screenshots or link to live demo once deployed)*  
+_(Add screenshots or link to live demo once deployed)_  
 ![Home Page](./screenshots/home.png)  
 ![Product Preview](./screenshots/product-preview.png)  
-![Admin Dashboard](./screenshots/admin-dashboard.png)  
+![Admin Dashboard](./screenshots/admin-dashboard.png)
 
-Live demo URL: [https://auxry-store.example.com](#) *(replace with actual deployment link)*  
+Live demo URL: [https://auxry-store.example.com](#) _(replace with actual deployment link)_
 
 ---
 
 ## Features
 
-- Product listing, pagination, filtering  
-- Product preview with details  
-- Cart management & checkout flow  
-- Payment integration with Stripe  
-- Order confirmation (via webhook)  
-- User authentication (signup/login) (planned)  
-- Admin dashboard for managing products & orders  
-- Responsive design for mobile & desktop  
-- Error handling & form validation  
-- Clean CSS styling and UX polish  
+- Product listing, pagination, filtering
+- Product preview with details
+- Cart management & checkout flow
+- Payment integration with Stripe
+- Order confirmation (via webhook)
+- User authentication (signup/login) (planned)
+- Admin dashboard for managing products & orders
+- Responsive design for mobile & desktop
+- Error handling & form validation
+- Clean CSS styling and UX polish
 
 ---
 
 ## Tech Stack
 
-| Part        | Tech / Tools                         |
-|--------------|--------------------------------------|
-| Frontend      | React, React Router, Context API     |
-| Backend       | Node.js, Express.js                  |
-| Database      | MongoDB (Atlas) / Mongoose           |
-| Payment       | Stripe                               |
-| Styling       | Tailwind CSS or Custom CSS (your choice) |
-| Tools         | Git, Postman, VSCode, Stripe CLI     |
+| Part     | Tech / Tools                             |
+| -------- | ---------------------------------------- |
+| Frontend | React, React Router, Context API         |
+| Backend  | Node.js, Express.js                      |
+| Database | MongoDB (Atlas) / Mongoose               |
+| Payment  | Stripe                                   |
+| Styling  | Tailwind CSS or Custom CSS (your choice) |
+| Tools    | Git, Postman, VSCode, Stripe CLI         |
 
 ---
 
@@ -95,11 +95,10 @@ auxry-store/
 └── .gitignore
 ```
 
-
-- **frontend/** contains the React application  
-- **backend/** hosts the Express API  
-- **admin/** (optional) for admin UI  
-- **screenshots/** for images used in README or documentation  
+- **frontend/** contains the React application
+- **backend/** hosts the Express API
+- **admin/** (optional) for admin UI
+- **screenshots/** for images used in README or documentation
 
 ---
 
@@ -107,38 +106,87 @@ auxry-store/
 
 ### Prerequisites
 
-- Node.js (v16 or later recommended)  
-- npm or yarn  
-- MongoDB (Atlas or local)  
-- Stripe account (for API keys & webhook setup)  
+- Node.js (v16 or later recommended)
+- npm or yarn
+- MongoDB (Atlas or local)
+- Stripe account (for API keys & webhook setup)
 
 ### Installation
 
-1. Clone the repo:  
+1. Clone the repo:
+
    ```bash
    git clone https://github.com/Dove-Stack/Auxry-Store.git
 
-2. Navigate to the project directory:  
-    ```bash
-    cd Auxry-Store
-    ```
+   ```
 
-3. Install dependencies for the backend:  
-    ```bash
-    cd backend
-    npm install
-    ```
+2. Navigate to the project directory:
 
-4. Install dependencies for the frontend:  
-    ```bash
-    cd ../frontend
-    npm install
-    ```
+   ```bash
+   cd Auxry-Store
+   ```
 
-5. If the admin panel is included, install its dependencies:  
-    ```bash
-    cd ../admin
-    npm install
-    ```
+3. Install dependencies for the backend:
 
+   ```bash
+   cd backend
+   npm install
+   ```
 
+4. Install dependencies for the frontend:
+
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+
+5. If the admin panel is included, install its dependencies:
+   ```bash
+   cd ../admin
+   npm install
+   ```
+
+### Running Locally
+
+1. Start the backend server:
+
+   ```bash
+   cd backend
+   npm run dev
+   ```
+
+2. Start the frontend development server:
+
+   ```bash
+   cd ../frontend
+   npm start
+   ```
+
+3. If the admin panel is included, start its development server:
+
+   ```bash
+   cd ../admin
+   npm start
+   ```
+
+   #### \*If you have admin UI, run that too.
+
+   ### Environment Variables
+
+   Create a `.env` file in the root of the backend and frontend directories with the following variables:
+
+   ```bash
+   # Backend
+   MONGODB_URI=your_mongodb_uri
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+   JWT_SECRET=your_jwt_secret
+   ```
+
+   ```bash
+   # Frontend
+   REACT_APP_API_URL=http://localhost:5000/api
+   REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public_key
+   ```
+
+   Make sure to replace the placeholder values with your actual configuration.
