@@ -247,3 +247,21 @@ auxry-store/
     - Open a Pull Request and explain what your PR does
 
     - Please make sure to follow code style, write clear commit messages, and test your changes.
+
+
+   ## Roadmap and Future Enhancements
+
+   - Implement user authentication and authorization
+   - Add more payment options (e.g., PayPal, Paystack & Flutterwave)
+   - Implement product filtering and advanced search
+   - Add order history for users
+   - Improve product search and filtering
+   - Enhance admin panel with analytics and reporting
+   - Optimize performance and scalability
+   - Image hosting (Cloudinary / AWS S3)
+
+   - Improve admin UI
+
+   - Deploy both frontend & backend
+
+   - Add CI/CD & automated tests
