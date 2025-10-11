@@ -265,3 +265,14 @@ auxry-store/
    - Deploy both frontend & backend
 
    - Add CI/CD & automated tests
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## Contact
+   - Name: Lawal Oluwafemi David
+   - Email: femilawal0123@gmail.com
+   - GitHub: [@Dove-Stack](https://github.com/Dove-Stack)
