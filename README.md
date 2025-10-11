@@ -29,11 +29,50 @@
 ## Demo & Screenshots
 
 _(Add screenshots or link to live demo once deployed)_  
-![Home Page](./screenshots/home.png)  
-![Product Preview](./screenshots/product-preview.png)  
-![Admin Dashboard](./screenshots/admin-dashboard.png)
 
-Live demo URL: [https://auxry-store.example.com](#) _(replace with actual deployment link)_
+### Home page 
+![Home Page](./screenshots/Hero.png)
+---
+![Home Page](./screenshots/Products.png)
+---
+![Home Page](./screenshots/Featured.png)
+---
+![Home Page](./screenshots/TopDeal.png)
+---
+![Home Page](./screenshots/Trends.png)
+   
+
+## Product Preview
+![Product Preview](./screenshots/ProductPreview.png)  
+
+
+## Checkout 
+![Checout Page ](./screenshots/Checkout.png)
+
+## Stripe
+![Stripe Payment](./screenshots/Stripe2.png)
+---
+***
+![Stripe Payment](./screenshots/Stripe1.png)
+---
+***
+![Stripe Payment](./screenshots/Stripe3.png)
+---
+***
+![Stripe Payment](./screenshots/Stripe4.png)
+---
+***
+![Stripe Payment](./screenshots/Stripe5.png)
+---
+***
+![Stripe Payment](./screenshots/paymentVerify.png)
+
+
+
+
+
+
+
 
 ---
 
