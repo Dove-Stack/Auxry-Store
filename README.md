@@ -192,3 +192,30 @@ auxry-store/
    Make sure to replace the placeholder values with your actual configuration.
 
    If your frontend or admin uses API keys, include those in their env too (but never commit secret keys).
+
+
+    ### Api Endpoints
+    | Method | Route                 | Description                       |
+    | ------ | --------------------- | --------------------------------- |
+    | GET    | `/api/products`       | Fetch list of products            |
+    | GET    | `/api/products/:id`   | Get details of a single product   |
+    | POST   | `/api/orders/create`  | Create a new order (checkout)     |
+    | POST   | `/api/webhook`        | Stripe webhook for payment events |
+    | POST   | `/api/users/login`    | Authenticate a user (future)      |
+    | POST   | `/api/users/register` | Register a new user (future)      |
+    | PUT    | `/api/products/:id`   | Update product details (admin)    |
+    | DELETE | `/api/products/:id`   | Delete a product (admin)          |
+    | GET    | `/api/orders`         | Fetch all orders (admin)          |
+    | GET    | `/api/orders/:id`     | Get details of a specific order   |
+    | PUT    | `/api/orders/:id`     | Update order status (admin)       |
+    | DELETE | `/api/orders/:id`     | Cancel an order                   |
+
+
+    ### Payment Integration
+       - Stripe Checkout is used to handle the payment session
+
+       - On the backend side, a webhook verifies the payment success and updates the order
+
+       - After successful payment, order data is saved in the database
+
+       - Make sure to test with Stripe CLI locally for your webhook events.
