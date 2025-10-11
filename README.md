@@ -117,3 +117,12 @@ auxry-store/
 1. Clone the repo:  
    ```bash
    git clone https://github.com/Dove-Stack/Auxry-Store.git
+
+2. cd Auxry-Store
+cd backend
+npm install
+cd ../frontend
+npm install
+# if admin:
+cd ../admin
+npm install
