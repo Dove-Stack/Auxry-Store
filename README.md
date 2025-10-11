@@ -69,3 +69,28 @@ Live demo URL: [https://auxry-store.example.com](#) *(replace with actual deploy
 
 Here’s a high-level overview of how the project is organized:
 
+```bash
+auxry-store/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── assets/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   ├── server.js
+│   └── package.json
+├── admin/ # (if a separate admin frontend)
+│   └── ...
+├── screenshots/
+├── README.md
+└── .gitignore
+```
