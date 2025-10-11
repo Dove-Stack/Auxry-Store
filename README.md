@@ -219,3 +219,31 @@ auxry-store/
        - After successful payment, order data is saved in the database
 
        - Make sure to test with Stripe CLI locally for your webhook events.
+
+
+    ### Testing
+       - Use Postman or similar tools to test API endpoints
+
+       - Write unit tests for critical backend logic
+
+       - Ensure frontend components are tested (Jest/React Testing Library)
+
+    ## Contributing
+
+    **Please open an issue or submit a pull request.**
+
+    ### You’re welcome to contribute! Here’s how:
+
+    - Fork the repo
+
+    - Create a feature branch: git checkout -b feature/FeatureName
+
+    - Make changes / additions
+
+    - Commit your work: git commit -m "Add XYZ feature"
+
+    - Push: git push origin feature/FeatureName
+
+    - Open a Pull Request and explain what your PR does
+
+    - Please make sure to follow code style, write clear commit messages, and test your changes.
