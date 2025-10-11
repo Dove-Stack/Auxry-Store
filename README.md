@@ -94,3 +94,26 @@ auxry-store/
 ├── README.md
 └── .gitignore
 ```
+
+
+- **frontend/** contains the React application  
+- **backend/** hosts the Express API  
+- **admin/** (optional) for admin UI  
+- **screenshots/** for images used in README or documentation  
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or later recommended)  
+- npm or yarn  
+- MongoDB (Atlas or local)  
+- Stripe account (for API keys & webhook setup)  
+
+### Installation
+
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/Dove-Stack/Auxry-Store.git
