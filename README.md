@@ -190,3 +190,5 @@ auxry-store/
    ```
 
    Make sure to replace the placeholder values with your actual configuration.
+
+   If your frontend or admin uses API keys, include those in their env too (but never commit secret keys).
