@@ -118,11 +118,25 @@ auxry-store/
    ```bash
    git clone https://github.com/Dove-Stack/Auxry-Store.git
 
-2. cd Auxry-Store
-cd backend
-npm install
-cd ../frontend
-npm install
-# if admin:
-cd ../admin
-npm install
+2. Navigate to the project directory:  
+    ```bash
+    cd Auxry-Store
+    ```
+
+3. Install dependencies for the backend:  
+    ```bash
+    cd backend
+    npm install
+    ```
+
+4. Install dependencies for the frontend:  
+    ```bash
+    cd ../frontend
+    npm install
+    ```
+
+5. If the admin panel is included, install its dependencies:  
+    ```bash
+    cd ../admin
+    npm install
+    ```
