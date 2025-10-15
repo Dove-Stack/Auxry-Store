@@ -28,51 +28,49 @@
 
 ## Demo & Screenshots
 
-_(Add screenshots or link to live demo once deployed)_  
+### Home page
 
-### Home page 
-![Home Page](./screenshots/Hero.png)
----
-![Home Page](./screenshots/Products.png)
----
-![Home Page](./screenshots/Featured.png)
----
-![Home Page](./screenshots/TopDeal.png)
----
+## ![Home Page](./screenshots/Hero.png)
+
+## ![Home Page](./screenshots/Products.png)
+
+## ![Home Page](./screenshots/Featured.png)
+
+## ![Home Page](./screenshots/TopDeal.png)
+
 ![Home Page](./screenshots/Trends.png)
-   
 
 ## Product Preview
-![Product Preview](./screenshots/ProductPreview.png)  
 
+![Product Preview](./screenshots/ProductPreview.png)
 
-## Checkout 
+## Checkout
+
 ![Checout Page ](./screenshots/Checkout.png)
 
 ## Stripe
-![Stripe Payment](./screenshots/Stripe2.png)
+
+## ![Stripe Payment](./screenshots/Stripe2.png)
+
 ---
-***
-![Stripe Payment](./screenshots/Stripe1.png)
+
+## ![Stripe Payment](./screenshots/Stripe1.png)
+
 ---
-***
-![Stripe Payment](./screenshots/Stripe3.png)
+
+## ![Stripe Payment](./screenshots/Stripe3.png)
+
 ---
-***
-![Stripe Payment](./screenshots/Stripe4.png)
+
+## ![Stripe Payment](./screenshots/Stripe4.png)
+
 ---
-***
-![Stripe Payment](./screenshots/Stripe5.png)
+
+## ![Stripe Payment](./screenshots/Stripe5.png)
+
 ---
-***
+
 ![Stripe Payment](./screenshots/paymentVerify.png)
-
-
-
-
-
-
-
 
 ---
 
@@ -187,53 +185,53 @@ auxry-store/
 
 ### Running Locally
 
-1. Start the backend server:
+1.  Start the backend server:
 
-   ```bash
-   cd backend
-   npm run dev
-   ```
+    ```bash
+    cd backend
+    npm run dev
+    ```
 
-2. Start the frontend development server:
+2.  Start the frontend development server:
 
-   ```bash
-   cd ../frontend
-   npm start
-   ```
+    ```bash
+    cd ../frontend
+    npm start
+    ```
 
-3. If the admin panel is included, start its development server:
+3.  If the admin panel is included, start its development server:
 
-   ```bash
-   cd ../admin
-   npm start
-   ```
+    ```bash
+    cd ../admin
+    npm start
+    ```
 
-   #### \*If you have admin UI, run that too.
+    #### \*If you have admin UI, run that too.
 
-   ### Environment Variables
+    ### Environment Variables
 
-   Create a `.env` file in the root of the backend and frontend directories with the following variables:
+    Create a `.env` file in the root of the backend and frontend directories with the following variables:
 
-   ```bash
-   # Backend
-   MONGODB_URI=your_mongodb_uri
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
-   JWT_SECRET=your_jwt_secret
-   ```
+    ```bash
+    # Backend
+    MONGODB_URI=your_mongodb_uri
+    STRIPE_SECRET_KEY=your_stripe_secret_key
+    STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+    JWT_SECRET=your_jwt_secret
+    ```
 
-   ```bash
-   # Frontend
-   REACT_APP_API_URL=http://localhost:5000/api
-   REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public_key
-   ```
+    ```bash
+    # Frontend
+    REACT_APP_API_URL=http://localhost:5000/api
+    REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public_key
+    ```
 
-   Make sure to replace the placeholder values with your actual configuration.
+    Make sure to replace the placeholder values with your actual configuration.
 
-   If your frontend or admin uses API keys, include those in their env too (but never commit secret keys).
-
+    If your frontend or admin uses API keys, include those in their env too (but never commit secret keys).
 
     ### Api Endpoints
+
     | Method | Route                 | Description                       |
     | ------ | --------------------- | --------------------------------- |
     | GET    | `/api/products`       | Fetch list of products            |
@@ -249,23 +247,23 @@ auxry-store/
     | PUT    | `/api/orders/:id`     | Update order status (admin)       |
     | DELETE | `/api/orders/:id`     | Cancel an order                   |
 
-
     ### Payment Integration
-       - Stripe Checkout is used to handle the payment session
 
-       - On the backend side, a webhook verifies the payment success and updates the order
+        - Stripe Checkout is used to handle the payment session
 
-       - After successful payment, order data is saved in the database
+        - On the backend side, a webhook verifies the payment success and updates the order
 
-       - Make sure to test with Stripe CLI locally for your webhook events.
+        - After successful payment, order data is saved in the database
 
+        - Make sure to test with Stripe CLI locally for your webhook events.
 
     ### Testing
-       - Use Postman or similar tools to test API endpoints
 
-       - Write unit tests for critical backend logic
+        - Use Postman or similar tools to test API endpoints
 
-       - Ensure frontend components are tested (Jest/React Testing Library)
+        - Write unit tests for critical backend logic
+
+        - Ensure frontend components are tested (Jest/React Testing Library)
 
     ## Contributing
 
@@ -287,31 +285,29 @@ auxry-store/
 
     - Please make sure to follow code style, write clear commit messages, and test your changes.
 
+    ## Roadmap and Future Enhancements
 
-   ## Roadmap and Future Enhancements
+    - Implement user authentication and authorization
+    - Add more payment options (e.g., PayPal, Paystack & Flutterwave)
+    - Implement product filtering and advanced search
+    - Add order history for users
+    - Improve product search and filtering
+    - Enhance admin panel with analytics and reporting
+    - Optimize performance and scalability
+    - Image hosting (Cloudinary / AWS S3)
 
-   - Implement user authentication and authorization
-   - Add more payment options (e.g., PayPal, Paystack & Flutterwave)
-   - Implement product filtering and advanced search
-   - Add order history for users
-   - Improve product search and filtering
-   - Enhance admin panel with analytics and reporting
-   - Optimize performance and scalability
-   - Image hosting (Cloudinary / AWS S3)
+    - Improve admin UI
 
-   - Improve admin UI
+    - Deploy both frontend & backend
 
-   - Deploy both frontend & backend
-
-   - Add CI/CD & automated tests
-
+    - Add CI/CD & automated tests
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
 ## Contact
-   - Name: Lawal Oluwafemi David
-   - Email: femilawal0123@gmail.com
-   - GitHub: [@Dove-Stack](https://github.com/Dove-Stack)
+
+- Name: Lawal Oluwafemi David
+- Email: femilawal0123@gmail.com
+- GitHub: [@Dove-Stack](https://github.com/Dove-Stack)
