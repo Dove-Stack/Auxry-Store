@@ -1,21 +1,32 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import productRouter from "./routes/productRoute.js";
 import userRouter from "./routes/userRoute.js";
-import "dotenv/config.js";
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 import emailRouter from "./routes/emailRoute.js";
 
-// app config
+// Load env variables
+dotenv.config();
 
+// app config
 const app = express();
 const port = 4000;
 
 //middleware
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://auxry-store.vercel.app",
+];
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use(express.json());
-app.use(cors());
 
 // DB connection
 connectDB();
@@ -29,11 +40,15 @@ app.use("/api/order", orderRouter);
 app.use("/api/email", emailRouter);
 
 app.get("/", (req, resp) => {
-  resp.send("API working");
+  resp.send("Auxry Store API is running ✅");
 });
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: "Server Error ❌", error: err.message });
+});
+
+// Start Server
 app.listen(port, () => {
   console.log(`Server Started on http://localhost:${port}`);
 });
-
-// mongodb+srv://AUXRYSTORE:jRGbiSC0FYTflVji@cluster0.w3upi.mongodb.net/?
