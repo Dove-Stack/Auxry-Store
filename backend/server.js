@@ -7,13 +7,19 @@ import userRouter from "./routes/userRoute.js";
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 import emailRouter from "./routes/emailRoute.js";
+import { handleStripeWebhook } from "./controllers/orderController.js";
 
-// Load env variables
 dotenv.config();
 
 // app config
 const app = express();
 const port = process.env.PORT || 4000;
+
+app.post(
+  "/api/order/webhook",
+  express.raw({ type: "application/json" }),
+  handleStripeWebhook
+);
 
 //middleware
 const allowedOrigins = [
