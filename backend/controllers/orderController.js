@@ -105,11 +105,46 @@ const verifyOrder = async (req, res) => {
   }
 };
 
+// const handleStripeWebhook = async (req, res) => {
+//   const stripeSignature = req.headers["stripe-signature"];
+//   const stripeWebHookKey = process.env.STRIPE_WEBHOOK_SECRET;
+
+//   let event;
+//   try {
+//     event = stripe.webhooks.constructEvent(
+//       req.body,
+//       stripeSignature,
+//       stripeWebHookKey
+//     );
+//   } catch (err) {
+//     console.error("Webhook signature verification failed: ", err.message);
+//     return res.status(400).send(`Webhook Error: ${err.message}`);
+//   }
+
+//   if (event.type === "checkout.session.completed") {
+//     const session = event.data.object;
+
+//     const orderId = session.metadata.orderId;
+
+//     try {
+//       await orderModel.findByIdAndUpdate(orderId, { payment: true });
+//       console.log(`Order ${orderId} payment confirmed.`);
+//       res.json({ success: true, message: "Payment Confirmed" });
+//     } catch (err) {
+//       console.error("Error updating order: ", err.message);
+//       res.json({ success: false, message: "Payment Confirmed" });
+//     }
+//   }
+
+//   res.status(200).json({ recieved: true });
+// };
+
 const handleStripeWebhook = async (req, res) => {
   const stripeSignature = req.headers["stripe-signature"];
   const stripeWebHookKey = process.env.STRIPE_WEBHOOK_SECRET;
 
   let event;
+
   try {
     event = stripe.webhooks.constructEvent(
       req.body,
@@ -117,26 +152,26 @@ const handleStripeWebhook = async (req, res) => {
       stripeWebHookKey
     );
   } catch (err) {
-    console.error("Webhook signature verification failed: ", err.message);
+    console.error("❌ Webhook signature verification failed:", err.message);
     return res.status(400).send(`Webhook Error: ${err.message}`);
   }
 
-  if (event.type === "checkout.session.completed") {
-    const session = event.data.object;
+  try {
+    if (event.type === "checkout.session.completed") {
+      const session = event.data.object;
+      const orderId = session.metadata.orderId;
 
-    const orderId = session.metadata.orderId;
-
-    try {
       await orderModel.findByIdAndUpdate(orderId, { payment: true });
-      console.log(`Order ${orderId} payment confirmed.`);
-      res.json({ success: true, message: "Payment Confirmed" });
-    } catch (err) {
-      console.error("Error updating order: ", err.message);
-      res.json({ success: false, message: "Payment Confirmed" });
+      console.log(
+        `✅ Stripe webhook confirmed: Order ${orderId} marked as paid.`
+      );
     }
-  }
 
-  res.status(200).json({ recieved: true });
+    return res.sendStatus(200);
+  } catch (error) {
+    console.error("❌ Webhook handling error:", error.message);
+    return res.status(500).send("Internal Server Error");
+  }
 };
 
 const userOrders = async (req, res) => {
