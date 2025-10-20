@@ -119,22 +119,14 @@ const pic_product8 =
 const pic_product9 =
   "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg";
 
-const HeroPotrait =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg";
-const pic_news2 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news2_zhbd7z.jpg";
-const pic_news3 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp";
-const pic_news4 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg";
-const pic_news5 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp";
-const pic_about =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg";
-const contact_pic =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
-const contactImg =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
+// const HeroPotrait = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg";
+// const pic_news2 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news2_zhbd7z.jpg";
+// const pic_news3 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp";
+// const pic_news4 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg";
+// const pic_news5 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp";
+// const pic_about = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg";
+// const contact_pic = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
+// const contactImg = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
 
 export const assets = {
   contact_pic,
