@@ -283,7 +283,7 @@ import pic_product9 from "../assets/Products/9.jpg";
 export const assets = {
   Logo,
   Logo1:
-    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760932144/Logo_dhari4.png",
 
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
