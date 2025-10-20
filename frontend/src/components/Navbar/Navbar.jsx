@@ -43,7 +43,7 @@ const Navbar = ({ setShowLogin }) => {
     >
       <div className="logo-container">
         <Link to={`/`}>
-          <img src={assets.Logo1} className="main-logo " alt="" />
+          <img src={assets.Logo} className="main-logo " alt="" />
         </Link>
       </div>
       <nav className={`navbar ${isActive ? "active" : ""}   `}>
