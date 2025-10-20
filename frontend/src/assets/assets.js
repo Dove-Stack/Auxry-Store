@@ -1,3 +1,4 @@
+import Logo from "./Logo.png";
 import pic_news2 from "../assets/news3.jpeg";
 import pic_news3 from "../assets/news4.jpeg";
 import pic_news4 from "../assets/news5.jpeg";
