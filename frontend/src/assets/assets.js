@@ -141,7 +141,7 @@ export const assets = {
   Logo,
   Logo1,
   HeroCart,
-  HeroHappy,
+  // HeroHappy,
   HeroPotrait,
   //   glass1,
   //   FlashSale1,
