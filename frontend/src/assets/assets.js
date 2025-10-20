@@ -1,12 +1,12 @@
-import Logo from "./Logo.png";
-import Logo1 from "./Logo1.png";
+// import Logo from "./Logo.png";
+// import Logo1 from "./Logo1.png";
 // import customer1 from "./customer_pic/customer.jpeg";
 // import customer2 from "./customer_pic/customer2.jpg";
 // import customer3 from "./customer_pic/customer3.jpg";
 // import customer4 from "./customer_pic/customer4.jpg";
 // import customer5 from "./customer_pic/customer5.jpg";
 // import customer6 from "./customer_pic/customer6.jpg";
-import HeroCart from "../assets/Hero/cart.jpg";
+// import HeroCart from "../assets/Hero/cart.jpg";
 // import HeroHappy from "../assets/Hero/happy.jpg";
 // import pic_news1 from "../assets/mann.jpg";
 // import pic_news2 from "../assets/news3.jpeg";
@@ -65,68 +65,43 @@ import HeroCart from "../assets/Hero/cart.jpg";
 // import pic_sponsor4 from "./Versace.png";
 // import pic_sponsor5 from "./zara.png";
 
-// Cloudinary image URLs
-const pic_deal1 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png";
-const pic_deal2 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_2_f4swjh.png";
-const pic_deal3 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_3_trya4y.png";
-const pic_deal4 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_4_rzsugu.png";
-const pic_deal5 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_5_yuqzxa.png";
-const pic_deal6 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_6_ypdol3.png";
-const pic_deal7 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_7_md3juk.png";
-const pic_deal8 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_8_gmm9ko.png";
-const pic_deal9 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_9_m6a3mx.png";
+// // Cloudinary image URLs
+// // const pic_deal1 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png";
+// // const pic_deal2 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_2_f4swjh.png";
+// // const pic_deal3 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_3_trya4y.png";
+// // const pic_deal4 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_4_rzsugu.png";
+// // const pic_deal5 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_5_yuqzxa.png";
+// // const pic_deal6 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_6_ypdol3.png";
+// // const pic_deal7 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_7_md3juk.png";
+// // const pic_deal8 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_8_gmm9ko.png";
+// // const pic_deal9 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_9_m6a3mx.png";
 
-const pic_feature1 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_1_agmemq.png";
-const pic_feature2 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_2_dlosnv.png";
-const pic_feature3 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_3_gsxld3.png";
-const pic_feature4 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_4_ki4nwc.png";
-const pic_feature5 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926674/feature_5_amhzhy.png";
-const pic_feature6 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926677/feature_6_fopvyn.png";
-const pic_feature7 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926678/feature_7_aycg3u.png";
-const pic_feature8 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926696/feature_8_u0uvsu.png";
+// // const pic_feature1 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_1_agmemq.png";
+// // const pic_feature2 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_2_dlosnv.png";
+// // const pic_feature3 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_3_gsxld3.png";
+// // const pic_feature4 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_4_ki4nwc.png";
+// // const pic_feature5 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926674/feature_5_amhzhy.png";
+// // const pic_feature6 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926677/feature_6_fopvyn.png";
+// // const pic_feature7 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926678/feature_7_aycg3u.png";
+// // const pic_feature8 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926696/feature_8_u0uvsu.png";
 
-const pic_product1 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927252/product1_bevwg0.jpg";
-const pic_product2 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product2_f0ccsz.jpg";
-const pic_product3 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product3_vkbk49.jpg";
-const pic_product4 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927261/product4_fsohnb.jpg";
-const pic_product5 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927262/product5_embvfi.jpg";
-const pic_product6 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product6_crlplr.jpg";
-const pic_product8 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg";
-const pic_product9 =
-  "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg";
+// // const pic_product1 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927252/product1_bevwg0.jpg";
+// // const pic_product2 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product2_f0ccsz.jpg";
+// // const pic_product3 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product3_vkbk49.jpg";
+// // const pic_product4 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927261/product4_fsohnb.jpg";
+// // const pic_product5 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927262/product5_embvfi.jpg";
+// // const pic_product6 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product6_crlplr.jpg";
+// // const pic_product8 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg";
+// // const pic_product9 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg";
 
-// const HeroPotrait = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg";
-// const pic_news2 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news2_zhbd7z.jpg";
-// const pic_news3 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp";
-// const pic_news4 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg";
-// const pic_news5 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp";
-// const pic_about = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg";
-// const contact_pic = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
-// const contactImg = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
+// // const HeroPotrait = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg";
+// // const pic_news2 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news2_zhbd7z.jpg";
+// // const pic_news3 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp";
+// // const pic_news4 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg";
+// // const pic_news5 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp";
+// // const pic_about = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg";
+// // const contact_pic = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
+// // const contactImg = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
 
 // export const assets = {
 //   contact_pic,
@@ -239,6 +214,7 @@ import pic_deal9 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v176092
 
 // Contact & About
 import contactImg from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
+import contact_pic from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
 import pic_contact from "../assets/Help1.jpg";
 import pic_about from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg";
 
@@ -288,13 +264,8 @@ export const assets = {
   Logo,
   Logo1,
   HeroCart,
-  // HeroHappy,
+  HeroHappy,
   HeroPotrait,
-  //   glass1,
-  //   FlashSale1,
-  //   FlashSale2,
-  //   FlashSale3,
-  //   FlashSale4,
   Sale1,
   Sale2,
   Sale3,
@@ -303,10 +274,6 @@ export const assets = {
   Sale6,
   pic_about,
   pic_contact,
-  pic_cloth1,
-  pic_cloth2,
-  pic_cloth3,
-  pic_cloth4,
   pic_deal1,
   pic_deal2,
   pic_deal3,
@@ -333,9 +300,6 @@ export const assets = {
   pic_feature6,
   pic_feature7,
   pic_feature8,
-  pic_feature9,
-  pic_feature10,
-  pic_feature11,
   pic_product1,
   pic_product2,
   pic_product3,
@@ -353,8 +317,8 @@ export const assets = {
   customer4,
   customer5,
   customer6,
-  contactImg,
 };
+
 
 export const TopDealList = [
   {
