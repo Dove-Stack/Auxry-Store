@@ -320,8 +320,10 @@ import pic_sponsor5 from "./zara.png";
 // };
 
 export const assets = {
-  // Logo: "../assets/Logo.png", // keep local images imported normally
-  Logo1: "../assets/Logo1.png",
+  // // Logo: "../assets/Logo.png", // keep local images imported normally
+  // Logo1: "../assets/Logo1.png",
+  Logo,
+  Logo1,
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
   contact_pic:
