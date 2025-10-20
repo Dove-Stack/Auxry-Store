@@ -128,6 +128,160 @@ const pic_product9 =
 // const contact_pic = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
 // const contactImg = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
 
+// export const assets = {
+//   contact_pic,
+//   Logo,
+//   Logo1,
+//   HeroCart,
+//   HeroHappy,
+//   HeroPotrait,
+//   //   glass1,
+//   //   FlashSale1,
+//   //   FlashSale2,
+//   //   FlashSale3,
+//   //   FlashSale4,
+//   Sale1,
+//   Sale2,
+//   Sale3,
+//   Sale4,
+//   Sale5,
+//   Sale6,
+//   pic_about,
+//   pic_contact,
+//   pic_cloth1,
+//   pic_cloth2,
+//   pic_cloth3,
+//   pic_cloth4,
+//   pic_deal1,
+//   pic_deal2,
+//   pic_deal3,
+//   pic_deal4,
+//   pic_deal5,
+//   pic_deal6,
+//   pic_deal7,
+//   pic_deal8,
+//   pic_deal9,
+//   pic_news1,
+//   pic_news2,
+//   pic_news3,
+//   pic_news4,
+//   pic_sponsor1,
+//   pic_sponsor2,
+//   pic_sponsor3,
+//   pic_sponsor4,
+//   pic_sponsor5,
+//   pic_feature1,
+//   pic_feature2,
+//   pic_feature3,
+//   pic_feature4,
+//   pic_feature5,
+//   pic_feature6,
+//   pic_feature7,
+//   pic_feature8,
+//   pic_feature9,
+//   // pic_feature10,
+//   // pic_feature11,
+//   // pic_product1,
+//   // pic_product2,
+//   // pic_product3,
+//   // pic_product4,
+//   // pic_product5,
+//   // pic_product6,
+//   // pic_product7,
+//   // pic_product8,
+//   // pic_product9,
+//   // pic_product17,
+//   // pic_product19,
+//   customer1,
+//   customer2,
+//   customer3,
+//   customer4,
+//   customer5,
+//   customer6,
+//   contactImg,
+// };
+
+// assets.js
+
+// Logos
+import Logo from "./Logo.png";
+import Logo1 from "./Logo1.png";
+
+// Customers
+import customer1 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer_buy1tq.jpg";
+import customer2 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer2_zwpr1j.jpg";
+import customer3 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer3_wuzhdj.jpg";
+import customer4 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer4_fiqqel.jpg";
+import customer5 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer5_qrpvkz.jpg";
+import customer6 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer6_drxsgd.jpg";
+
+// Hero
+import HeroCart from "../assets/Hero/cart.jpg";
+import HeroHappy from "../assets/Hero/happy.jpg";
+import HeroPotrait from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg";
+
+// News
+import pic_news1 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/woman_r5nwzr.jpg";
+import pic_news2 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news2_zhbd7z.jpg";
+import pic_news3 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp";
+import pic_news4 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg";
+
+// Deals
+import pic_deal1 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png";
+import pic_deal2 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_2_f4swjh.png";
+import pic_deal3 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_3_trya4y.png";
+import pic_deal4 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_4_rzsugu.png";
+import pic_deal5 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_5_yuqzxa.png";
+import pic_deal6 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_6_ypdol3.png";
+import pic_deal7 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_7_md3juk.png";
+import pic_deal8 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_8_gmm9ko.png";
+import pic_deal9 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_9_m6a3mx.png";
+
+// Contact & About
+import contactImg from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
+import pic_contact from "../assets/Help1.jpg";
+import pic_about from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg";
+
+// FlashSales
+import Sale1 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/FlashSale_1_bfydzw.jpg";
+import Sale2 from "../assets/FlashSales/FlashSale_2.jpg";
+import Sale3 from "../assets/FlashSales/FlashSale_3.jpg";
+import Sale4 from "../assets/FlashSales/Bag.jpg";
+import Sale5 from "../assets/FlashSales/Cloth.jpg";
+import Sale6 from "../assets/FlashSales/FlashSale_4.jpeg";
+
+// Features
+import pic_feature1 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_1_agmemq.png";
+import pic_feature2 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_2_dlosnv.png";
+import pic_feature3 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_3_gsxld3.png";
+import pic_feature4 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_4_ki4nwc.png";
+import pic_feature5 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926674/feature_5_amhzhy.png";
+import pic_feature6 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926677/feature_6_fopvyn.png";
+import pic_feature7 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926678/feature_7_aycg3u.png";
+import pic_feature8 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926696/feature_8_u0uvsu.png";
+// The rest remain local if not provided
+
+// Products
+import pic_product1 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927252/product1_bevwg0.jpg";
+import pic_product2 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product2_f0ccsz.jpg";
+import pic_product3 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product3_vkbk49.jpg";
+import pic_product4 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927261/product4_fsohnb.jpg";
+import pic_product5 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927262/product5_embvfi.jpg";
+import pic_product6 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product6_crlplr.jpg";
+import pic_product7 from "../assets/Products/7.jpg";
+import pic_product8 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg";
+import pic_product9 from "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg";
+import pic_product17 from "../assets/Products/17.jpg";
+import pic_product19 from "../assets/Products/19.jpg";
+
+// Sponsors
+import pic_sponsor1 from "./Calvin.png";
+import pic_sponsor2 from "./gucci.png";
+import pic_sponsor3 from "./prada.png";
+import pic_sponsor4 from "./Versace.png";
+import pic_sponsor5 from "./zara.png";
+
+// Export assets object
 export const assets = {
   contact_pic,
   Logo,
