@@ -6,7 +6,7 @@ import Logo1 from "./Logo1.png";
 // import customer4 from "./customer_pic/customer4.jpg";
 // import customer5 from "./customer_pic/customer5.jpg";
 // import customer6 from "./customer_pic/customer6.jpg";
-// import HeroCart from "../assets/Hero/cart.jpg";
+import HeroCart from "../assets/Hero/cart.jpg";
 // import HeroHappy from "../assets/Hero/happy.jpg";
 // import pic_news1 from "../assets/mann.jpg";
 // import pic_news2 from "../assets/news3.jpeg";
