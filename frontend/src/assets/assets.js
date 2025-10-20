@@ -322,7 +322,8 @@ import pic_sponsor5 from "./zara.png";
 export const assets = {
   // // Logo: "../assets/Logo.png", // keep local images imported normally
   // Logo1: "../assets/Logo1.png",
-  Logo,
+
+  Logo: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
   Logo1:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
   contactImg:
