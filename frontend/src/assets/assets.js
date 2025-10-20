@@ -1,5 +1,5 @@
-import Logo from "../assets/Logo.png";
-import Logo1 from "../assets/Logo1.png";
+import Logo from "../assets";
+import Logo1 from "./Logo1.png";
 import customer1 from "./customer_pic/customer.jpeg";
 import customer2 from "./customer_pic/customer2.jpg";
 import customer3 from "./customer_pic/customer3.jpg";
@@ -323,7 +323,8 @@ export const assets = {
   // // Logo: "../assets/Logo.png", // keep local images imported normally
   // Logo1: "../assets/Logo1.png",
   Logo,
-  Logo1,
+  Logo1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
   contact_pic:
