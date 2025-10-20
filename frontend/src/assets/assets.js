@@ -319,71 +319,101 @@ import pic_sponsor5 from "./zara.png";
 //   customer6,
 // };
 
-// assets.js
-
-// Logos
 export const assets = {
-  Logo: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
-  Logo1: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
+  Logo: "../assets/Logo.png",
+  Logo1: "../assets/Logo1.png",
 
-  // Hero / Banner
-  HeroCart: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930416/bg-video-01_xfcw6z.webp",
-  HeroHappy: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/woman_r5nwzr.jpg",
-  HeroPotrait: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg",
-
-  // News
-  pic_news1: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/mann.jpg",
-  pic_news2: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp",
-  pic_news3: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg",
-  pic_news4: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp",
-
-  // About / Contact
-  pic_about: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg",
-  pic_contact: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/Help1.jpg",
-  contact_pic: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg",
-  contactImg: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
-
-  // Flash Sales
-  Sale1: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/FlashSale_1_bfydzw.jpg",
-  Sale2: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/FlashSale_2.jpg",
-  Sale3: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/FlashSale_3.jpg",
-  Sale4: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/Bag.jpg",
-  Sale5: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/Cloth.jpg",
-  Sale6: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/FlashSale_4.jpeg",
-
-  // Top Deals
-  pic_deal1: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png",
-  pic_deal2: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_2_f4swjh.png",
-  pic_deal3: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_3_trya4y.png",
-  pic_deal4: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_4_rzsugu.png",
-  pic_deal5: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_5_yuqzxa.png",
-  pic_deal6: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_6_ypdol3.png",
-  pic_deal7: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_7_md3juk.png",
-  pic_deal8: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_8_gmm9ko.png",
-  pic_deal9: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_9_m6a3mx.png",
-
-  // Products
-  pic_product1: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927252/product1_bevwg0.jpg",
-  pic_product2: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product2_f0ccsz.jpg",
-  pic_product3: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product3_vkbk49.jpg",
-  pic_product4: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927261/product4_fsohnb.jpg",
-  pic_product5: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927262/product5_embvfi.jpg",
-  pic_product6: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product6_crlplr.jpg",
-  pic_product7: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product7.jpg",
-  pic_product8: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg",
-  pic_product9: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg",
-  pic_product17: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927273/product17.jpg",
-  pic_product19: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927273/product19.jpg",
-
-  // Customers
-  customer1: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer_buy1tq.jpg",
-  customer2: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer2_zwpr1j.jpg",
-  customer3: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer3_wuzhdj.jpg",
-  customer4: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer4_fiqqel.jpg",
-  customer5: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer5_qrpvkz.jpg",
-  customer6: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer6_drxsgd.jpg",
+  contactImg:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
+  contact_pic:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg",
+  HeroCart:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930416/bg-video-01_xfcw6z.webp",
+  HeroHappy:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/woman_r5nwzr.jpg",
+  HeroPotrait:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg",
+  pic_news1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/mann.jpg",
+  pic_news2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp",
+  pic_news3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg",
+  pic_news4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp",
+  pic_about:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg",
+  pic_cloth1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/apparel4_hipstv.jpg",
+  pic_cloth2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/apparel2_rnort9.jpg",
+  pic_cloth3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/apparel3_kvruc6.jpg",
+  pic_feature1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_1_agmemq.png",
+  pic_feature2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_2_dlosnv.png",
+  pic_feature3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_3_gsxld3.png",
+  pic_feature4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_4_ki4nwc.png",
+  pic_feature5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926674/feature_5_amhzhy.png",
+  pic_feature6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926677/feature_6_fopvyn.png",
+  pic_feature7:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926678/feature_7_aycg3u.png",
+  pic_feature8:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926696/feature_8_u0uvsu.png",
+  pic_deal1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png",
+  pic_deal2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_2_f4swjh.png",
+  pic_deal3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_3_trya4y.png",
+  pic_deal4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_4_rzsugu.png",
+  pic_deal5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_5_yuqzxa.png",
+  pic_deal6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_6_ypdol3.png",
+  pic_deal7:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_7_md3juk.png",
+  pic_deal8:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_8_gmm9ko.png",
+  pic_deal9:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_9_m6a3mx.png",
+  pic_product1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927252/product1_bevwg0.jpg",
+  pic_product2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product2_f0ccsz.jpg",
+  pic_product3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product3_vkbk49.jpg",
+  pic_product4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927261/product4_fsohnb.jpg",
+  pic_product5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927262/product5_embvfi.jpg",
+  pic_product6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product6_crlplr.jpg",
+  pic_product7:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg",
+  pic_product8:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg",
+  pic_product9:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg",
+  customer1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer_buy1tq.jpg",
+  customer2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer2_zwpr1j.jpg",
+  customer3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer3_wuzhdj.jpg",
+  customer4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer4_fiqqel.jpg",
+  customer5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer5_qrpvkz.jpg",
+  customer6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer6_drxsgd.jpg",
 };
-
 
 export const TopDealList = [
   {
