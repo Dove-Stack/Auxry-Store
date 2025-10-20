@@ -283,6 +283,7 @@ import pic_sponsor5 from "./zara.png";
 
 // Export assets object
 export const assets = {
+  contactImg,
   contact_pic,
   Logo,
   Logo1,
