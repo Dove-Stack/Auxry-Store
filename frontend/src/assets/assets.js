@@ -1,5 +1,5 @@
-import Logo from "./Logo.png";
-import Logo1 from "./Logo1.png";
+import Logo from "../assets/Logo.png";
+import Logo1 from "../assets/Logo1.png";
 import customer1 from "./customer_pic/customer.jpeg";
 import customer2 from "./customer_pic/customer2.jpg";
 import customer3 from "./customer_pic/customer3.jpg";
