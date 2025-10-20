@@ -103,78 +103,78 @@ import pic_sponsor5 from "./zara.png";
 // const contact_pic = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg";
 // const contactImg = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/contact_img_wwwgky.png";
 
-export const assets = {
-  contact_pic,
-  Logo,
-  Logo1,
-  HeroCart,
-  HeroHappy,
-  HeroPotrait,
-  //   glass1,
-  //   FlashSale1,
-  //   FlashSale2,
-  //   FlashSale3,
-  //   FlashSale4,
-  Sale1,
-  Sale2,
-  Sale3,
-  Sale4,
-  Sale5,
-  Sale6,
-  pic_about,
-  pic_contact,
-  pic_cloth1,
-  pic_cloth2,
-  pic_cloth3,
-  pic_cloth4,
-  pic_deal1,
-  pic_deal2,
-  pic_deal3,
-  pic_deal4,
-  pic_deal5,
-  pic_deal6,
-  pic_deal7,
-  pic_deal8,
-  pic_deal9,
-  pic_news1,
-  pic_news2,
-  pic_news3,
-  pic_news4,
-  pic_sponsor1,
-  pic_sponsor2,
-  pic_sponsor3,
-  pic_sponsor4,
-  pic_sponsor5,
-  pic_feature1,
-  pic_feature2,
-  pic_feature3,
-  pic_feature4,
-  pic_feature5,
-  pic_feature6,
-  pic_feature7,
-  pic_feature8,
-  pic_feature9,
-  // pic_feature10,
-  // pic_feature11,
-  // pic_product1,
-  // pic_product2,
-  // pic_product3,
-  // pic_product4,
-  // pic_product5,
-  // pic_product6,
-  // pic_product7,
-  // pic_product8,
-  // pic_product9,
-  // pic_product17,
-  // pic_product19,
-  customer1,
-  customer2,
-  customer3,
-  customer4,
-  customer5,
-  customer6,
-  contactImg,
-};
+// export const assets = {
+//   contact_pic,
+//   Logo,
+//   Logo1,
+//   HeroCart,
+//   HeroHappy,
+//   HeroPotrait,
+//   //   glass1,
+//   //   FlashSale1,
+//   //   FlashSale2,
+//   //   FlashSale3,
+//   //   FlashSale4,
+//   Sale1,
+//   Sale2,
+//   Sale3,
+//   Sale4,
+//   Sale5,
+//   Sale6,
+//   pic_about,
+//   pic_contact,
+//   pic_cloth1,
+//   pic_cloth2,
+//   pic_cloth3,
+//   pic_cloth4,
+//   pic_deal1,
+//   pic_deal2,
+//   pic_deal3,
+//   pic_deal4,
+//   pic_deal5,
+//   pic_deal6,
+//   pic_deal7,
+//   pic_deal8,
+//   pic_deal9,
+//   pic_news1,
+//   pic_news2,
+//   pic_news3,
+//   pic_news4,
+//   pic_sponsor1,
+//   pic_sponsor2,
+//   pic_sponsor3,
+//   pic_sponsor4,
+//   pic_sponsor5,
+//   pic_feature1,
+//   pic_feature2,
+//   pic_feature3,
+//   pic_feature4,
+//   pic_feature5,
+//   pic_feature6,
+//   pic_feature7,
+//   pic_feature8,
+//   pic_feature9,
+//   // pic_feature10,
+//   // pic_feature11,
+//   // pic_product1,
+//   // pic_product2,
+//   // pic_product3,
+//   // pic_product4,
+//   // pic_product5,
+//   // pic_product6,
+//   // pic_product7,
+//   // pic_product8,
+//   // pic_product9,
+//   // pic_product17,
+//   // pic_product19,
+//   customer1,
+//   customer2,
+//   customer3,
+//   customer4,
+//   customer5,
+//   customer6,
+//   contactImg,
+// };
 
 // // assets.js
 
@@ -318,6 +318,101 @@ export const assets = {
 //   customer5,
 //   customer6,
 // };
+
+export const assets = {
+  Logo: "/Logo.png", // keep local images imported normally
+  Logo1: "/Logo1.png",
+  contactImg:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
+  contact_pic:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg",
+  HeroCart:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/bg-video-01_sz616m.webp",
+  HeroHappy:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/woman_r5nwzr.jpg",
+  HeroPotrait:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/portrait_wbfns9.jpg",
+  pic_news1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/mann.jpg",
+  pic_news2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news3_szrmpo.webp",
+  pic_news3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news4_xdxvxj.jpg",
+  pic_news4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/news5_w1thik.webp",
+  pic_about:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/About_ozbaht.jpg",
+  pic_cloth1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925529/apparel4_hipstv.jpg",
+  pic_cloth2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/apparel2_rnort9.jpg",
+  pic_cloth3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/apparel3_kvruc6.jpg",
+  pic_feature1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_1_agmemq.png",
+  pic_feature2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926664/feature_2_dlosnv.png",
+  pic_feature3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_3_gsxld3.png",
+  pic_feature4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926670/feature_4_ki4nwc.png",
+  pic_feature5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926674/feature_5_amhzhy.png",
+  pic_feature6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926677/feature_6_fopvyn.png",
+  pic_feature7:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926678/feature_7_aycg3u.png",
+  pic_feature8:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926696/feature_8_u0uvsu.png",
+  pic_deal1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png",
+  pic_deal2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_2_f4swjh.png",
+  pic_deal3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_3_trya4y.png",
+  pic_deal4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_4_rzsugu.png",
+  pic_deal5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_5_yuqzxa.png",
+  pic_deal6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_6_ypdol3.png",
+  pic_deal7:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/deal_7_md3juk.png",
+  pic_deal8:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_8_gmm9ko.png",
+  pic_deal9:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/deal_9_m6a3mx.png",
+  pic_product1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927252/product1_bevwg0.jpg",
+  pic_product2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product2_f0ccsz.jpg",
+  pic_product3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927253/product3_vkbk49.jpg",
+  pic_product4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927261/product4_fsohnb.jpg",
+  pic_product5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927262/product5_embvfi.jpg",
+  pic_product6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product6_crlplr.jpg",
+  pic_product7:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg",
+  pic_product8:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927267/product8_rxrw5k.jpg",
+  pic_product9:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760927272/product9_ggcrih.jpg",
+  customer1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer_buy1tq.jpg",
+  customer2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer2_zwpr1j.jpg",
+  customer3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer3_wuzhdj.jpg",
+  customer4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926388/customer4_fiqqel.jpg",
+  customer5:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer5_qrpvkz.jpg",
+  customer6:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760926401/customer6_drxsgd.jpg",
+};
 
 export const TopDealList = [
   {
@@ -586,224 +681,6 @@ export const News = [
     date: "- 25, Jul. 2024",
   },
 ];
-
-/* export const itemList = [
-  {
-    featureList: [
-      {
-        id: "product1",
-        image: pic_product2,
-        name: "White Sneakers",
-        description: "A pair of white Sneakers",
-        salePrice: 53.25,
-        listPrice: 89.75,
-        category: "Shoes",
-      },
-
-      {
-        id: "product2",
-        image: pic_product1,
-        name: "T-Shirt",
-        description: "A Blue T-Shirt",
-        salePrice: 37.22,
-        listPrice: 59.75,
-        category: "T-Shirts",
-      },
-
-      {
-        id: "product3",
-        image: pic_product5,
-        name: "Wormer",
-        description: "A Head Wormer",
-        salePrice: 18.63,
-        listPrice: 33.28,
-        category: "All",
-      },
-      {
-        id: "product4",
-        image: pic_product4,
-        name: "Blue Shoe",
-        description: "A pair of Blue Shoe",
-        salePrice: 38.63,
-        listPrice: 63.28,
-        category: "Shoes",
-      },
-      {
-        id: "product5",
-        image: pic_product9,
-        name: "Cross Bag",
-        description: "A CrossBag",
-        salePrice: 28.63,
-        listPrice: 33.28,
-        category: "Bags",
-      },
-      {
-        id: "product6",
-        image: pic_product6,
-        name: "Red Jacket",
-        description: "A Single Jacket",
-        salePrice: 28.63,
-        listPrice: 43.28,
-        category: "Jacket",
-      },
-      {
-        id: "product7",
-        image: pic_product3,
-        name: "Designer Bag",
-        description: "A Designer Bag",
-        salePrice: 88.63,
-        listPrice: 173.28,
-        category: "Bags",
-      },
-      {
-        id: "product8",
-        image: pic_product8,
-        name: "Blue Jacket",
-        description: "A Single Jacket",
-        salePrice: 48.63,
-        listPrice: 73.28,
-        category: "Jacket",
-      },
-    ],
-
-    productList: [
-      {
-        id: "product1",
-        image: pic_product2,
-        name: "White Sneakers",
-        description: "A pair of white Sneakers",
-        salePrice: 53.25,
-        listPrice: 89.75,
-        category: "Shoes",
-      },
-
-      {
-        id: "product2",
-        image: pic_product1,
-        name: "T-Shirt",
-        description: "A Blue T-Shirt",
-        salePrice: 37.22,
-        listPrice: 59.75,
-        category: "T-Shirts",
-      },
-
-      {
-        id: "product3",
-        image: pic_product5,
-        name: "Wormer",
-        description: "A Head Wormer",
-        salePrice: 18.63,
-        listPrice: 33.28,
-        category: "All",
-      },
-      {
-        id: "product4",
-        image: pic_product4,
-        name: "Blue Shoe",
-        description: "A pair of Blue Shoe",
-        salePrice: 38.63,
-        listPrice: 63.28,
-        category: "Shoes",
-      },
-      {
-        id: "product5",
-        image: pic_product9,
-        name: "Cross Bag",
-        description: "A CrossBag",
-        salePrice: 28.63,
-        listPrice: 33.28,
-        category: "Bags",
-      },
-      {
-        id: "product6",
-        image: pic_product6,
-        name: "Red Jacket",
-        description: "A Single Jacket",
-        salePrice: 28.63,
-        listPrice: 43.28,
-        category: "Jacket",
-      },
-      {
-        id: "product7",
-        image: pic_product3,
-        name: "Designer Bag",
-        description: "A Designer Bag",
-        salePrice: 88.63,
-        listPrice: 173.28,
-        category: "Bags",
-      },
-      {
-        id: "product8",
-        image: pic_product8,
-        name: "Blue Jacket",
-        description: "A Single Jacket",
-        salePrice: 48.63,
-        listPrice: 73.28,
-        category: "Jacket",
-      },
-    ],
-
-    topdealList: [
-      {
-        id: "deal1",
-        name: "Brown Sweater",
-        image: pic_deal1,
-        salePrice: 88.99,
-        listPrice: 120.99,
-        percent: 26,
-      },
-
-      {
-        id: "deal2",
-        name: "Cologne",
-        image: pic_deal2,
-        salePrice: 279.99,
-        listPrice: 430.99,
-        percent: 35,
-      },
-      {
-        id: "deal3",
-        name: "Eye Glasses",
-        image: pic_deal5,
-        salePrice: 61.99,
-        listPrice: 75.99,
-        percent: 18,
-      },
-      // {
-      //   id: "deal4",
-      //   name: "Cap",
-      //   image: pic_deal4,
-      //   salePrice: 35.99,
-      //   listPrice: 45.99,
-      //   percent: 25,
-      // },
-      {
-        id: "deal5",
-        name: "Cap",
-        image: pic_deal7,
-        salePrice: 35.99,
-        listPrice: 45.99,
-        percent: 25,
-      },
-      {
-        id: "deal6",
-        name: "Cap",
-        image: pic_deal3,
-        salePrice: 35.99,
-        listPrice: 45.99,
-        percent: 25,
-      },
-      {
-        id: "deal7",
-        name: "Cap",
-        image: pic_deal6,
-        salePrice: 35.99,
-        listPrice: 45.99,
-        percent: 25,
-      },
-    ],
-  },
-]; */
 
 // export const itemList = [
 //   ...FeatureList,
