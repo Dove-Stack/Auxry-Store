@@ -320,14 +320,14 @@ import pic_sponsor5 from "./zara.png";
 // };
 
 export const assets = {
-  Logo: "/Logo.png", // keep local images imported normally
-  Logo1: "/Logo1.png",
+  // Logo: "../assets/Logo.png", // keep local images imported normally
+  Logo1: "../assets/Logo1.png",
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
   contact_pic:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/contact-img_aw3jqc.jpg",
   HeroCart:
-    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/bg-video-01_sz616m.webp",
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930416/bg-video-01_xfcw6z.webp",
   HeroHappy:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925531/woman_r5nwzr.jpg",
   HeroPotrait:
