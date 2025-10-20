@@ -1,4 +1,4 @@
-import Logo from "./Logo.png";
+import Logo from "./assets/Logo1.png";
 import pic_news2 from "../assets/news3.jpeg";
 import pic_news3 from "../assets/news4.jpeg";
 import pic_news4 from "../assets/news5.jpeg";
@@ -282,9 +282,6 @@ import pic_product9 from "../assets/Products/9.jpg";
 
 export const assets = {
   Logo,
-  Logo1:
-    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760932144/Logo_dhari4.png",
-
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
   contact_pic:
