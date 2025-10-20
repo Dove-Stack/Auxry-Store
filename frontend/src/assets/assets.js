@@ -1,29 +1,29 @@
-import Logo1 from "../assets/Logo1.png"
-import pic_news2 from "../assets/news3.jpeg";
-import pic_news3 from "../assets/news4.jpeg";
-import pic_news4 from "../assets/news5.jpeg";
-import pic_deal1 from "../assets/deal_1.png";
-import pic_deal2 from "../assets/deal_2.png";
-import pic_deal3 from "../assets/deal_3.png";
-import pic_deal5 from "../assets/deal_5.png";
-import pic_deal6 from "../assets/deal_6.png";
-import pic_deal7 from "../assets/deal_7.png";
-// import glass1 from "../assets/FlashSales/glass1.jpeg";
-import pic_feature1 from "../assets/Featured/feature_1.png";
-import pic_feature2 from "../assets/Featured/feature_2.png";
-import pic_feature3 from "../assets/Featured/feature_3.png";
-import pic_feature4 from "../assets/Featured/feature_4.png";
-import pic_feature5 from "../assets/Featured/feature_5.png";
-import pic_feature6 from "../assets/Featured/feature_6.png";
-import pic_feature7 from "../assets/Featured/feature_7.png";
-import pic_feature8 from "../assets/Featured/feature_8.png";
-import pic_product1 from "../assets/Products/1.jpg";
-import pic_product2 from "../assets/Products/2.jpg";
-import pic_product3 from "../assets/Products/3.jpg";
-import pic_product4 from "../assets/Products/4.jpg";
-import pic_product5 from "../assets/Products/5.jpg";
-import pic_product6 from "../assets/Products/6.jpg";
-import pic_product8 from "../assets/Products/8.jpg";
+import Logo1 from "../assets/Logo1.png";
+// import pic_news2 from "../assets/news3.jpeg";
+// import pic_news3 from "../assets/news4.jpeg";
+// import pic_news4 from "../assets/news5.jpeg";
+// import pic_deal1 from "../assets/deal_1.png";
+// import pic_deal2 from "../assets/deal_2.png";
+// import pic_deal3 from "../assets/deal_3.png";
+// import pic_deal5 from "../assets/deal_5.png";
+// import pic_deal6 from "../assets/deal_6.png";
+// import pic_deal7 from "../assets/deal_7.png";
+// // import glass1 from "../assets/FlashSales/glass1.jpeg";
+// import pic_feature1 from "../assets/Featured/feature_1.png";
+// import pic_feature2 from "../assets/Featured/feature_2.png";
+// import pic_feature3 from "../assets/Featured/feature_3.png";
+// import pic_feature4 from "../assets/Featured/feature_4.png";
+// import pic_feature5 from "../assets/Featured/feature_5.png";
+// import pic_feature6 from "../assets/Featured/feature_6.png";
+// import pic_feature7 from "../assets/Featured/feature_7.png";
+// import pic_feature8 from "../assets/Featured/feature_8.png";
+// import pic_product1 from "../assets/Products/1.jpg";
+// import pic_product2 from "../assets/Products/2.jpg";
+// import pic_product3 from "../assets/Products/3.jpg";
+// import pic_product4 from "../assets/Products/4.jpg";
+// import pic_product5 from "../assets/Products/5.jpg";
+// import pic_product6 from "../assets/Products/6.jpg";
+// import pic_product8 from "../assets/Products/8.jpg";
 import pic_product9 from "../assets/Products/9.jpg";
 
 // Cloudinary image URLs
@@ -282,8 +282,7 @@ import pic_product9 from "../assets/Products/9.jpg";
 
 export const assets = {
   Logo1,
-  Logo:
-    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760930714/Logo1_ewyxxm.png",
+  Logo: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760966409/Logo1_ot9mmh.png",
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
   contact_pic:
@@ -380,7 +379,7 @@ export const TopDealList = [
   {
     id: "deal1",
     name: "Brown Sweater",
-    image: pic_deal1,
+    image: assets.pic_deal1,
     salePrice: 88.99,
     listPrice: 120.99,
     percent: 26,
@@ -389,7 +388,7 @@ export const TopDealList = [
   {
     id: "deal2",
     name: "Cologne",
-    image: pic_deal2,
+    image: assets.pic_deal2,
     salePrice: 279.99,
     listPrice: 430.99,
     percent: 35,
@@ -397,7 +396,7 @@ export const TopDealList = [
   {
     id: "deal3",
     name: "Eye Glasses",
-    image: pic_deal5,
+    image: assets.pic_deal5,
     salePrice: 61.99,
     listPrice: 75.99,
     percent: 18,
@@ -413,7 +412,7 @@ export const TopDealList = [
   {
     id: "deal5",
     name: "Cap",
-    image: pic_deal7,
+    image: assets.pic_deal7,
     salePrice: 35.99,
     listPrice: 45.99,
     percent: 25,
@@ -421,7 +420,7 @@ export const TopDealList = [
   {
     id: "deal6",
     name: "Cap",
-    image: pic_deal3,
+    image: assets.pic_deal3,
     salePrice: 35.99,
     listPrice: 45.99,
     percent: 25,
@@ -429,7 +428,7 @@ export const TopDealList = [
   {
     id: "deal7",
     name: "Cap",
-    image: pic_deal6,
+    image: assets.pic_deal6,
     salePrice: 35.99,
     listPrice: 45.99,
     percent: 25,
@@ -440,7 +439,7 @@ export const FeatureList = [
   {
     id: "feature1",
     name: "T-shirt",
-    image: pic_feature1,
+    image: assets.pic_feature1,
     description: "A Black T-Shirt",
     salePrice: 127.35,
     listPrice: 160,
@@ -451,7 +450,7 @@ export const FeatureList = [
   {
     id: "feature2",
     name: "Long Sleeve Shirt",
-    image: pic_feature3,
+    image: assets.pic_feature3,
     description: "A Checkered Shirt",
     salePrice: 146.25,
     listPrice: 180,
@@ -462,7 +461,7 @@ export const FeatureList = [
     id: "feature3",
     name: "T-Shirt",
     description: "An Orange black-striped T-Shirt",
-    image: pic_feature4,
+    image: assets.pic_feature4,
     salePrice: 139.99,
     listPrice: 160,
     percent: 20,
@@ -475,14 +474,14 @@ export const FeatureList = [
     salePrice: 162.87,
     listPrice: 250,
     percent: 35,
-    image: pic_feature8,
+    image: assets.pic_feature8,
     radius: "false",
   },
   {
     id: "feature5",
     name: "T-Shirt",
     description: "An Orange printed T-Shirt",
-    image: pic_feature6,
+    image: assets.pic_feature6,
     salePrice: 113.75,
     listPrice: 325,
     percent: 65,
@@ -492,7 +491,7 @@ export const FeatureList = [
     id: "feature6",
     name: "Shirt",
     description: "A Green Long Sleeve Shirt",
-    image: pic_feature5,
+    image: assets.pic_feature5,
     salePrice: 178.5,
     listPrice: 210,
     percent: 65,
@@ -502,7 +501,7 @@ export const FeatureList = [
     id: "feature7",
     name: "Jeans",
     description: "Faded Jeans",
-    image: pic_feature2,
+    image: assets.pic_feature2,
     salePrice: 148.75,
     listPrice: 175,
     percent: 15,
@@ -512,7 +511,7 @@ export const FeatureList = [
     id: "feature8",
     name: "Knickers",
     description: "A Jeans Knicker",
-    image: pic_feature7,
+    image: assets.pic_feature7,
     salePrice: 99.6,
     listPrice: 325,
     percent: 17,
@@ -546,7 +545,7 @@ export const ProductNav = [
 export const ProductList = [
   {
     id: "product1",
-    image: pic_product2,
+    image: assets.pic_product2,
     name: "White Sneakers",
     description: "A pair of white Sneakers",
     salePrice: 53.25,
@@ -556,7 +555,7 @@ export const ProductList = [
 
   {
     id: "product2",
-    image: pic_product1,
+    image: assets.pic_product1,
     name: "T-Shirt",
     description: "A Blue T-Shirt",
     salePrice: 37.22,
@@ -566,7 +565,7 @@ export const ProductList = [
 
   {
     id: "product3",
-    image: pic_product5,
+    image: assets.pic_product5,
     name: "Wormer",
     description: "A Head Wormer",
     salePrice: 18.63,
@@ -575,7 +574,7 @@ export const ProductList = [
   },
   {
     id: "product4",
-    image: pic_product4,
+    image: assets.pic_product4,
     name: "Blue Shoe",
     description: "A pair of Blue Shoe",
     salePrice: 38.63,
@@ -584,7 +583,7 @@ export const ProductList = [
   },
   {
     id: "product5",
-    image: pic_product9,
+    image: assets.pic_product9,
     name: "Cross Bag",
     description: "A CrossBag",
     salePrice: 28.63,
@@ -593,7 +592,7 @@ export const ProductList = [
   },
   {
     id: "product6",
-    image: pic_product6,
+    image: assets.pic_product6,
     name: "Red Jacket",
     description: "A Single Jacket",
     salePrice: 28.63,
@@ -602,7 +601,7 @@ export const ProductList = [
   },
   {
     id: "product7",
-    image: pic_product3,
+    image: assets.pic_product3,
     name: "Designer Bag",
     description: "A Designer Bag",
     salePrice: 88.63,
@@ -611,7 +610,7 @@ export const ProductList = [
   },
   {
     id: "product8",
-    image: pic_product8,
+    image: assets.pic_product8,
     name: "Blue Jacket",
     description: "A Single Jacket",
     salePrice: 48.63,
@@ -623,21 +622,21 @@ export const ProductList = [
 export const News = [
   {
     id: "news1",
-    image: pic_news3,
+    image: assets.pic_news3,
     category: "FASHION",
     header: "Shop with Style",
     date: "- 15, Oct. 2024",
   },
   {
     id: "news2",
-    image: pic_news2,
+    image: assets.pic_news2,
     category: "CLOTHING",
     header: "Shop with Style",
     date: "- 7, Apr. 2024",
   },
   {
     id: "news3",
-    image: pic_news4,
+    image: assets.pic_news4,
     category: "COLLECTION",
     header: "Shop with Style",
     date: "- 25, Jul. 2024",
