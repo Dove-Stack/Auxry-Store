@@ -58,8 +58,6 @@
 
 // export { addToCart, removeFromCart, getCart };
 
-
-
 import userModel from "../models/userModel.js";
 
 // Add item to cart
@@ -114,12 +112,26 @@ const removeFromCart = async (req, res) => {
       .json({ success: true, message: "Removed from Cart" });
   } catch (error) {
     console.error(error);
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Server Error while removing from cart",
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Server Error while removing from cart",
+    });
+  }
+};
+
+// Clear item from cart
+const clearFromCart = async (req, res) => {
+  try {
+    let userData = await userModel.findById(req.body.userId);
+    let cartData = await userData.cartData;
+
+    cartData[req.body.itemId] = 0;
+
+    await userModel.findByIdAndUpdate(req.body.userId, { cartData });
+    res.status(200).json({ success: true, message: "Cleared from Cart" });
+  } catch (error) {
+    console.error("Error clearing from cart:", error);
+    res.status(500).json({ success: false, message: "Server Error while clearing from cart" });
   }
 };
 
