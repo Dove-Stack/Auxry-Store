@@ -113,8 +113,7 @@
 
 .card-total .disabled:hover {
   margin-left: 0;
-  color: white;
-  background-color: #121731;
+  color: #121731;
 }
 
 .cart-couponcode {
