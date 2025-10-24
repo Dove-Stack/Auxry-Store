@@ -33,19 +33,48 @@ const Login = ({ setShowLogin }) => {
       newUrl += "/api/user/register";
     }
 
+    // try {
+    //   const response = await axios.post(newUrl, data);
+
+    //   if (response.data.success) {
+    //     setToken(response.data.token);
+    //     localStorage.setItem("token", response.data.token);
+    //     setShowLogin(false);
+    //   } else {
+    //     alert(response.data.message);
+    //   }
+    // } catch (error) {
+    //   console.error("Error during authentication: ", error);
+    //   alert("Login Failed. Please try again");
+    // }
+
     try {
       const response = await axios.post(newUrl, data);
 
       if (response.data.success) {
         setToken(response.data.token);
         localStorage.setItem("token", response.data.token);
-        setShowLogin(false);
+
+        if (loginState === "Sign Up") {
+          alert("Account created successfully! You can now log in.");
+          setLoginState("Login");
+        } else {
+          alert("Login successful!");
+          setShowLogin(false);
+        }
       } else {
-        alert(response.data.message);
+        alert(
+          response.data.message || "Authentication failed. Please try again."
+        );
       }
     } catch (error) {
-      console.error("Error during authentication: ", error);
-      alert("Login Failed. Please try again");
+      console.error("Error during authentication:", error);
+
+      if (loginState === "Sign Up") {
+        alert("Sign up failed . Please try again");
+      } else {
+        alert("Login Failed. Please check your credentials and try again.");
+      }
     }
   };
 
