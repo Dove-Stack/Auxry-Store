@@ -131,7 +131,12 @@ const clearFromCart = async (req, res) => {
     res.status(200).json({ success: true, message: "Cleared from Cart" });
   } catch (error) {
     console.error("Error clearing from cart:", error);
-    res.status(500).json({ success: false, message: "Server Error while clearing from cart" });
+    res
+      .status(500)
+      .json({
+        success: false,
+        message: "Server Error while clearing from cart",
+      });
   }
 };
 
@@ -156,4 +161,4 @@ const getCart = async (req, res) => {
   }
 };
 
-export { addToCart, removeFromCart, getCart };
+export { addToCart, removeFromCart, getCart, clearFromCart };
