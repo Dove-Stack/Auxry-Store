@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
@@ -19,9 +19,19 @@ const cart = () => {
 
   const navigate = useNavigate();
 
-  const handleShowItem = () => {
-    console.log(cartItems);
+  const handleCheckout = () => {
+    if (!cartItems || Object.keys(cartItems).length === 0) {
+      toast.error(
+        "Your cart is empty. Please add items to proceed to checkout."
+      );
+      return;
+    }
+    navigate("/order");
   };
+
+  // const handleShowItem = () => {
+  //   console.log(cartItems);
+  // };
 
   return (
     <div className="cart">
@@ -145,8 +155,8 @@ const cart = () => {
           </div>
           <button
             onClick={() => {
-              handleShowItem();
-              navigate("/order");
+              handleCheckout;
+              // navigate("/order");
             }}
           >
             Proceed to CheckOut
