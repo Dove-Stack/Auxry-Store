@@ -114,6 +114,7 @@
 .card-total .disabled:hover {
   margin-left: 0;
   color: #121731;
+  border: 1px solid #121731;
 }
 
 .cart-couponcode {
