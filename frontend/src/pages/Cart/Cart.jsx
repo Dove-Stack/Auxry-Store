@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
-import toast, { toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const cart = () => {
   const {
@@ -154,14 +154,12 @@ const cart = () => {
             </div>
           </div>
           <button
-            // onClick={() => {
-            //   handleCheckout;
-            //   // navigate("/order");
-            // }}
-
             onClick={() => {
               handleCheckout;
+              // navigate("/order");
             }}
+            disabled={getTotalCartAmount() === 0}
+            className={getTotalCartAmount() === 0 ? "disabled" : ""}
           >
             Proceed to CheckOut
             <i className="bx bx-cart-alt"></i>
