@@ -4,6 +4,7 @@ import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import toast, { taost } from "react-hot-toast";
 
 const Login = ({ setShowLogin }) => {
   const { url, setToken } = useContext(StoreContext);
@@ -33,7 +34,6 @@ const Login = ({ setShowLogin }) => {
       newUrl += "/api/user/register";
     }
 
-
     try {
       const response = await axios.post(newUrl, data);
 
@@ -42,14 +42,14 @@ const Login = ({ setShowLogin }) => {
         localStorage.setItem("token", response.data.token);
 
         if (loginState === "Sign Up") {
-          alert("Account created successfully! You can now log in.");
+          toast.success("Account created successfully! You can now log in.");
           setLoginState("Login");
         } else {
-          alert("Login successful!");
+          toast.success("Login successful!");
           setShowLogin(false);
         }
       } else {
-        alert(
+        toast.error(
           response.data.message || "Authentication failed. Please try again."
         );
       }
@@ -57,9 +57,11 @@ const Login = ({ setShowLogin }) => {
       console.error("Error during authentication:", error);
 
       if (loginState === "Sign Up") {
-        alert("Sign up failed . Please try again");
+        toast.error("Sign up failed . Please try again");
       } else {
-        alert("Login Failed. Please check your credentials and try again.");
+        toast.error(
+          "Login Failed. Please check your credentials and try again."
+        );
       }
     }
   };
