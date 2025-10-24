@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-hot-toast";
+import toast, { toast } from "react-hot-toast";
 
 const cart = () => {
   const {
@@ -154,9 +154,13 @@ const cart = () => {
             </div>
           </div>
           <button
+            // onClick={() => {
+            //   handleCheckout;
+            //   // navigate("/order");
+            // }}
+
             onClick={() => {
               handleCheckout;
-              // navigate("/order");
             }}
           >
             Proceed to CheckOut
