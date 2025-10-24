@@ -33,20 +33,6 @@ const Login = ({ setShowLogin }) => {
       newUrl += "/api/user/register";
     }
 
-    // try {
-    //   const response = await axios.post(newUrl, data);
-
-    //   if (response.data.success) {
-    //     setToken(response.data.token);
-    //     localStorage.setItem("token", response.data.token);
-    //     setShowLogin(false);
-    //   } else {
-    //     alert(response.data.message);
-    //   }
-    // } catch (error) {
-    //   console.error("Error during authentication: ", error);
-    //   alert("Login Failed. Please try again");
-    // }
 
     try {
       const response = await axios.post(newUrl, data);
