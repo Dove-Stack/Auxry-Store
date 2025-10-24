@@ -105,6 +105,12 @@
   background: white;
 }
 
+.card-total .disabled {
+  opacity: 0.6;
+  border: none;
+  cursor: not-allowed;
+}
+
 .cart-couponcode {
   padding: 7px;
   flex: 1;
