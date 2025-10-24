@@ -4,7 +4,7 @@ import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import toast, { taost } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const Login = ({ setShowLogin }) => {
   const { url, setToken } = useContext(StoreContext);
