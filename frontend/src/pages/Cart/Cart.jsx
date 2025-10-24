@@ -155,7 +155,7 @@ const cart = () => {
           </div>
           <button
             onClick={() => {
-              handleCheckout;
+              handleCheckout();
               // navigate("/order");
             }}
             disabled={getTotalCartAmount() === 0}
