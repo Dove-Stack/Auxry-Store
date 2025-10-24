@@ -26,7 +26,7 @@ const cart = () => {
       );
       return;
     }
-    navigate("/order");
+    // navigate("/order");
   };
 
   // const handleShowItem = () => {
@@ -156,7 +156,7 @@ const cart = () => {
           <button
             onClick={() => {
               handleCheckout();
-              // navigate("/order");
+              navigate("/order");
             }}
             disabled={getTotalCartAmount() === 0}
             className={getTotalCartAmount() === 0 ? "disabled" : ""}
