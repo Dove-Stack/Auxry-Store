@@ -31,7 +31,7 @@
 }
 
 .banner .image-1 {
-  background-image: url('https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg');
+  background-image: url("https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg");
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@
     url(../../assets/banner1.jpg); */
 
   /* box-shadow: 4px 12px #00000090; */
-  background-image: url(../../assets/clothes/4.jpg);
+  background-image: url("https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/dancer_ctvura.jpg");
   height: 75vh;
   background-size: cover;
   background-position: center;
@@ -65,7 +65,7 @@
   /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
     url(../../assets/banner1.jpg); */
 
-  background-image: url(../../assets/dancer.jpeg);
+  background-image: url("https://res.cloudinary.com/dkuhcrjzc/image/upload/v1761463645/4_kwzkvj.jpg");
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -148,7 +148,7 @@
   /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.565)),
   url(../../assets/banner1.jpg); */
 
-  background-image: url(../../assets/apparel2.jpg);
+  background-image: url("https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/apparel2_rnort9.jpg");
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -163,7 +163,7 @@
 
 .banner .image:hover {
   /* height: 45vh; */
-  scale: 1.03;
+  scale: 1.026;
   /* padding: 10px; */
 }
 
