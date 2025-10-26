@@ -37,7 +37,8 @@ const Banner = () => {
               </span>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="image image-3">
+
+          <SwiperSlide className="image image-2">
             <div className="text-content">
               <p>NEW SEASON</p>
               <h3>Shop for Latest trends in Fashion Season</h3>
@@ -47,8 +48,7 @@ const Banner = () => {
               </span>
             </div>
           </SwiperSlide>
-
-          <SwiperSlide className="image image-2">
+          <SwiperSlide className="image image-3">
             <div className="text-content">
               <p>NEW SEASON</p>
               <h3>Shop for Latest trends in Fashion Season</h3>
