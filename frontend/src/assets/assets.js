@@ -283,6 +283,15 @@ import pic_product9 from "../assets/Products/9.jpg";
 export const assets = {
   Logo1,
   Logo: "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760966409/Logo1_ot9mmh.png",
+
+  BannerImg1:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
+  BannerImg2:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/dancer_ctvura.jpg",
+  BannerImg3:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1761463645/4_kwzkvj.jpg",
+  BannerImg4:
+    "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925528/apparel2_rnort9.jpg",
   contactImg:
     "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg",
   contact_pic:
