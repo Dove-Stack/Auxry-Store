@@ -31,7 +31,7 @@
 }
 
 .banner .image-1 {
-  background-image: url(../../assets/banner2.jpg);
+  background-image: url('https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/banner2-2_pkr4ir.jpg');
   height: 70vh;
   background-size: cover;
   background-position: center;
