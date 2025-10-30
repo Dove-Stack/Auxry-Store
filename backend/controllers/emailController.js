@@ -33,7 +33,7 @@ const contactFeedback = async (req, res) => {
       to: email,
       subject: "We have received your message!",
       html: `<h2>Hi ${fullname},</h2>
-             <p>Thank you for reaching out to Auxry Store. We have received your message and will get back to you as soon as possible.</p>
+            <p>Thank you for reaching out to Auxry Store. We have received your message and will get back to you as soon as possible.</p>
              <p><b>Your Message:</b> ${message
                .replace(/</g, "&lt;")
                .replace(/>/g, "&gt;")}</p>
