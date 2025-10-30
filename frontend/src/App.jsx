@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 
 import {
   About,
@@ -29,6 +30,7 @@ function App() {
         <>
           <Navbar setShowLogin={setShowLogin} />
 
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
