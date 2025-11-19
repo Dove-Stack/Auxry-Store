@@ -19,7 +19,7 @@ const Newsletter = () => {
           </span>
         </div>
       </div>
-      <div className="sub-newsletter">
+      <div className="sub-newsletter need-help">
         <h2>
           Need Help ? <br /> (+234) 7045 810 691
         </h2>
