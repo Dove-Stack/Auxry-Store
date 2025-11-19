@@ -9,7 +9,11 @@
   justify-content: center;
   flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: 11px;
+=======
+  margin-bottom: 10px;
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
   margin-bottom: 10px;
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -25,7 +29,11 @@
 .review .title p {
   font-size: 12px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-weight: 600;
+=======
+  font-weight: 500;
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
   font-weight: 500;
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -59,10 +67,13 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .review .text-content .top p.review-name {
   font-weight: 500 ;
 }
 
+=======
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 .review .text-content .top img {
@@ -85,7 +96,11 @@
   line-height: 1.7;
   font-weight: normal;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #00000093;
+=======
+  color: #00000070;
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
   color: #00000070;
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -94,7 +109,11 @@
 .review .text-content .bottom i {
   font-size: 15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-right: 7px;
+=======
+  margin-right: 5px;
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
   margin-right: 5px;
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041

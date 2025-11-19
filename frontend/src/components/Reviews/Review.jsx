@@ -50,7 +50,11 @@ const Review = () => {
             <div className="top">
               <img src={assets.customer1} alt="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="review-name" >Richard </p>
+=======
+              <p>Richard </p>
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
               <p>Richard </p>
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -72,7 +76,11 @@ const Review = () => {
             <div className="top">
               <img src={assets.customer2} alt="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="review-name" >Laura </p>
+=======
+              <p>Laura </p>
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
               <p>Laura </p>
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -94,7 +102,11 @@ const Review = () => {
             <div className="top">
               <img src={assets.customer3} alt="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="review-name" >Rosie </p>
+=======
+              <p>Rosie </p>
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
               <p>Rosie </p>
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -116,7 +128,11 @@ const Review = () => {
             <div className="top">
               <img src={assets.customer4} alt="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="review-name" >Anne </p>
+=======
+              <p>Anne </p>
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
               <p>Anne </p>
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -138,7 +154,11 @@ const Review = () => {
             <div className="top">
               <img src={assets.customer5} alt="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="review-name" >Jason </p>
+=======
+              <p>Jason </p>
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
               <p>Jason </p>
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
@@ -160,7 +180,11 @@ const Review = () => {
             <div className="top">
               <img src={assets.customer6} alt="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="review-name" >Emilia </p>
+=======
+              <p>Emilia </p>
+>>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 =======
               <p>Emilia </p>
 >>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
