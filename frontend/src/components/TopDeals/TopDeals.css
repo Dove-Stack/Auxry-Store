@@ -46,8 +46,8 @@
 
 .top-deals .deals-wrapper .deal-percent {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   padding: 5px 9px;
   /* background-color: white; */
   font-size: 7px;
@@ -59,8 +59,8 @@
   /* border-end-end-radius: 3rem;
   border-start-end-radius: 3rem; */
 
-    border-end-end-radius: 19rem;
-  border-start-end-radius: 19rem;
+    /* border-end-end-radius: 19rem; */
+  /* border-start-end-radius: 19rem; */
   color: white;
 }
 
@@ -73,7 +73,7 @@
   /* backdrop-filter: blur(11px); */
 }
 .top-deals .deals-wrapper .deals-card:hover img {
-    box-shadow: 10px 8px 23px 0 rgba(49, 49, 50, 0.265);
+    box-shadow: 1px 8px 10px 0 rgba(49, 49, 50, 0.265);
   
 }
 
