@@ -1,26 +1,14 @@
 footer {
-<<<<<<< HEAD
-<<<<<<< HEAD
   /* margin-top: 10px; */
-=======
   margin-top: 80px;
->>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
-=======
   margin-top: 80px;
->>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 }
 
 .footer-main {
   padding: 10px 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-color: rgb(232, 232, 232);
-=======
   background-color: rgba(233, 229, 229, 0.838);
->>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
-=======
   background-color: rgba(233, 229, 229, 0.838);
->>>>>>> 27c609da820b76aff2dd055f7c3d3c1ceb3f3041
 }
 
 .footer-main .content {
@@ -72,7 +60,7 @@ footer {
 .footer-main .content .content-left span {
   font-size: 10px;
   font-weight: 500;
-  font-family: Poppins;
+  /* font-family: Poppins; */
 }
 
 .footer-main .content .content-left .social-icon {
