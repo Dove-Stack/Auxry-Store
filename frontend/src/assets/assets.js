@@ -1,4 +1,5 @@
 import Logo1 from "../assets/Logo1.png";
+import pic_product9 from "../assets/Products/9.jpg";
 // import pic_news2 from "../assets/news3.jpeg";
 // import pic_news3 from "../assets/news4.jpeg";
 // import pic_news4 from "../assets/news5.jpeg";
@@ -24,7 +25,6 @@ import Logo1 from "../assets/Logo1.png";
 // import pic_product5 from "../assets/Products/5.jpg";
 // import pic_product6 from "../assets/Products/6.jpg";
 // import pic_product8 from "../assets/Products/8.jpg";
-import pic_product9 from "../assets/Products/9.jpg";
 
 // Cloudinary image URLs
 // const pic_deal1 = "https://res.cloudinary.com/dkuhcrjzc/image/upload/v1760925530/deal_1_g8dns0.png";
@@ -387,7 +387,7 @@ export const assets = {
 export const TopDealList = [
   {
     id: "deal1",
-    name: "Brown Sweater",
+    name: "Raglan Half Sleeve",
     image: assets.pic_deal1,
     salePrice: 88.99,
     listPrice: 120.99,
@@ -396,7 +396,7 @@ export const TopDealList = [
 
   {
     id: "deal2",
-    name: "Cologne",
+    name: "Linen Shirt",
     image: assets.pic_deal2,
     salePrice: 279.99,
     listPrice: 430.99,
@@ -404,7 +404,7 @@ export const TopDealList = [
   },
   {
     id: "deal3",
-    name: "Eye Glasses",
+    name: "Rugby Polo",
     image: assets.pic_deal5,
     salePrice: 61.99,
     listPrice: 75.99,
@@ -420,7 +420,7 @@ export const TopDealList = [
   // },
   {
     id: "deal5",
-    name: "Cap",
+    name: "off-shoulder Top",
     image: assets.pic_deal7,
     salePrice: 35.99,
     listPrice: 45.99,
@@ -428,7 +428,7 @@ export const TopDealList = [
   },
   {
     id: "deal6",
-    name: "Cap",
+    name: "Short Sleeve Shirt",
     image: assets.pic_deal3,
     salePrice: 35.99,
     listPrice: 45.99,
@@ -436,7 +436,7 @@ export const TopDealList = [
   },
   {
     id: "deal7",
-    name: "Cap",
+    name: "Biker Jacket",
     image: assets.pic_deal6,
     salePrice: 35.99,
     listPrice: 45.99,
@@ -611,7 +611,7 @@ export const ProductList = [
   {
     id: "product7",
     image: assets.pic_product3,
-    name: "Designer Bag",
+    name: "Coach Horse BAG",
     description: "A Designer Bag",
     salePrice: 88.63,
     listPrice: 173.28,
