@@ -7,12 +7,14 @@ import StoreContextProvider from './context/StoreContext.jsx'
 import { ToastContainer } from "react-toastify"
 // import "react-toastify/dist/ReactToastify.css";
 import { Toaster } from 'react-hot-toast'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <StoreContextProvider>
       <Toaster position='top-right' reverseOrder={false} />
       <App />
+      <SpeedInsights/>
       <ToastContainer/>
     </StoreContextProvider> 
   </BrowserRouter>,
