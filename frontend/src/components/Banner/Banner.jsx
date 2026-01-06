@@ -27,47 +27,57 @@ const Banner = () => {
           }}
           speed={1000}
         >
-          <SwiperSlide className="image image-1">
-            <div className="text-content">
-              <p>NEW SEASON</p>
-              <h3>Shop for Latest trends in Fashion Season</h3>
-              <span>
-                Don't miss the Opportunity
-                <i className="bx bx-right-top-arrow-circle"></i>
-              </span>
-            </div>
-          </SwiperSlide>
+          <div className="banner-outer">
+            <SwiperSlide className="image image-1">
+              <div className="text-content">
+                <p>NEW SEASON</p>
+                <h3>Shop for Latest trends in Fashion Season</h3>
+                <span>
+                  Don't miss the Opportunity
+                  <i className="bx bx-right-top-arrow-circle"></i>
+                </span>
+              </div>
+            </SwiperSlide>
+          </div>
 
-          <SwiperSlide className="image image-2">
-            <div className="text-content">
-              <p>NEW SEASON</p>
-              <h3>Shop for Latest trends in Fashion Season</h3>
-              <span>
-                Don't miss the Opportunity{" "}
-                <i className="bx bx-right-top-arrow-circle"></i>{" "}
-              </span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="image image-3">
-            <div className="text-content">
-              <p>NEW SEASON</p>
-              <h3>Shop for Latest trends in Fashion Season</h3>
-              <span>
-                Don't miss the Opportunity{" "}
-                <i className="bx bx-right-top-arrow-circle"></i>{" "}
-              </span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="image image-8">
-            <div className="text-content">
-              <p>NEW SEASON</p>
-              <h3>Shop for Latest trends in Fashion Season</h3>
-              <span>
-                Don't miss the Opportunity{" "}
-                <i className="bx bx-right-top-arrow-circle"></i>{" "}
-              </span>
-            </div>
-          </SwiperSlide>
+          <div className="banner-outer">
+            <SwiperSlide className="image image-2">
+              <div className="text-content">
+                <p>NEW SEASON</p>
+                <h3>Shop for Latest trends in Fashion Season</h3>
+                <span>
+                  Don't miss the Opportunity{" "}
+                  <i className="bx bx-right-top-arrow-circle"></i>{" "}
+                </span>
+              </div>
+            </SwiperSlide>
+          </div>
+
+
+          <div className="banner-outer">
+            <SwiperSlide className="image image-3">
+              <div className="text-content">
+                <p>NEW SEASON</p>
+                <h3>Shop for Latest trends in Fashion Season</h3>
+                <span>
+                  Don't miss the Opportunity{" "}
+                  <i className="bx bx-right-top-arrow-circle"></i>{" "}
+                </span>
+              </div>
+            </SwiperSlide>
+          </div>
+          <div className="banner-outer">
+            <SwiperSlide className="image image-8">
+              <div className="text-content">
+                <p>NEW SEASON</p>
+                <h3>Shop for Latest trends in Fashion Season</h3>
+                <span>
+                  Don't miss the Opportunity{" "}
+                  <i className="bx bx-right-top-arrow-circle"></i>{" "}
+                </span>
+              </div>
+            </SwiperSlide>
+          </div>
         </Swiper>
       </div>
     </div>
