@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import {
   About,
@@ -61,7 +60,6 @@ function App() {
             <Route path="*" element={<NullPage />} />
           </Routes>
           <Footer />
-          <SpeedInsights />
         </>
       )}
     </>
