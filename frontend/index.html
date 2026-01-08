@@ -5,9 +5,37 @@
     <link rel="icon" type="image" href="/src/assets/Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auxry Store</title>
+    <link rel="preload" as="image" href="/src/assets/bg-video-01.jpg" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        body { margin: 0; background-color: #121212; }
+        .app-loader {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          flex-direction: column;
+          color: white;
+          font-family: monospace;
+        }
+        .loader-spinner {
+          width: 40px;
+          height: 40px;
+          border: 3px solid rgba(255,255,255,0.3);
+          border-radius: 50%;
+          border-top-color: #fff;
+          animation: spin 1s ease-in-out infinite;
+          margin-bottom: 15px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+      </style>
+      <div class="app-loader">
+        <div class="loader-spinner"></div>
+        <span>Starting Auxry...</span>
+      </div>
+      </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
