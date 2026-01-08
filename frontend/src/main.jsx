@@ -1,23 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { BrowserRouter } from 'react-router-dom'
-import StoreContextProvider from './context/StoreContext.jsx'
-import { ToastContainer } from "react-toastify"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import StoreContextProvider from "./context/StoreContext.jsx";
+import { ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
-import { Toaster } from 'react-hot-toast'
-import { injectSpeedInsights } from '@vercel/speed-insights';
+import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
-injectSpeedInsights()
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <StoreContextProvider>
-      <Toaster position='top-right' reverseOrder={false} />
+      <Toaster position="top-right" reverseOrder={false} />
       <App />
-      <ToastContainer/>
-    </StoreContextProvider> 
-  </BrowserRouter>,
-)
+      <ToastContainer />
+      <SpeedInsights />
+    </StoreContextProvider>
+  </BrowserRouter>
+);
