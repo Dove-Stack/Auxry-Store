@@ -1,165 +1,93 @@
-.first-slide {
-  position: relative;
-  height: 95vh;
-}
+/* src/components/Hero/Hero.css */
+/* Keep your existing layout/styling, plus the changes to support the <img> hero */
 
-.first-slide-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* send behind text */
-}
-
-
-
-
+/* Container */
 .hero-section {
   height: 70vh;
   width: 100%;
-
-  /* margin: 4.2rem auto; */
   margin-bottom: 10rem;
-  padding: 0px;
+  padding: 0;
 }
 
+/* First slide wrapper */
+.first-slide {
+  position: relative;
+  height: 95vh;
+  overflow: hidden;
+}
+
+/* The actual <img> behind the content */
+.first-slide-img {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* behind the text content */
+  display: block;
+}
+
+/* remove background-image from CSS; JS will set it inline for slides 2/3 */
+/* Keep size / position rules for those classes */
 .hero-section .image-1 {
   height: 95vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position: top 5% right 5%; */
-
-  background-image: linear-gradient(
-      to bottom left,
-      rgba(0, 0, 0, 0.24),
-      rgba(218, 212, 212, 0.899)
-    ),
-    url(../../assets/bg-video-01.jpg);
-  /* url(../../assets/Hero/cart.jpg); */
-  /* border-radius: 22px; */
-
-  h2 {
-    /* font-size: 3.3rem;
-    letter-spacing: 2px;
-    font-weight: 600;
-    line-height: 1.2; */
-    /* text-shadow: 1px 5px 1px #eff0f5; */
-    text-shadow: -1px 5px 7px #eff0f596;
-
-    width: 60%;
-    text-transform: capitalize;
-  }
-
-  span {
-    /* text-shadow: -1px 5px 7px #101011b8; */
-  }
-
-  h4 {
-    /* text-shadow: -1px 5px 7px #101011; */
-  }
 }
 
-.hero-section .image-2 {
-  height: 95vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top 5% left 5%;
-
-  background-image: linear-gradient(
-      to bottom left,
-      rgba(0, 0, 0, 0.24),
-      rgba(151, 145, 145, 0.699)
-    ),
-    url(../../assets/Hero/portrait.jpg);
-  /* border-radius: 22px; */
-
-  h2 {
-    /* color: #ffffffc8 !important; */
-    text-shadow: -1px 5px 7px #353538a7;
-
-    color: #e7e2e2a3;
-
-    width: 60% !important;
-  }
-
-  span {
-    /* text-shadow: -1px 5px 7px #101011;
-    text-shadow: -1px 5px 7px #eff0f5; */
-  }
-
-  h4 {
-    /* text-shadow: -1px 5px 7px #101011; */
-  }
-}
-
+/* image-2 and image-3 will receive inline backgroundImage from JS */
+.hero-section .image-2,
 .hero-section .image-3 {
   height: 95vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top 5% left 5%;
-  background-image: linear-gradient(
-      to bottom left,
-      rgba(0, 0, 0, 0.24),
-      rgba(212, 201, 201, 0.699)
-    ),
-    url(../../assets/woman.jpg);
-  /* border-radius: 22px; */
-
-  h2 {
-    /* text-shadow: 1px 5px 1px #eff0f5; */
-    /* text-shadow: -1px 5px 7px #eff0f5; */
-
-    font-size: 3.1rem !important;
-    width: 58%;
-    font-weight: bold;
-    /* color: #ffffffc8; */
-  }
-
-  span {
-    /* text-shadow: -1px 5px 7px #101011; */
-  }
-
-  h4 {
-    /* text-shadow: -1px 3px 7px #101011b7; */
-  }
 }
 
+/* Content overlay (text) */
 .hero-section .img-div {
+  position: relative; /* ensure overlay sits above background image */
+  z-index: 5;
   display: flex;
   align-items: start;
   justify-content: center;
   gap: 15px;
   flex-direction: column;
   padding: 20px 80px;
+  color: #2f3449;
 }
 
-.hero-section .img-div span {
+/* small text */
+.hero-section .img-div .hero-kicker {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 4px;
   margin: 0;
   color: #2f3449;
 }
-/* cd frontend  */
-.hero-section .img-div h2 {
+
+/* headline */
+.hero-section .img-div .hero-title {
   font-size: 3.3rem;
   letter-spacing: 2px;
   font-weight: 800;
   line-height: 1.2;
   text-transform: capitalize;
+  text-shadow: -1px 5px 7px #eff0f596;
+  width: 60%;
 }
 
-.hero-section .img-div h4 {
+/* sub heading */
+.hero-section .img-div .hero-sub {
   font-weight: 300;
   color: #2f3449;
   line-height: 1.7;
   letter-spacing: 2px;
 }
 
-.hero-section .img-div button {
+/* CTA */
+.hero-section .img-div .hero-cta {
   padding: 14px 30px;
   margin-top: 10px;
   text-align: left;
@@ -172,24 +100,16 @@
   color: white;
   background-color: #121731;
   transition: background-color 0.3s ease;
-  /* box-shadow: -1px 5px 7px #79797b; */
-  /* box-shadow: -1px -3px 15px 1px #2b2a2aa1; */
-  /* border-radius: 18px; */
-  /* border: 1px solid black; */
 }
 
-.hero-section .img-div button:hover {
+/* hover */
+.hero-section .img-div .hero-cta:hover {
   background-color: initial;
   font-weight: 600;
   color: #121731;
 }
 
-@media (max-width: 1200px) {
-  .hero-section {
-    /* margin-top: .5rem; */
-  }
-}
-
+/* Responsive tweaks (kept from your original file) */
 @media (max-width: 991px) {
   .hero-section {
     margin-bottom: 7.5rem;
@@ -200,13 +120,11 @@
     padding: 12px 40px;
   }
 
-  .hero-section .image-1 {
-    h2 {
-      width: 70% !important;
-    }
+  .hero-section .image-1 .hero-title {
+    width: 70% !important;
   }
-  
- .hero-section .img-div button {
+
+  .hero-section .img-div .hero-cta {
     padding: 11px 20px;
     border-radius: 3px;
     font-size: 8px;
@@ -215,40 +133,30 @@
 
 @media (max-width: 941px) {
   .hero-section .img-div {
-    /* margin-top: px; */
-
     span {
       font-size: 10px;
       font-weight: 500;
     }
 
-    h4 {
+    .hero-sub {
       font-size: 13px;
       font-weight: 400;
     }
+  }
 
-    /* button {
-      padding: 7px 19px;
-      font-size: 8px;
-    } */
+  .hero-section .image-1 .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    width: 100%;
   }
-  .hero-section .image-1 {
-    h2 {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      width: 100%;
-    }
+
+  .hero-section .image-2 .hero-title {
+    font-size: 2.5rem;
+    width: 67%;
   }
-  .hero-section .image-2 {
-    h2 {
-      font-size: 2.5rem;
-      width: 67%;
-    }
-  }
-  .hero-section .image-3 {
-    h2 {
-      font-size: 2.5rem !important;
-    }
+
+  .hero-section .image-3 .hero-title {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -257,57 +165,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-     
-
-     text-align: center !important;
+    text-align: center !important;
     background-position: center;
-    h2 {
-      width: 100% !important;
-    }
-
   }
 
-   .hero-section .img-div button {
-    /* padding: 13px 25px; */
+  .hero-section .img-div .hero-cta {
     border-radius: 3px;
     font-size: 8px;
   }
 
-  
-
   .hero-section .image-1 {
+    /* fallback gradient if JS/inline fails */
     background-image: linear-gradient(
         to bottom,
         rgba(94, 91, 91, 0.404),
         rgba(255, 255, 255, 0.63)
-      ),
-      url(../../assets/bg-video-01.jpg);
+      );
   }
-
-  .hero-section .image-2 {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.24),
-        rgba(165, 165, 165, 0.63)
-      ),
-      url(../../assets/Hero/portrait.jpg);
-  }
-
-  .hero-section .image-3 {
-    background-image: linear-gradient(
-        to bottom ,
-        rgba(0, 0, 0, 0.24),
-        rgba(255, 255, 255, 0.63)
-      ),
-      url(../../assets/woman.jpg);
-  }
-
-
 }
 
 @media (max-width: 475px) {
-
   .hero-section {
     height: 61vh;
     margin-bottom: 8rem;
@@ -319,33 +196,32 @@
     justify-content: center;
     height: 70vh !important;
     gap: 0px;
-    span {
-      letter-spacing: 0.5;
-      font-size: 8px;
-      text-align: center;
-    }
+  }
 
-    h2 {
-      font-size: 1.5rem !important;
-      line-height: 1.4;
-      letter-spacing: normal;
-    }
+  .hero-section .img-div .hero-kicker {
+    letter-spacing: 0.5px;
+    font-size: 8px;
+    text-align: center;
+  }
 
-    h4 {
-      font-size: 10px;
-      letter-spacing: 1;
-      text-align: center;
-    }
+  .hero-section .img-div .hero-title {
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+    letter-spacing: normal;
+  }
 
-    
-   .img-div button {
-      padding: 11px ;
-    } 
+  .hero-section .img-div .hero-sub {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .hero-section .img-div .hero-cta {
+    padding: 11px;
   }
 }
 
 @media (max-width: 375px) {
-
   .hero-section {
     margin-bottom: 4rem;
   }
@@ -354,12 +230,12 @@
     height: 80vh;
   }
 
-  .hero-section .img-div {
-    h2 {
-      text-align: center;
-    }
-    span, h4 {
-      display: none;
-    }
+  .hero-section .img-div .hero-title {
+    text-align: center;
+  }
+
+  .hero-section .img-div .hero-kicker,
+  .hero-section .img-div .hero-sub {
+    display: none;
   }
 }
