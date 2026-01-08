@@ -97,12 +97,25 @@ const StoreContextProvider = (props) => {
   };
 
   useEffect(() => {
-    async function loadData() {
+   /*  async function loadData() {
       if (getToken) {
         setToken(getToken);
         await loadCartData(getToken);
       }
     }
+    loadData(); */
+
+    const loadData = async () => {
+      const storedToken = localStorage.getItem("token");
+      if (storedToken) {
+        setToken(storedToken)
+        try {
+          loadCartData(storedToken)
+        } catch (error) {
+          console.error("Failed to load cart", error)
+        }
+      }
+    };
     loadData();
   }, []);
 
