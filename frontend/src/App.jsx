@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import SecureRoute from "./pages/SecureRoute/SecureRoute.jsx";
+import SecureRoute from "./auth/SecureRoute/SecureRoute.jsx";
 
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const Shop = lazy(() => import("./pages/Shop/Shop.jsx"));
