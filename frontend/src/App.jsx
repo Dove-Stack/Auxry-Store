@@ -1,29 +1,48 @@
-import React, { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import SecureRoute from "./pages/SecureRoute/SecureRoute.jsx";
 
-import {
-  About,
-  Cart,
-  Contact,
-  Footer,
-  Home,
-  ItemView,
-  Login,
-  NullPage,
-  Navbar,
-  PlaceOrder,
-  Shop,
-  SecureRoute,
-  VerifyPayment,
-  ProductOrders,
-} from "./pages/PageRoute/PageRoute.js";
+const Home = lazy(() => import("./pages/Home/Home.jsx"));
+const Shop = lazy(() => import("./pages/Shop/Shop.jsx"));
+const Contact = lazy(() => import("./pages/Contact/Contact.jsx"));
+const About = lazy(() => import("./pages/About/About.jsx"));
+const Cart = lazy(() => import("./pages/Cart/Cart.jsx"));
+const PlaceOrder = lazy(() => import("./pages/PlaceOrder/PlaceOrder.jsx"));
+const ItemView = lazy(() => import("./pages/ItemView/ItemView.jsx"));
+const VerifyPayment = lazy(() =>
+  import("./pages/VerifyPayment/VerifyPayment.jsx")
+);
+const ProductOrders = lazy(() =>
+  import("./pages/ProductOrders/ProductOrders.jsx")
+);
+const NullPage = lazy(() => import("./pages/NullPage/NullPage.jsx"));
+const Login = lazy(() => import("./pages/Login/Login.jsx"));
+
+// import {
+//   About,
+//   Cart,
+//   Contact,
+//   Footer,
+//   Home,
+//   ItemView,
+//   Login,
+//   NullPage,
+//   Navbar,
+//   PlaceOrder,
+//   Shop,
+//   SecureRoute,
+//   VerifyPayment,
+//   ProductOrders,
+// } from "./pages/PageRoute/PageRoute.js";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <>
+    <Suspense fallback={<div style={{ padding: 40 }}>Loading....</div>}>
       {showLogin ? (
         <Login setShowLogin={setShowLogin} />
       ) : (
@@ -62,7 +81,7 @@ function App() {
           <Footer />
         </>
       )}
-    </>
+    </Suspense>
   );
 }
 
