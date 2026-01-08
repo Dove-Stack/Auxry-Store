@@ -22,12 +22,31 @@ const Hero = () => {
         }}
         modules={[Autoplay, EffectFade]}
       >
-        <SwiperSlide className="image-1 img-div">
+{/*         <SwiperSlide className="image-1 img-div">
           <span>WHERE FASHION MEETS PASSION.</span>
           <h2>Discover Our Exquisite Fashion Pieces</h2>
           <h4>Enjoy exclusive discounts on Every Purchase</h4>
           <button>SHOP NOW</button>
         </SwiperSlide>
+ */}
+        <SwiperSlide>
+          <div className="img-div">
+            <img
+              src={require("../../assets/bg-video-01.jpg")}
+              width="1920"
+              height="950"
+              alt="Hero"
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              loading="eager"
+              fetchpriority="high"
+            />
+            <span>WHERE FASHION MEETS PASSION.</span>
+            <h2>Discover Our Exquisite Fashion Pieces</h2>
+            <h4>Enjoy exclusive discounts on Every Purchase</h4>
+            <button>SHOP NOW</button>
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide className="image-2 img-div">
           <span>ELEVATE YOUR FASHION GAME</span>
           <h2>Discover Elegance In Simplicity</h2>
