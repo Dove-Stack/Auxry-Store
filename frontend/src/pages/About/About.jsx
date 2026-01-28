@@ -1,128 +1,107 @@
+import React, { useEffect } from "react";
 import "./About.css";
 import "boxicons/css/boxicons.min.css";
 import { assets } from "../../assets/assets.js";
 
 const About = () => {
   return (
-    <div className="main-about">
-      <div className="about-banner">
-        <img src={`${assets.pic_about}`} alt="" className="about-img" />
-        {/* Removed overlay for a clear background image */}
-        <div className="text-right card">
-          <p className="title">
-            <i className="bx bxs-store-alt about-title-icon"></i> About Auxry
-            Store
-          </p>
-          <span>
-            Welcome to Auxry Store! Your one-stop shop for quality and style.
-          </span>
-          <p className="body">
-            Discover a curated selection of products designed to elevate your
-            lifestyle. Our mission is to provide exceptional value and a
-            seamless shopping experience for every customer.
-          </p>
-          <p className="body">
-            Join our community and enjoy exclusive deals, fast delivery, and
-            top-notch customer support. Thank you for choosing Auxry Store!
+    <div className="about-container">
+      <section className="about-hero">
+        <div className="hero-content">
+          <div className="hero-badge">
+            <i className="bx bxs-store-alt"></i>
+            EST. 2024
+          </div>
+          <h1 className="hero-title">
+            Redefining the way <br />
+            <span className="highlight">you shop.</span>
+          </h1>
+          <p className="hero-subtitle">
+            Welcome to Auxry Store. We bridge the gap between exceptional
+            quality and everyday lifestyle, providing a curated experinece just
+            for you
           </p>
         </div>
-      </div>
+        <div className="hero-image-wrapper">
+          <img src={assets.pic_about} alt="About Auxry" className="hero-img" />
+        </div>
+      </section>
 
-      <div className="content-about">
-        <h4>
-          <i className="bx bxs-bullseye about-section-icon"></i> Mission
-        </h4>
-        <p>
-          To deliver the best products at unbeatable prices, while ensuring a
-          delightful and secure shopping journey for all our customers. We are
-          committed to innovation, quality, and customer satisfaction.
-        </p>
-        <p>
-          At Auxry Store, we believe shopping should be simple, enjoyable, and
-          rewarding. Our team works tirelessly to source high-quality products
-          from trusted suppliers, ensuring that every item you receive meets our
-          strict standards. We are passionate about providing a diverse range of
-          products to suit every taste and need, from the latest trends in
-          fashion to must-have gadgets and home essentials.
-        </p>
-        <p>
-          We value transparency, integrity, and building lasting relationships
-          with our customers. Our support team is always ready to assist you,
-          whether you have a question about a product, need help with your
-          order, or want to share feedback. Your satisfaction is our top
-          priority, and we strive to exceed your expectations at every step.
-        </p>
-        <div className="sub-content-about">
-          <h4>
-            <i className="bx bxs-quote-alt-left about-section-icon"></i> Our
-            Motto
-          </h4>
-          <p>
-            "Shop Smart, Live Better." We believe in making life easier and more
-            enjoyable through thoughtful products and outstanding service.
-          </p>
-          <p>
-            Your happiness is our priority. Experience the Auxry difference
-            today!
-          </p>
-          <p>
-            We invite you to join our growing community of satisfied customers.
-            Stay connected with us on social media for the latest updates,
-            exclusive offers, and inspiration. Thank you for choosing Auxry
-            Store as your trusted shopping destination!
-          </p>
-        </div>
-      </div>
+      <section className="about-mission">
+        <div className="mission-grid">
+          <div className="mission-text">
+            <h4>Our Mission</h4>
+            <h2> Empowering your lifestyle through quality and innovation</h2>
+            <p>
+              At Auxry Store, we believe shopping should be simple, enjoyable,
+              and rewarding. Our team works tirelessly to source high-quality
+              products from trusted suppliers, ensuring that every item you
+              receive meets our strict standards.
+            </p>
+            <div className="quote-box">
+              <i className="bx bxs-quote-alt-left quote-icon"></i>
+              <p className="quote-text">
+                "Shop Smart, Live Better." We believe in making life easier
+                through thoughtful products.
+              </p>
+            </div>
+          </div>
 
-      <div className="about-features-row">
-        <div className="about-feature-card">
-          <i className="bx bxs-truck about-feature-icon"></i>
-          <h5>Fast Delivery</h5>
-          <p>Get your orders quickly with our reliable delivery service.</p>
+          <div className="mission-stats">
+            <div className="stat-card primary">
+              <h3>10k+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div className="stat-card secondary">
+              <h3>100%</h3>
+              <p>Quality Guarantee</p>
+            </div>
+          </div>
         </div>
-        {/* <div className="about-feature-card">
-          <i className="bx bxs-shield-alt-2 about-feature-icon"></i>
-          <h5>30-Day Guarantee</h5>
-          <p>Enjoy peace of mind with our 30-day money-back guarantee.</p>
-        </div> */}
-        <div className="about-feature-card">
-          <i className="bx bxs-star about-feature-icon"></i>
-          <h5>Trusted Brand</h5>
-          <p>Thousands of happy customers trust Auxry Store for quality.</p>
-        </div>
-        <div className="about-feature-card">
-          <i className="bx bxs-lock-alt about-feature-icon"></i>
-          <h5>Secure Payment</h5>
-          <p>Your transactions are protected with top-tier security.</p>
-        </div>
-        <div className="about-feature-card">
-          <i className="bx bx-support about-feature-icon"></i>
-          <h5>Customer Support</h5>
-          <p>Our team is here to help you 24/7 with any questions.</p>
-        </div>
-      </div>
+      </section>
 
-{/*       <div className="icon-about">
-        <a href="tel:+1234567890" className="about-icon-link" title="Call us">
-          <i className="bx bx-phone"></i>
-        </a>
-        <a
-          href="mailto:info@auxrystore.com"
-          className="about-icon-link"
-          title="Email us"
-        >
-          <i className="bx bx-envelope"></i>
-        </a>
-        <a
-          href="https://instagram.com/auxrystore"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="about-icon-link"
-          title="Instagram"
-        >
-          <i className="bx bxl-instagram"></i>
-        </a>
-      </div> */}
+      <section className="about-features">
+        <div className="section-header">
+          <h2>Why Choose Auxry?</h2>
+          <p>The standard we promise to every customer.</p>
+        </div>
+        <div className="bento-grid animate-on-scroll">
+          <div className="bento-card large">
+            <i className="bx bxs-truck feature-icon"></i>
+            <h3>Fast Delivery</h3>
+            <p>
+              Get your orders quickly with our reliable delivery network
+              designed for speed and safety.
+            </p>
+          </div>
+
+          <div className="bento-card medium">
+            <i className="bx bxs-star feature-icon"></i>
+            <h3>Trusted Brand</h3>
+            <p>Thousands of happy customers trust Auxry Store for quality.</p>
+          </div>
+
+          <div className="bento-card medium">
+            <i className="bx bxs-lock-alt feature-icon"></i>
+            <h3>Secure Payment</h3>
+            <p>Your transactions are protected with top-tier SSL encryption.</p>
+          </div>
+
+          <div className="bento-card wide">
+            <i className="bx bx-support feature-icon"></i>
+            <div className="text-group">
+              <h3>24/7 Support</h3>
+              <p>Our dedicated team is here to help you around the clock.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="about-cta animate-on-scroll">
+        <h3>Join the Community</h3>
+        <p>Experience the Auxry difference today.</p>
+        <button className="btn-primary">Start Shopping</button>
+      </div>
     </div>
   );
 };
