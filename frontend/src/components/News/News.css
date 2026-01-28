@@ -13,14 +13,14 @@
 }
 .news .news-title h2 {
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 9px;
-  text-shadow: 1px 3px 1px #9e9fa5;
+  text-shadow: 1px 1.5px 1px #9e9fa5;
 }
 
 .news .news-title p {
-  width: 70%;
+  width: 50%;
   text-align: center;
   font-size: 10px;
   font-weight: normal;
@@ -35,16 +35,16 @@
 }
 
 .news .news-container .news-card {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background: rgba(255, 255, 255, 0.459);
-  box-shadow: -3px 1px 10px 0 rgba(60, 60, 61, 0.091);
+/* box-shadow: -3px 1px 10px 0 rgba(60, 60, 61, 0.091); */
 }
 
 .news .news-container .news-card .news-image img {
   height: 11rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   transition: 0.5s ease-in-out;
@@ -61,12 +61,12 @@
 .news .news-container .news-card .news-description p {
   color: #aaa;
   line-height: 1.7;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 9px;
 }
 .news .news-container .news-card .news-description h3 {
   line-height: 1.7;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -74,7 +74,7 @@
   color: #00000090;
   font-weight: 400;
   font-size: 11px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 
 @media (max-width: 992px) {
