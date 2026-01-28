@@ -1,6 +1,7 @@
 .about-container {
   width: 100%;
   overflow-x: hidden;
+  font-family: 'Inter', sans-serif; /* Ensure you have a nice font loaded */
   background-color: #fff;
   padding-bottom: 80px;
 }
@@ -20,7 +21,7 @@
 /* --- HERO SECTION --- */
 .about-hero {
   display: flex;
-  flex-direction: column-reverse; 
+  flex-direction: column-reverse; /* Text bottom on mobile */
   gap: 40px;
   padding: 100px 5% 60px;
   max-width: 1400px;
@@ -46,7 +47,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(18, 23, 49, 0.05);
+  background: rgba(18, 23, 49, 0.176);
   color: #121731;
   padding: 8px 16px;
   border-radius: 50px;
@@ -70,6 +71,7 @@
   display: inline-block;
 }
 
+/* Add a subtle underline decoration */
 .hero-title .highlight::after {
   content: '';
   position: absolute;
@@ -101,7 +103,7 @@
   max-width: 600px;
   height: auto;
   border-radius: var(--border-radius);
-  box-shadow: 20px 20px 0px #121731;
+  box-shadow: 20px 20px 0px #121731; /* Offset shadow for style */
   object-fit: cover;
   aspect-ratio: 4/3;
 }
@@ -334,7 +336,7 @@
   color: white;
   border: none;
   padding: 16px 36px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
