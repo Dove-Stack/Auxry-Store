@@ -33,7 +33,7 @@ const Banner = () => {
                 <p>NEW SEASON</p>
                 <h3>Shop for Latest trends in Fashion Season</h3>
                 <span>
-                  Don't miss the Opportunity
+                  Shop here 
                   <i className="bx bx-right-top-arrow-circle"></i>
                 </span>
               </div>
