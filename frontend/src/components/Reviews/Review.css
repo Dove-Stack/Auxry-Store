@@ -17,20 +17,15 @@
 }
 
 .review .title h3 {
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 35px;
+  font-weight: 500;
   margin-top: 8px;
   margin-bottom: 5px;
 }
 
 .review .title p {
   font-size: 12px;
-
-  font-weight: 600;
-
-  font-weight: 500;
-
-  font-weight: 500;
+  font-weight: 400;
   color: #00000060;
   width: 75%;
   margin-top: 8px;
@@ -47,7 +42,7 @@
   flex-direction: column;
   background: none;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 5px;
   margin: 30px 0;
 }
@@ -76,7 +71,7 @@
 }
 
 .review .text-content .bottom {
-  padding: 15px;
+  padding: 10px;
 }
 
 .review .text-content .bottom p {
@@ -86,9 +81,8 @@
 
   color: #00000093;
 
-  color: #00000070;
 
-  color: #00000070;
+  /* color: #00000070; */
 }
 
 .review .text-content .bottom i {
