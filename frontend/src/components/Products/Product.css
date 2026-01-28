@@ -5,8 +5,8 @@
 
 .product .product-main h1 {
   font-size: 40px;
-  font-weight: 900;
-  text-shadow: 1px 3px 1px #9e9fa5;
+  font-weight: 500;
+  text-shadow: 1px 1.5px 1px #9e9fa5;
 }
 
 .product .product-main .products-nav {
@@ -48,12 +48,12 @@
     font-size: 32px;
   }
 
-   .product .product-main .products-nav {
+  .product .product-main .products-nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     /* gap: 15px; */
-   }
+  }
 
   .product .product-main .products-nav .left li {
     font-size: 11px;
