@@ -12,8 +12,8 @@
 
 .main-banner .title h3 {
   font-size: 40px;
-  font-weight: 900;
-  text-shadow: 1px 3px 1px #9e9fa5;
+  font-weight: 600;
+  text-shadow: 1px 1.5px 1px #9e9fa5;
 
 }
 .banner {
@@ -36,7 +36,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   transition: 0.7s;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -70,7 +70,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -88,7 +88,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -105,7 +105,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -121,7 +121,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -137,7 +137,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -153,7 +153,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   /* margin: 40px; */
   /* padding: 20px; */
   transition: 0.7s;
@@ -186,7 +186,7 @@
 
 .banner .text-content h3 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -195,11 +195,11 @@
 }
 
 .banner .text-content span > i {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .banner .text-content p {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 
