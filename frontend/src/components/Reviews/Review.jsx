@@ -50,7 +50,6 @@ const Review = () => {
               <img src={assets.customer1} alt="" />
 
               <p className="review-name">Richard </p>
-
             </div>
             <div className="bottom">
               <p>
@@ -70,8 +69,6 @@ const Review = () => {
               <img src={assets.customer2} alt="" />
 
               <p className="review-name">Laura </p>
-
-
             </div>
             <div className="bottom">
               <p>
@@ -91,8 +88,6 @@ const Review = () => {
               <img src={assets.customer3} alt="" />
 
               <p className="review-name">Rosie </p>
-
-
             </div>
             <div className="bottom">
               <p>
@@ -112,8 +107,6 @@ const Review = () => {
               <img src={assets.customer4} alt="" />
 
               <p className="review-name">Anne </p>
-
-
             </div>
             <div className="bottom">
               <p>
@@ -133,8 +126,6 @@ const Review = () => {
               <img src={assets.customer5} alt="" />
 
               <p className="review-name">Jason </p>
-
-
             </div>
             <div className="bottom">
               <p>
@@ -154,8 +145,6 @@ const Review = () => {
               <img src={assets.customer6} alt="" />
 
               <p className="review-name">Emilia </p>
-
-
             </div>
             <div className="bottom">
               <p>
