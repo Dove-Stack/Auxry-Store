@@ -23,22 +23,22 @@ const Hero = () => {
         modules={[Autoplay, EffectFade]}
       >
         <SwiperSlide className="image-1 img-div">
-          <span>WHERE FASHION MEETS PASSION.</span>
+          <span>Where Fashion Meets Passion.</span>
           <h2>Discover Our Exquisite Fashion Pieces</h2>
           <h4>Enjoy exclusive discounts on Every Purchase</h4>
-          <button>SHOP NOW</button>
+          <a>Shop Now</a>
         </SwiperSlide>
         <SwiperSlide className="image-2 img-div">
-          <span>ELEVATE YOUR FASHION GAME</span>
+          <span>Elevate Your Fashion Game</span>
           <h2>Discover Elegance In Simplicity</h2>
           <h4>Up To 25% and More on every Purchase</h4>
-          <button>SHOP NOW</button>
+          <a>Shop Now</a>
         </SwiperSlide>
         <SwiperSlide className="image-3 img-div">
-          <span>SUSTAINABLE FASHION</span>
+          <span>Sustainable Fashion</span>
           <h2>Embrace Yourself and Define your Fashion</h2>
           <h4>Hurry !! , Don't miss out on Huge discount</h4>
-          <button>SHOP NOW</button>
+          <a>Shop Now</a>
         </SwiperSlide>
       </Swiper>
     </div>
