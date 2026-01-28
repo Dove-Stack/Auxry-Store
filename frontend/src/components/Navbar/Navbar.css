@@ -18,8 +18,8 @@
 .scroll-active {
   padding: 13px 40px;
   /* background-color: hsla(0, 0%, 100%, 0.635); */
-  background: rgb(255, 255, 255);
-  box-shadow: 20px 8px 32px 0 rgba(31, 38, 135, 0.1);
+  background: rgba(255, 255, 255, 0.566);
+  box-shadow: 20px 8px 32px 0 rgba(182, 182, 184, 0.623);
 }
 
 .header .logo-container {
@@ -365,7 +365,6 @@
   .header .navbar.active li:nth-child(4) {
     transition-delay: 0.4s;
   }
-  
 
   .header #close-menu-btn {
     display: none;
@@ -445,7 +444,7 @@
   .header .header-icon {
     gap: 20px;
   }
-  .header .header-icon i{
+  .header .header-icon i {
     font-size: 12px;
   }
 }
