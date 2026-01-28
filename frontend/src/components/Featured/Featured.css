@@ -5,10 +5,10 @@
 .feature-header h1 {
   margin-left: 3rem;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 1px;
   /* padding-left: 10px; */
-  text-shadow: 1px 3px 1px #9e9fa5;
+  text-shadow: 1px 1.5px 1px #9e9fa5;
 }
 
 .feature .feature-card {
@@ -25,23 +25,22 @@
 
 .feature .feature-card .feature-main-card .feature-card-image {
   background-color: #f0eeed;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
   width: 250px;
 }
 
 .feature .feature-card .feature-main-card {
   line-height: 1.7;
   /* padding-block-end: 12px; */
-  border-radius: 20px;
-  box-shadow: -2px 8px 10px 3px #00000010;
+  /* border-radius: 20px; */
   position: relative;
   transition: 0.5s ease-in-out;
   /* padding: 5px; */
 }
 
 .feature .feature-card .feature-main-card:hover {
-  scale: 1.02;
+  box-shadow: 1px 1px 10px 1px #00000010;
 }
 
 .feature .feature-card .feature-main-card .text {
@@ -56,7 +55,7 @@
   /* font-size: 1.2rem; */
   font-size: 15px;
   font-weight: normal;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .feature .feature-card .feature-main-card pre {
@@ -111,7 +110,7 @@
   cursor: pointer;
 }
 
- .more-btn {
+.more-btn {
   padding: 9px 11px;
   font-size: 10px;
   font-weight: 600;
@@ -128,7 +127,7 @@
 }
 
 .feature .feature-card .feature-main-card i {
-  background: #00000013;
+  /* background: #00000013; */
   padding: 8px;
   border-radius: 40px;
   margin-top: 8px;
@@ -159,7 +158,7 @@
   cursor: pointer;
   /* color: white; */
   border-radius: 40px;
-  background-color: #00000013;
+  /* background-color: #00000013; */
   padding: 8px;
   margin-top: 8px;
   transition: 0.5s ease-in-out;
@@ -230,12 +229,12 @@
 }
 
 @media (max-width: 991px) {
-   .more-btn {
+  .more-btn {
     padding: 18px 30px;
     font-size: 10px;
     color: #fefefe;
     background-color: #121731;
-    border-radius: 22px;
+    /* border-radius: 22px; */
     margin: 40px auto;
     display: block;
     align-self: center;
@@ -245,13 +244,12 @@
   }
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
   .feature-header h1 {
     text-align: center;
     margin: 0;
   }
 }
-
 
 @media (max-width: 775px) {
   .more-btn {
@@ -272,7 +270,7 @@
     margin-top: 50px;
   }
 
-  .feature-header h1  {
+  .feature-header h1 {
     text-align: center;
     margin: 0;
   }
