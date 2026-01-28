@@ -53,7 +53,9 @@ const Navbar = ({ setShowLogin }) => {
         {/* <Link to={`/`}>
             <img src={assets.Logo1} className="logo nav-logo" alt="" />
           </Link> */}
-        <li>Home</li>
+        <Link to={`/`}>
+          <li>Home</li>
+        </Link>
         <Link to={`/shop`}>
           <li>Shop</li>
         </Link>
