@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /* --font-body: "Playfair Display", serif; */
   /* --font-body: "Inter", sans-serif; */
 
-  font-family: "Audiowide", sans-serif;
+  font-family: "Jost", sans-serif;
+  --accent-color: #ff6347;
+  --bg-light: #f8f9fa;
+  --text-dark: #1a1a1a;
+  --text-grey: #555;
+  --card-bg: #ffffff;
+  --border-radius: 0px;
 }
 
 * {
